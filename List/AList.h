@@ -30,7 +30,10 @@ public:
     const T& getValue(); //获取当前位置的值
     int currentPosi(); //返回当前位置
 
-    int length() const; //表的长度
+    int length() const //表的长度
+    {
+        return listSize;
+    }
 };
 
 
