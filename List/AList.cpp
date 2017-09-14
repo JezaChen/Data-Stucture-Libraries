@@ -2,6 +2,7 @@
 // Created by Jeza on 2017/9/12.
 //
 #include "AList.h"
+#include "Exception_Handler.h"
 
 template<typename T>
 void Alist<T>::clear()
@@ -30,7 +31,8 @@ void Alist<T>::insert(const T &x)
 template<typename T>
 T Alist<T>::remove()
 {
-    //TODO：处理异常情况
+    if(currPosi>=listSize) throw nullPointer_Exception();
+
     T target=data[currPosi];
     //向左腾空间
     for(int i=currPosi;i<listSize-1;i++)
@@ -55,26 +57,28 @@ void Alist<T>::moveToEnd()
 template<typename T>
 void Alist<T>::next()
 {
-    //TODO:处理异常情况
+    if(currPosi==listSize-1)
+        throw outOfBounds_Exception(UNDERFLOWED); //抛出出界异常
     currPosi++;
 }
 template<typename T>
 void Alist<T>::prev()
 {
-    //TODO:处理异常情况
+    if(currPosi==0)
+        throw outOfBounds_Exception(OVERFLOWED); //抛出出界异常
     currPosi--;
 }
 template<typename T>
 void Alist<T>::moveToPosi(int posi)
 {
-    //TODO:处理异常情况
+    if(posi<0) throw outOfBounds_Exception(OVERFLOWED);
+    if(posi>=listSize) throw outOfBounds_Exception(UNDERFLOWED);
     currPosi=posi;
 }
 
 template <typename T>
 const T& Alist<T>::getValue()
 {
-   //TODO:处理异常情况
     return data[currPosi];
 }
 

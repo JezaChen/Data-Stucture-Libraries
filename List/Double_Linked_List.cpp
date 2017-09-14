@@ -1,13 +1,13 @@
 //
 // Created by Jeza on 2017/9/14.
 //
-#include "Doubly_Linked_List.h"
 
 //
 // Created by Jeza on 2017/9/14.
 //
+#include "Doubly_Linked_List.h"
+#include "Exception_Handler.h"
 
-#include "Link.h"
 template<typename T>
 void Llist<T>::removeAll()
 {
@@ -25,28 +25,27 @@ void Llist<T>::removeAll()
 template<typename T>
 void Llist<T>::insert(const T &x)
 {
-    curr->next=new Link(x,curr->next);
+    curr->next=curr->next->prev=new Link(x,curr,curr->next);
     if(curr==tail) tail=tail->next; //如有必要，需要更新尾节点的位置
     listSize++; //更新表长
 }
 template<typename T>
 void Llist<T>::append(const T &x)
 {
-    tail=tail->next=new Link(x,NULL);
+    tail=tail->next=new Link(x,tail,NULL);
     listSize++;
 }
 template<typename T>
 T Llist<T>::remove()
 {
-    if(curr->next==NULL)
-    {
-        //TODO::处理异常状况
-    }
+    if (curr->next == NULL)
+        throw nullPointer_Exception(); //抛出空指针异常
     else
     {
         LinkPosi(T) target=curr->next;
         T r=target->data;
         curr->next=target->next;
+        target->next->prev=curr;
         delete target;
         return r;
     }
@@ -56,36 +55,36 @@ T Llist<T>::remove()
 template<typename T>
 void Llist<T>::prev()
 {
-    //TODO:处理异常情况
-    LinkPosi(T) r=head;
-    while(r->next!=curr)
-        r=r->next;
-    curr=r;
-    currPosition--;
+    if(curr==head)
+        throw outOfBounds_Exception(OVERFLOWED); //抛出出界异常
+    curr=curr->prev;
 }
 template<typename T>
 void Llist<T>::next()
 {
-    //TODO:处理异常情况
+    if(curr==tail)
+        throw outOfBounds_Exception(UNDERFLOWED); //抛出出界异常
     curr=curr->next;
     currPosition++;
 }
 template<typename T>
 void Llist<T>::moveToPosi(int newPosi)
 {
-    //TODO:处理异常
+    if(newPosi<0) throw outOfBounds_Exception(OVERFLOWED);
+    if(newPosi>listSize) throw outOfBounds_Exception(UNDERFLOWED);
     if(newPosi>=currPosition)
     {
-        //直接后移即可
+        //后移
         for(int i=0;i<newPosi-currPosition;i++)
             curr=curr->next;
         return;
     }
     else
     {
-        LinkPosi(T) r=head;
-        for(int i=0;i<newPosi;i++)   curr=curr->next;
-        return ;
+        //前移
+        for(int i=0;i<currPosition-newPosi;i++)
+            curr=curr->prev;
+        return;
     }
 }
 template<typename T>
@@ -108,6 +107,7 @@ void Llist<T>::removeToEnd()
 template<typename T>
 const T& Llist<T>::getValue()
 {
-    //TODO:处理异常
+    if(curr==head)
+        throw nullPointer_Exception();  //抛出空指针异常
     return curr->next->data;
 }
