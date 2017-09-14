@@ -4,6 +4,7 @@
 
 #ifndef LIST_EXCEPTION_HANDLER_H
 #define LIST_EXCEPTION_HANDLER_H
+
 #include <iostream>
 using namespace std;
 
@@ -52,6 +53,15 @@ public:
     void print()
     {
         cerr<<"The Stack is EMPTY!"<<endl;
+    }
+};
+class queueEmpty_Exception //队空异常
+{
+public:
+    queueEmpty_Exception() {}
+    void print()
+    {
+        cerr<<"The Queue is EMPTY!"<<endl;
     }
 };
 #endif //LIST_EXCEPTION_HANDLER_H

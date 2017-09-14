@@ -2,6 +2,7 @@
 // Created by Jeza on 2017/9/14.
 //
 #include "Array_Based_Queue.h"
+#include "../Common/Exception_Handler.h"
 
 template <typename T>
 void AQueue<T>::clear()
@@ -12,7 +13,8 @@ void AQueue<T>::clear()
 template<typename T>
 T AQueue<T>::dequeue()
 {
-    //TODO: 处理异常情况
+    if(size()==0)
+        throw queueEmpty_Exception(); //抛出队空异常
     T temp=listArray[front];
     head=(head+1)%capacity; //记得要取余数
     return temp;
@@ -21,8 +23,8 @@ T AQueue<T>::dequeue()
 template<typename T>
 void AQueue<T>::enqueue(const T &e)
 {
-    //TODO: 处理异常情况
-    if((rear+2)%capacity==head) {}
+    if((rear+2)%capacity==head)
+       throw arrayFull_Exception("queue"); //抛出队空异常
     //else
     rear=(rear+1)%capacity;
     listArray[rear]=e;
@@ -30,7 +32,8 @@ void AQueue<T>::enqueue(const T &e)
 template <typename T>
 const T& AQueue<T>::front() const
 {
-    //TODO: 处理异常情况
+    if(size()==0)
+        throw queueEmpty_Exception(); //抛出队空异常
     return listArray[head];
 }
 
