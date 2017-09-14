@@ -10,11 +10,12 @@ template<typename T>
 class Alist:public List<T>
 {
 private:
-    int opacity; //最大承载容量
+    int capacity; //最大承载容量
     int listSize; //当前长度
     int currPosi; //当前位置
     T* data; //储存列表数据的数组
 public:
+    Alist(int s=250):capacity(s) {data=new T[s];}
     void clear(); //清空
     void append(const T&); //追加
     void insert(const T&); //插入

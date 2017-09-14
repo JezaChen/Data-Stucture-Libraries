@@ -9,7 +9,7 @@ void Alist<T>::clear()
 {
     delete[] data;
     listSize=0; currPosi=0;
-    data=new T[opacity];
+    data=new T[capacity];
 }
 
 template<typename T>
@@ -21,7 +21,7 @@ void Alist<T>::append(const T &x)
 template <typename T>
 void Alist<T>::insert(const T &x)
 {
-    if(listSize==opacity) throw arrayFull_Exception("list");
+    if(listSize==capacity) throw arrayFull_Exception("list");
     //腾出空间
     for(int i=listSize;i>currPosi;i--)
         data[i]=data[i-1];
