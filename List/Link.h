@@ -7,8 +7,8 @@
 
 #include "List.h"
 #include <iostream>
-#define LinkPosi(T) Link<T>*
 #define defaultSize 200
+#define LinkPosi(T) Link<T>*
 
 namespace DSLibrary {
     namespace Single_Linked {
