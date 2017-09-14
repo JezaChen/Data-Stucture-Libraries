@@ -39,7 +39,7 @@ public:
 };
 template<typename T> LinkPosi(T) Link<T>::freeList=NULL;
 
-template<typename T>
+template<typename T,typename VST>
 class Llist:public List<T>
 {
 private:
@@ -59,7 +59,7 @@ public:
     Llist(int size=defaultSize) {initialize();} //defaultSize有啥用处
     ~Llist() {removeAll();}
 
-    void trav()const; //遍历链表
+    void trav(VST& visit)const; //遍历链表
     void clear() {removeAll();initialize();}
     void insert(const T& x); //插入
     void append(const T& x); //追加
