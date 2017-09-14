@@ -14,8 +14,8 @@ private:
     int _size; //当前容量
     T* listArray;
 public:
-    Astack(int op=defaultSize):opacity(op) {}
-    ~Astack() {delete[] listArray;}
+    AStack(int op=defaultSize):opacity(op) {}
+    ~AStack() {delete[] listArray;}
     void clear();
     void push(const T& e);
     T pop();

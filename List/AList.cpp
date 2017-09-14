@@ -2,7 +2,7 @@
 // Created by Jeza on 2017/9/12.
 //
 #include "AList.h"
-#include "Exception_Handler.h"
+#include "../Common/Exception_Handler.h"
 
 template<typename T>
 void Alist<T>::clear()
