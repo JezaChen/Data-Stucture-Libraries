@@ -9,6 +9,7 @@
 #include <iostream>
 #define LinkPosi(T) Link<T>*
 #define defaultSize 200
+
 using namespace std;
 template<typename T>
 class Link //单向链表节点
@@ -16,10 +17,27 @@ class Link //单向链表节点
 public:
     T data;
     Link* next;
+    static LinkPosi(T) freeList;
 
     Link(const T& _data,Link<T>* next_pointer=NULL):data(_data),next(next_pointer) {}
     Link(Link<T>* next_pointer=NULL):next(next_pointer) {}
+
+    void* operator new(size_t)
+    {
+        if(freeList==NULL) return ::new Link<T>;
+        LinkPosi(T) temp=freeList;
+        freeList=freeList->next;
+        temp->next=NULL;
+        return temp;
+    }
+
+    void operator delete(void* ptr)
+    {
+        ((LinkPosi(T)) ptr)->next=freeList;
+        freeList=(LinkPosi(T)) ptr;
+    }
 };
+template<typename T> LinkPosi(T) Link<T>::freeList=NULL;
 
 template<typename T>
 class Llist:public List<T>
@@ -27,7 +45,8 @@ class Llist:public List<T>
 private:
     LinkPosi(T) head;
     LinkPosi(T) tail;
-    LinkPosi(T) curr;
+    LinkPosi(T) curr;//当前位置，指针表示
+    int currPosition; //当前位置，数字表示
     int listSize; //表长
     void initialize()
     {
@@ -52,9 +71,8 @@ public:
     void prev();
     void next();
     void moveToPosi(int newPosi);
-    int currPosi();
+    int currentPosi();
     const T& getValue();
-
 };
 
 #endif //LIST_LINK_H

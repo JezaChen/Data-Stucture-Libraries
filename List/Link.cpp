@@ -46,6 +46,8 @@ T Llist<T>::remove()
         return r;
     }
 }
+
+//位置操作
 template<typename T>
 void Llist<T>::prev()
 {
@@ -54,14 +56,53 @@ void Llist<T>::prev()
     while(r->next!=curr)
         r=r->next;
     curr=r;
+    currPosition--;
 }
 template<typename T>
 void Llist<T>::next()
 {
+    //TODO:处理异常情况
     curr=curr->next;
+    currPosition++;
 }
 template<typename T>
 void Llist<T>::moveToPosi(int newPosi)
 {
-
+    //TODO:处理异常
+    if(newPosi>=currPosition)
+    {
+        //直接后移即可
+        for(int i=0;i<newPosi-currPosition;i++)
+            curr=curr->next;
+        return;
+    }
+    else
+    {
+        LinkPosi(T) r=head;
+        for(int i=0;i<newPosi;i++)   curr=curr->next;
+        return ;
+    }
+}
+template<typename T>
+int Llist<T>::currentPosi()
+{
+    return currPosition;
+}
+template<typename T>
+void Llist<T>::removeToStart()
+{
+    curr=head;
+    currPosition=0;
+}
+template<typename T>
+void Llist<T>::removeToEnd()
+{
+    curr=tail;
+    currPosition=listSize;
+}
+template<typename T>
+const T& Llist<T>::getValue()
+{
+    //TODO:处理异常
+    return curr->next->data;
 }
