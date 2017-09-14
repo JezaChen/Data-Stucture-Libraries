@@ -23,13 +23,15 @@ public:
     }
 };
 
-class listFull_Exception
+class arrayFull_Exception
 {
+private:
+    char* name;
 public:
-    listFull_Exception() {}
+    arrayFull_Exception(const char* target_name):name(target_name) {}
     void print()
     {
-        cerr<<"The list is too full to insert any elements!"<<endl;
+        cerr<<"The "<<name<<" is too full to insert any elements!"<<endl;
     }
 };
 
@@ -40,6 +42,16 @@ public:
     void print()
     {
         cerr<<"No elements!"<<endl;
+    }
+};
+
+class stackEmpty_Exception //栈空异常
+{
+public:
+    stackEmpty_Exception() {}
+    void print()
+    {
+        cerr<<"The Stack is EMPTY!"<<endl;
     }
 };
 #endif //LIST_EXCEPTION_HANDLER_H

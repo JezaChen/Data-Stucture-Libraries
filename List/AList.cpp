@@ -21,6 +21,7 @@ void Alist<T>::append(const T &x)
 template <typename T>
 void Alist<T>::insert(const T &x)
 {
+    if(listSize==opacity) throw arrayFull_Exception("list");
     //腾出空间
     for(int i=listSize;i>currPosi;i--)
         data[i]=data[i-1];

@@ -4,6 +4,7 @@
 
 #include "Linked_Stack.h"
 #include "../Common/Share.h"
+#include "../Common/Exception_Handler.h"
 
 template<typename T>
 void LStack<T>::clear()
@@ -27,7 +28,7 @@ void LStack<T>::push(const T &e)
 template <typename T>
 T LStack<T>::pop()
 {
-    //TODO：处理异常情况
+    if(!_size) throw stackEmpty_Exception(); //这时候抛出空战异常吧
     T data_temp=_top->data;
     LinkPosi(T) pointer_temp=_top;
     _top=_top->next;
@@ -39,7 +40,7 @@ T LStack<T>::pop()
 template <typename T>
 T LStack<T>::top()
 {
-    //TODO:处理异常情况
+    if(!_size) throw stackEmpty_Exception();
     return _top->data;
 }
 
