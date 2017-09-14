@@ -13,7 +13,7 @@ void AStack<T>::clear()
 template <typename T>
 void AStack<T>::push(const T &e)
 {
-    if(_size==opacity) throw arrayFull_Exception("stack");
+    if(_size==capacity) throw arrayFull_Exception("stack");
     listArray[_size++]=e;
 }
 

@@ -10,11 +10,11 @@ template <typename T>
 class AStack:public Stack<T>
 {
 private:
-    int opacity; //最大容量
+    int capacity; //最大容量
     int _size; //当前容量
     T* listArray;
 public:
-    AStack(int op=defaultSize):opacity(op) {}
+    AStack(int op=defaultSize):capacity(op) {listArray=new T[capacity];}
     ~AStack() {delete[] listArray;}
     void clear();
     void push(const T& e);
