@@ -8,60 +8,62 @@
 #include <iostream>
 using namespace std;
 
-enum OUT_OF_BOUNDS_STATUS {OVERFLOWED=0,UNDERFLOWED=1};
+namespace DSLibrary {
+    enum OUT_OF_BOUNDS_STATUS {
+        OVERFLOWED = 0, UNDERFLOWED = 1
+    };
 
-class outOfBounds_Exception
-{
-private:
-    OUT_OF_BOUNDS_STATUS status;
-public:
-    outOfBounds_Exception(OUT_OF_BOUNDS_STATUS s):status(s) {}
-    void print()
-    {
-        cerr<<"Position out of range: ";
-        if(status==OVERFLOWED) cerr<<"overflowed."<<endl;
-        else cerr<<"underflowed"<<endl;
-    }
-};
+    class outOfBounds_Exception {
+    private:
+        OUT_OF_BOUNDS_STATUS status;
+    public:
+        outOfBounds_Exception(OUT_OF_BOUNDS_STATUS s) : status(s) {}
 
-class arrayFull_Exception
-{
-private:
-    char* name;
-public:
-    arrayFull_Exception(const char* target_name):name(target_name) {}
-    void print()
-    {
-        cerr<<"The "<<name<<" is too full to insert any elements!"<<endl;
-    }
-};
+        void print() {
+            cerr << "Position out of range: ";
+            if (status == OVERFLOWED) cerr << "overflowed." << endl;
+            else cerr << "underflowed" << endl;
+        }
+    };
 
-class nullPointer_Exception
-{
-public:
-    nullPointer_Exception() {}
-    void print()
-    {
-        cerr<<"No elements!"<<endl;
-    }
-};
+    class arrayFull_Exception {
+    private:
+        char *name;
+    public:
+        arrayFull_Exception(const char *target_name) : name(target_name) {}
 
-class stackEmpty_Exception //栈空异常
-{
-public:
-    stackEmpty_Exception() {}
-    void print()
+        void print() {
+            cerr << "The " << name << " is too full to insert any elements!" << endl;
+        }
+    };
+
+    class nullPointer_Exception {
+    public:
+        nullPointer_Exception() {}
+
+        void print() {
+            cerr << "No elements!" << endl;
+        }
+    };
+
+    class stackEmpty_Exception //栈空异常
     {
-        cerr<<"The Stack is EMPTY!"<<endl;
-    }
-};
-class queueEmpty_Exception //队空异常
-{
-public:
-    queueEmpty_Exception() {}
-    void print()
+    public:
+        stackEmpty_Exception() {}
+
+        void print() {
+            cerr << "The Stack is EMPTY!" << endl;
+        }
+    };
+
+    class queueEmpty_Exception //队空异常
     {
-        cerr<<"The Queue is EMPTY!"<<endl;
-    }
-};
+    public:
+        queueEmpty_Exception() {}
+
+        void print() {
+            cerr << "The Queue is EMPTY!" << endl;
+        }
+    };
+}
 #endif //LIST_EXCEPTION_HANDLER_H

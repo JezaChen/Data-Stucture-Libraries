@@ -35,7 +35,7 @@ namespace DSLibrary {
             if (temp == rear)
                 rear = head;
             head->next = head->next->next; //并不用else
-            delete temp;
+            release(temp);
             _size--;
             return data_temp;
         }
