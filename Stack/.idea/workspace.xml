@@ -12,10 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="948a9c09-dd26-41c6-967d-ad5a15d26c05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Queue/Linked_Queue.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Queue/Linked_Queue.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Common/Exception_Handler.h" afterPath="$PROJECT_DIR$/../Common/Exception_Handler.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Queue/Array_Based_Queue.cpp" afterPath="$PROJECT_DIR$/../Queue/Array_Based_Queue.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Queue/Linked_Queue.h" afterPath="$PROJECT_DIR$/../Queue/Linked_Queue.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -123,8 +120,8 @@
       <file leaf-file-name="Exception_Handler.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Common/Exception_Handler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="332">
+              <caret line="48" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,9 +151,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="976" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -432,7 +430,7 @@
       <option name="presentableId" value="Default" />
       <updated>1505393419953</updated>
       <workItem from="1505393421237" duration="5035000" />
-      <workItem from="1505399972126" duration="2108000" />
+      <workItem from="1505399972126" duration="3308000" />
     </task>
     <task id="LOCAL-00001" summary="#Update#20170914#2117#更新了顺序栈">
       <created>1505395051519</created>
@@ -459,13 +457,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7143000" />
+    <option name="totallyTimeSpent" value="8343000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="976" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17745303" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.088541664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33296338" sideWeight="0.5062631" order="7" side_tool="true" content_ui="tabs" />
@@ -670,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Common/Exception_Handler.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="332">
+          <caret line="48" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>

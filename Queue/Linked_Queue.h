@@ -17,7 +17,7 @@ private:
     int _size;
 public:
     LQueue() {_size=0;head=rear=new Link<T>;} //init
-    ~LQueue() {clear();} //TODO
+    ~LQueue() {clear();delete head;} //TODO
 
     void clear();
     void enqueue(const T& e);
