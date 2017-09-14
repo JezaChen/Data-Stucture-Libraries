@@ -4,6 +4,7 @@
 
 #include "Link.h"
 #include "Exception_Handler.h
+#include "Doubly_Linked_List.h"
 
 template<typename T>
 void Llist<T>::removeAll()
@@ -104,10 +105,18 @@ void Llist<T>::removeToEnd()
     curr=tail;
     currPosition=listSize;
 }
+
 template<typename T>
 const T& Llist<T>::getValue()
 {
     if(curr==head)
         throw nullPointer_Exception();  //抛出空指针异常
     return curr->next->data;
+}
+
+template <typename T>
+T& Llist<T>::operator[](int posi)
+{
+    moveToPosi(posi);
+    return curr->data;
 }

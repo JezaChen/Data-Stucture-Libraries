@@ -28,6 +28,7 @@ public:
 
     void moveToPosi(int posi); //移动到某个位置
     const T& getValue(); //获取当前位置的值
+    T& operator[] (int posi);
     int currentPosi(); //返回当前位置
 
     int length() const //表的长度

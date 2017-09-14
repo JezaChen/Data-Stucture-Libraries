@@ -82,6 +82,15 @@ const T& Alist<T>::getValue()
     return data[currPosi];
 }
 
+template<typename T>
+T& Alist<T>::operator[](int posi)
+{
+    if(posi<0) throw outOfBounds_Exception(OVERFLOWED);
+    if(posi>=listSize) throw outOfBounds_Exception(UNDERFLOWED);
+
+    currPosi=posi; //当前位置更新
+    return data[currPosi]; //返回该元素的引用
+}
 template <typename T>
 int Alist<T>::currentPosi()
 {

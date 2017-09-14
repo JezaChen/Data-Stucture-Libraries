@@ -111,3 +111,10 @@ const T& Llist<T>::getValue()
         throw nullPointer_Exception();  //抛出空指针异常
     return curr->next->data;
 }
+
+template <typename T>
+T& Llist<T>::operator[](int posi)
+{
+    moveToPosi(posi);
+    return curr->data;
+}

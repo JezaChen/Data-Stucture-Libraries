@@ -73,6 +73,7 @@ public:
     void moveToPosi(int newPosi);
     int currentPosi();
     const T& getValue();
+    T& operator[] (int posi);
 };
 
 #endif //LIST_LINK_H
