@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.1.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Codes\Aizu OJ\Data Stucture_SCUT\Data-Stucture_SCUT\Stack"
--- Configuring done
--- Generating done
--- Build files have been written to: D:/Codes/Aizu OJ/Data Stucture_SCUT/Data-Stucture_SCUT/Stack/cmake-build-debug
