@@ -114,5 +114,27 @@ namespace DSLibrary {
             moveToPosi(posi);
             return curr->data;
         }
+
+        template<typename T,typename VST>
+        void Llist<T>::trav(VST &visit)
+        {
+            LinkPosi(T) p=head->next;
+            while(p)
+            {
+                visit(p);  //线性访问
+                p=p->next;
+            }
+        }
+
+        template<typename T>
+        void Llist<T>::trav(void (*visit)(T &) )
+        {
+            LinkPosi(T) p=head->next;
+            while(p)
+            {
+                visit(p);  //线性访问
+                p=p->next;
+            }
     }
+  }
 }

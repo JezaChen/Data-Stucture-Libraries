@@ -22,7 +22,6 @@ namespace DSLibrary {
 
             //Constructor
             Link(T _data, LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL) : data(_data), prev(_prev), next(_next) {}
-
             Link(LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL) : prev(_prev), next(_next) {}
 
             void *operator new(size_t) {
@@ -77,6 +76,10 @@ namespace DSLibrary {
             int currentPosi();
             const T &getValue();
             T &operator[](int posi);
+
+            //遍历操作
+            template<typename VST> void trav(VST& visit);
+            void trav(void ( *visit )(T&));
         };
     }
 }

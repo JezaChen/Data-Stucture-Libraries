@@ -90,4 +90,22 @@ namespace DSLibrary {
     int Alist<T>::currentPosi() {
         return currPosi;
     }
+
+    template<typename VST,typename T>
+    void Alist<T>::trav(VST& visit)
+    {
+        for(int i=0;i<listSize;i++)
+        {
+            visit(data[i]);
+        }
+    }
+
+    template <typename T>
+    void Alist<T>::trav(void (* visit)(T &) )
+    {
+        for(int i=0;i<listSize;i++)
+        {
+            visit(data[i]);
+        }
+    }
 }

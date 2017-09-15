@@ -60,7 +60,6 @@ namespace DSLibrary {
             Llist(int size = defaultSize) { initialize(); } //defaultSize有啥用处
             ~Llist() { removeAll(); }
 
-            template<typename VST> void trav(VST &visit) const; //遍历链表
             void clear() {
                 removeAll();
                 initialize();
@@ -72,20 +71,17 @@ namespace DSLibrary {
 
             //位置操作
             void removeToStart();
-
             void removeToEnd();
-
             void prev();
-
             void next();
-
             void moveToPosi(int newPosi);
-
             int currentPosi();
-
             const T &getValue();
-
             T &operator[](int posi);
+
+            //遍历操作
+            template<typename VST> void trav(VST& visit);
+            void trav(void ( *visit )(T&));
         };
     }
 }

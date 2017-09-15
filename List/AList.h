@@ -39,6 +39,10 @@ namespace DSLibrary {
         {
             return listSize;
         }
+
+        //遍历操作
+        template<typename VST> void trav(VST& visit);
+        void trav(void ( *visit )(T&));
     };
 
 }
