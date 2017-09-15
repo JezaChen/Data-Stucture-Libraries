@@ -123,7 +123,6 @@ namespace DSLibrary {
                 p = p->next;
             }
         }
-
         template<typename T>
         void Llist<T>::trav(void (*visit)(T &)) {
             LinkPosi(T)p = head->next;
