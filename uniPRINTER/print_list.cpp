@@ -6,8 +6,9 @@
 
 namespace DSLibrary{
     template<typename T>
-    void UNI_PRINTER::p(Alist &list)
+    void UNI_PRINTER::p(List &List)
     {
-
+        List.trav(print); //利用虚函数的特性统一规范接入打印函数
     }
+
 }

@@ -19,7 +19,7 @@
 using namespace std;
 
 namespace DSLibrary {
-//内接口
+    //内接口
     class UNI_PRINTER //统一输出类
     {
         //基本类型打印
@@ -29,9 +29,13 @@ namespace DSLibrary {
         static void p(const char &);
 
         //复杂数据结构的打印输出
-        template<typename T> static void p(Alist &);
-        template<typename T> static void p(Single_Linked::Llist<T> &); //单向链表
-        template<typename T> static void p(Double_Linked::Llist<T> &); //双向链表
+        template<typename T> static void p(List &);  //表
     };
+
+    //对外接口
+    template<typename T> static void print(T* x) {x?print(*x):printf("<NULL>");} //指针访问
+    //引用访问
+    template<typename T> static void print(T& x) {UNI_PRINTER::p(x);}
+    template<typename T> static void print(const T&x) {UNI_PRINTER::p(x);}
 }
 #endif //UNIPRINTER_PRINT_H
