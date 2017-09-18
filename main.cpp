@@ -2,7 +2,7 @@
 #include "AList.h"
 #include "Link.h"
 #include "Doubly_Linked_List.h"
-#include "Exception_Handler.h"
+#include "cstdio"
 #include "print.h"
 
 using namespace std;
@@ -87,7 +87,7 @@ void list_test(int choice)
         {
             try
             {
-                test->moveToStart();
+                test->prev();
                 continue;
             }
             catch(outOfBounds_Exception& e)
@@ -127,6 +127,7 @@ void list_test(int choice)
             if(choice==1) print((Alist<int>*) test);
             else if(choice==2) print((Single_Linked::Llist<int>*) test);
             else print((Double_Linked::Llist<int>*) test);
+            printf("\n");
         }
     }
 

@@ -30,7 +30,7 @@ namespace DSLibrary {
     private:
         char *name;
     public:
-        arrayFull_Exception(const char *target_name) : name(target_name) {}
+        arrayFull_Exception(char *target_name) : name(target_name) {}
 
         void print() {
             cerr << "The " << name << " is too full to insert any elements!" << endl;

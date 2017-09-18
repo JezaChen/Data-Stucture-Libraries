@@ -17,7 +17,7 @@ namespace DSLibrary {
         int currPosi; //当前位置
         T *data; //储存列表数据的数组
     public:
-        Alist(int s = 250) : capacity(s) { data = new T[s];currPosi=0;}
+        Alist(int s = 250) : capacity(s) { data = new T[s];currPosi=listSize=0;}
         void clear() //清空
         {
             delete[] data;
