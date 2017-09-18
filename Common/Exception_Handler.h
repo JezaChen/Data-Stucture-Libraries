@@ -6,6 +6,8 @@
 #define LIST_EXCEPTION_HANDLER_H
 
 #include <iostream>
+#include <cstring>
+
 using namespace std;
 
 namespace DSLibrary {
@@ -30,7 +32,7 @@ namespace DSLibrary {
     private:
         char *name;
     public:
-        arrayFull_Exception(char *target_name) : name(target_name) {}
+        arrayFull_Exception(char *target_name) {strcpy(name,target_name);}
 
         void print() {
             cerr << "The " << name << " is too full to insert any elements!" << endl;
