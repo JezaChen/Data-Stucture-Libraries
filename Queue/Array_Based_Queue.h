@@ -26,11 +26,34 @@ public:
         delete[] listArray;
     }
 
-    void clear();
-    void enqueue(const T &e);
-    T dequeue();
-    const T &front() const;
-    int size() const;
+    void clear()
+    {
+        rear = 0;
+        head = 1;
+    }
+    void enqueue(const T &e)
+    {
+        if ((rear + 2) % capacity == head)
+            throw arrayFull_Exception("queue"); //抛出队空异常
+        //else
+        rear = (rear + 1) % capacity;
+        listArray[rear] = e;
+    }
+    T dequeue()
+    {
+        if (size() == 0)
+            throw queueEmpty_Exception(); //抛出队空异常
+        T temp = listArray[front];
+        head = (head + 1) % capacity; //记得要取余数
+        return temp;
+    }
+    const T &front() const
+    {
+        if (size() == 0)
+            throw queueEmpty_Exception(); //抛出队空异常
+        return listArray[head];
+    }
+    int size() const  {  return (rear - head + 1 - capacity) % capacity;} //记得取余
 };
 
 }

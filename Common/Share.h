@@ -1,9 +1,12 @@
 //
-// Created by Jeza on 2017/9/14.
+// Created by Jeza on 2017/9/18.
 //
 
-#ifndef LIST_VISIT_H
-#define LIST_VISIT_H
+#ifndef COMMON_SHARE_H
+#define COMMON_SHARE_H
+//
+// Created by Jeza on 2017/9/14.
+//
 
 #include <iostream>
 using namespace std;
@@ -27,6 +30,10 @@ namespace DSLibrary {
     template<typename T> static bool rt (T* a, T* b) {return  rt(*a,*b);}
     template<typename T> static bool eq (T& a, T& b) {return a==b;}
     template<typename T> static bool eq (T* a ,T* b) {return eq(*a,*b);}
-    }
+}
 #endif //LIST_VISIT_H
+
+//
+// Created by Jeza on 2017/9/14.
+//
 

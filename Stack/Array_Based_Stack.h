@@ -18,11 +18,27 @@ namespace DSLibrary {
 
         ~AStack() { delete[] listArray; }
 
-        void clear();
-        void push(const T &e);
-        T pop();
-        T top();
-        int size();
+        void clear()
+        {
+            _size = 0; //_size=0即可
+        }
+        void push(const T &e)
+        {
+            if (_size == capacity) throw arrayFull_Exception("stack");
+            listArray[_size++] = e;
+        }
+        T pop()
+        {
+            if (!_size) throw stackEmpty_Exception(); //抛出空战异常
+            T temp = listArray[(_size--) - 1];
+            return temp;
+        }
+        T top()
+        {
+            if (!_size) throw stackEmpty_Exception();
+            return listArray[_size - 1];
+        }
+        int size() { return _size; }
     };
 }
 #endif //STACK_ARRAY_BASED_STACK_H

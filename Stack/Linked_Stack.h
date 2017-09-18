@@ -22,11 +22,36 @@ namespace DSLibrary {
 
             ~LStack() { clear(); }
 
-            void clear();
-            void push(const T &e);
-            T pop();
-            T top();
-            int size();
+            void clear()
+            {
+                while (_top) {
+                    LinkPosi(T)t = _top;
+                    release(t);
+                    _top = _top->next;
+                }
+                _size = 0; //记得要置零长度
+            }
+            void push(const T &e)
+            {
+                _top = new Link<T>(e, _top);
+                _size++;
+            }
+            T pop()
+            {
+                if (!_size) throw stackEmpty_Exception(); //这时候抛出空战异常吧
+                T data_temp = _top->data;
+                LinkPosi(T)pointer_temp = _top;
+                _top = _top->next;
+                release(pointer_temp);
+                _size--;
+                return data_temp;
+            }
+            T top()
+            {
+                if (!_size) throw stackEmpty_Exception();
+                return _top->data;
+            }
+            int size() {  return _size; }
         };
     }
 }

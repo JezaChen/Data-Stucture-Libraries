@@ -1,7 +1,7 @@
 //
 // Created by Jeza on 2017/9/12.
 //
-
+#pragma once
 #ifndef LIST_LIST_H
 #define LIST_LIST_H
 namespace DSLibrary {
@@ -35,7 +35,7 @@ namespace DSLibrary {
         virtual int length() const =0; //表的长度
 
         //遍历操作
-        template<typename VST> virtual void trav(VST& visit)=0; //遍历访问，用于全局性修改，利用函数对象特性
+       // virtual void trav(VST& visit)=0; //遍历访问，用于全局性修改，利用函数对象特性
         virtual void trav(void ( *visit )(T&))=0; //遍历访问，作局部性地修改，利用函数指针特性
     };
 
