@@ -84,6 +84,7 @@ namespace DSLibrary {
 
             void insert(const T &x) //插入
             {
+                if(curr==tail) {append(x); return;}
                 curr->next = curr->next->prev = new Link<T>(x, curr, curr->next);
                 if (curr == tail) tail = tail->next; //如有必要，需要更新尾节点的位置
                 listSize++; //更新表长
@@ -117,7 +118,8 @@ namespace DSLibrary {
             void moveToEnd()
             {
                 curr = tail;
-                currPosition = listSize;}
+                currPosition = listSize;
+            }
             void prev()
             {
                 if (curr == head)

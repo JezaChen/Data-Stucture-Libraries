@@ -27,7 +27,6 @@ namespace DSLibrary {
             static LinkPosi(T)freeList;
 
             Link(const T &_data, Link<T> *next_pointer = NULL) : data(_data), next(next_pointer) {}
-
             Link(Link<T> *next_pointer = NULL) : next(next_pointer) {}
 
             void *operator new(size_t) {
@@ -56,7 +55,7 @@ namespace DSLibrary {
             int listSize; //表长
             void initialize() {
                 curr = tail = head = new Link<T>();
-                listSize = 0;
+                listSize =currPosition=0;
             }
 
             void removeAll()
