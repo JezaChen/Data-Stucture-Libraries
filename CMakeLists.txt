@@ -10,7 +10,7 @@ add_subdirectory(List)
 add_subdirectory(uniPRINTER)
 add_subdirectory(Common)
 # Target
-add_executable(DSL ${DIRSRCS})
+add_executable(DSL ${DIRSRCS} "Binary Tree/BinNode.h" "Binary Tree/BinTree.h")
 include_directories(./ ./List ./uniPRINTER ./Common)
 link_directories(./ ./List ./uniPRINTER ./Common)
 
