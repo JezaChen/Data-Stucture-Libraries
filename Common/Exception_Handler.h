@@ -10,40 +10,48 @@
 
 using namespace std;
 
-namespace DSLibrary {
-    enum OUT_OF_BOUNDS_STATUS {
+namespace DSLibrary
+{
+    enum OUT_OF_BOUNDS_STATUS
+    {
         OVERFLOWED = 0, UNDERFLOWED = 1
     };
 
-    class outOfBounds_Exception {
+    class outOfBounds_Exception
+    {
     private:
         OUT_OF_BOUNDS_STATUS status;
     public:
         outOfBounds_Exception(OUT_OF_BOUNDS_STATUS s) : status(s) {}
 
-        void print() {
+        void print()
+        {
             cerr << "Position out of range: ";
             if (status == OVERFLOWED) cerr << "overflowed." << endl;
             else cerr << "underflowed" << endl;
         }
     };
 
-    class arrayFull_Exception {
+    class arrayFull_Exception
+    {
     private:
         char *name;
     public:
         arrayFull_Exception(char *target_name) {strcpy(name,target_name);}
 
-        void print() {
+        void print()
+        {
             cerr << "The " << name << " is too full to insert any elements!" << endl;
         }
     };
 
-    class nullPointer_Exception {
+    class nullPointer_Exception //空指针异常
+    {
     public:
         nullPointer_Exception() {}
 
-        void print() {
+        void print()
+        {
             cerr << "No elements!" << endl;
         }
     };
@@ -53,7 +61,8 @@ namespace DSLibrary {
     public:
         stackEmpty_Exception() {}
 
-        void print() {
+        void print()
+        {
             cerr << "The Stack is EMPTY!" << endl;
         }
     };
@@ -63,8 +72,20 @@ namespace DSLibrary {
     public:
         queueEmpty_Exception() {}
 
-        void print() {
+        void print()
+        {
             cerr << "The Queue is EMPTY!" << endl;
+        }
+    };
+
+    class binTreeEmpty_Exception //空树异常
+    {
+    public:
+        binTreeEmpty_Exception() {}
+
+        void print()
+        {
+            cerr<<"The tree is empty! "<<endl;
         }
     };
 }
