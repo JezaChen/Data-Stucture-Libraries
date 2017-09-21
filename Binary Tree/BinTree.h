@@ -50,7 +50,15 @@ namespace DSLibrary
             release(S); S=NULL; return x; //释放原树，并返回原插入点
         }
         int remove (BinNodePosi(T) x);
-
+        BinTree<T>* secede(BinNodePosi(T) x) //子树分离
+        {
+            FromParentTo(*x)=NULL; //切断与父亲的联系
+            updateHeightAbove(x->parent);
+            BinTree<T>* S=new BinTree;
+            S->_root=x; x->parent=NULL;
+            S->_size=x->size();_size-=S->_size;
+            return S;
+        }
     };
 }
 #endif //DSL_BINTREE_H

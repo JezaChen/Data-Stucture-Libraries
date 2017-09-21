@@ -14,8 +14,11 @@
 
 #define LinkPosi(T) Link<T>*
 
-namespace DSLibrary {
-    namespace Single_Linked {
+namespace DSLibrary
+{
+
+    namespace Single_Linked
+    {
         using namespace std;
 
         template<typename T>
