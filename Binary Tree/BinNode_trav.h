@@ -5,12 +5,33 @@
 #ifndef DSL_BINNODE_TRAV_H
 #define DSL_BINNODE_TRAV_H
 #include "BinNode.h"
+#include "BinNode_travPre.h"
+#include "BinNode_travIn.h"
+#include "BinNode_travPost.h"
+
 namespace DSLibrary
 {
     template <typename T,typename VST>
-    void BinNode<T>::travPre(VST &)
+    void BinNode<T>::travPre(VST &visit)
     {
-
+        //看情况选择吧...
+        travPre_I1(this,visit);
+        //travPre_R(this,visit);
+        //travPre_I2(this,visit);
+    }
+    template <typename T, typename  VST>
+    void BinNode<T>::travIn(VST &visit)
+    {
+        travIn_I3(this,visit);
+        //travIn_I1(this,visit);
+        //travIn_I2(this,visit);
+        //travIn_R(this,visit);
+    }
+    template<typename T,typename VST>
+    void BinNode<T>::travPost(VST &visit)
+    {
+        travPost_I(this,visit);
+        //travPost_R(this,visit);
     }
 }
 #endif //DSL_BINNODE_TRAV_H

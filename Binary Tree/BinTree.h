@@ -59,6 +59,11 @@ namespace DSLibrary
             S->_size=x->size();_size-=S->_size;
             return S;
         }
+
+        //trav
+        template<typename VST> void travPre(VST& visit) {if(_root) _root->travPre(visit);} //前序遍历
+        template<typename VST> void travIn(VST& visit) {if(_root) _root->travIn(visit);} //中序遍历
+        template<typename VST> void travPost(VST& visit) {if(_root) _root->travPost(visit);} //后序遍历
     };
 }
 #endif //DSL_BINTREE_H
