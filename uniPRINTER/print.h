@@ -16,6 +16,9 @@
 #include "../List/Link.h"
 #include "../List/List.h"
 #include "../List/Doubly_Linked_List.h"
+#include "../Queue/Queue.h"
+#include "../Queue/Linked_Queue.h"
+#include "../Queue/Array_Based_Queue.h"
 
 
 using namespace std;
@@ -41,13 +44,35 @@ namespace DSLibrary {
         {
             List.trav(print); //利用虚函数的特性统一规范接入打印函数
         }
+        template<typename T> static void p(Double_Linked::Llist<T>& list)
+        {
+            list.trav(print);
+        }
         template<typename T> static void p(Single_Linked::Llist<T>& List)
         {
             List.trav(print);
         }
-        template<typename T> static void p(Double_Linked::Llist<T>& list)
+        template <typename T> static void p(Single_Linked::LQueue<T> Q)
         {
-            list.trav(print);
+            int i=0;
+            while(Q.size())
+            {
+                if(i) cout<<"  ";
+                cout<<Q.front();
+                Q.dequeue();
+                i++;
+            }
+        }
+        template <typename T> static void p(AQueue<T>& Q)
+        {
+            int i=0;
+            while(Q.size())
+            {
+                if(i) cout<<"  ";
+                cout<<Q.front();
+                Q.dequeue();
+                i++;
+            }
         }
     };
 
