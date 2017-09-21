@@ -55,7 +55,25 @@ namespace DSLibrary
         BinNodePosi(T) insertAsLc(const T& e) {return lc= new BinNode<T>(e,this);}
         BinNodePosi(T) insertAsRc(const T& e) {return rc= new BinNode<T>(e,this);}
         BinNodePosi(T) succ() //中序遍历的直接后继
-        {}
+        {
+            if(rc) //如果右孩子存在
+            {
+                //沿右孩子的左分支不断深入
+                BinNodePosi(T) x=rc;
+                while(x->lc) x=x->lc;
+                return x;
+            }
+            else //否则，向上追溯
+            {
+                //找到包含当前节点为左子树范围的最近祖先
+                BinNodePosi(T) x=this;
+                while(!IsLChild(*x))
+                {
+                    x=x->parent;
+                }
+                return x->parent;
+            }
+        }
         //遍历
         template <typename VST> void travLevel(VST& ); //层次遍历
         template <typename VST> void travPre(VST& ); //前序遍历

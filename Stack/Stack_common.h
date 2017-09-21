@@ -17,6 +17,7 @@ namespace DSLibrary {
         virtual T pop()=0;
         virtual T top()=0;
         virtual int size()=0;
+        virtual bool empty()=0; //判空
     };
 }
 #endif //STACK_STACK_COMMON_H

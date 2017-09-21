@@ -39,6 +39,7 @@ namespace DSLibrary {
             return listArray[_size - 1];
         }
         int size() { return _size; }
+        bool empty() {return !_size;}
     };
 }
 #endif //STACK_ARRAY_BASED_STACK_H

@@ -9,13 +9,15 @@
 //
 
 #include <iostream>
+#include "../uniPRINTER/print.h"
 using namespace std;
 namespace DSLibrary {
 // 访问器
     template<typename T>
     class PRINTER {
         void operator()(const T &x) {
-            cout << x << ' ';
+            //cout << x << ' ';
+            print(x);
         }
     };
 

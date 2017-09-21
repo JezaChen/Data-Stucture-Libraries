@@ -52,6 +52,7 @@ namespace DSLibrary {
                 return _top->data;
             }
             int size() {  return _size; }
+            bool empty() {return !_size;}
         };
     }
 }

@@ -14,8 +14,9 @@
 
 #include "../List/AList.h"
 #include "../List/Link.h"
-#include "../List/Doubly_Linked_List.h"
 #include "../List/List.h"
+#include "../List/Doubly_Linked_List.h"
+
 
 using namespace std;
 
@@ -44,9 +45,9 @@ namespace DSLibrary {
         {
             List.trav(print);
         }
-        template<typename T> static void p(Double_Linked::Llist<T>& List)
+        template<typename T> static void p(Double_Linked::Llist<T>& list)
         {
-            List.trav(print);
+            list.trav(print);
         }
     };
 
