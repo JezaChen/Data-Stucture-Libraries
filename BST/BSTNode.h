@@ -56,6 +56,9 @@ namespace DSLibrary {
             return rc = new BSTNode<Key, E>(elem, key, this);
         }
 
+        E element() {return _elem; }
+        void setElem(E val) {_elem = val;}
+
         BSTNodePosi(Key, E)succ() {
 
             if (rc) {

@@ -4,8 +4,11 @@
 
 #ifndef DSL_BST_H
 #define DSL_BST_H
+#include <iostream>
 #include "Dictionary.h"
 #include "BSTNode.h"
+using namespace std;
+
 namespace DSLibrary
 {
     template<typename Key, typename E>
@@ -17,9 +20,9 @@ namespace DSLibrary
 
         //Private helper functions
         void clearHelp(BSTNodePosi(Key,E));
-        BSTNodePosi(Key,E) insertHelp(BSTNodePosi(Key,E), const Key&, const E&)
-        BSTNodePosi(Key,E) deleteMin();
-        BSTNodePosi(Key,E) getMin();
+        BSTNodePosi(Key,E) insertHelp(BSTNodePosi(Key,E), const Key&, const E&, BSTNodePosi(Key,E) hot);
+        BSTNodePosi(Key,E) deleteMin(BSTNodePosi(Key,E) rt, BSTNodePosi(Key,E) hot);
+        BSTNodePosi(Key,E) getMin(BSTNodePosi(Key,E) rt);
         BSTNodePosi(Key,E) removeHelp(BSTNodePosi(Key,E), const Key& k);
         E findHelp(BSTNodePosi(Key,E), const Key&)const;
         void printHelp(BSTNodePosi(Key,E), int)const;
@@ -34,11 +37,11 @@ namespace DSLibrary
 
         void insert (const Key& k, const E& elem)
         {
-            _root = insertHelp(_root, k, elem);
+            _root = insertHelp(_root, k, elem,NULL);
             _size++; //记得增加长度
         }
 
-        E  remove (const Key& k)
+        E remove (const Key& k)
         {
             E temp = find(k);
             //要找不到节点的情况
@@ -48,6 +51,35 @@ namespace DSLibrary
                 _size--;
             }
             return temp;
+        }
+        E removeAny() //莫名奇怪的成员函数
+        {
+            if(_root)
+            {
+                E temp=_root->element();
+                _root = removeHelp(_root,_root->_key);
+                _size--;
+                return temp;
+            }
+            else return NULL;
+        }
+
+        E find(const Key& k) const
+        {
+            return findHelp(_root,k);
+        }
+        int size() {return _size;}
+        void print() const
+        {
+            if(!_root)
+            {
+                cerr<<"The BST is empty now."<<endl;
+                //TODO: 要不做个异常？
+            }
+            else
+            {
+                printHelp(_root,0);
+            }
         }
 
     };
