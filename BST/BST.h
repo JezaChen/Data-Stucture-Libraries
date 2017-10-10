@@ -5,6 +5,7 @@
 #ifndef DSL_BST_H
 #define DSL_BST_H
 #include <iostream>
+#include <Common/Exception_Handler.h>
 #include "Dictionary.h"
 #include "BSTNode.h"
 using namespace std;
@@ -74,7 +75,7 @@ namespace DSLibrary
             if(!_root)
             {
                 cerr<<"The BST is empty now."<<endl;
-                //TODO: 要不做个异常？
+                throw binTreeEmpty_Exception(); //抛出空树异常
             }
             else
             {

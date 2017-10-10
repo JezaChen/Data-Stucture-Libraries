@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include "../Common/Exception_Handler.h"
 #include"PQ.h"
 using namespace std;
 namespace DSLibrary
@@ -93,8 +94,8 @@ namespace DSLibrary
         {
             if(_size==capacity)
             {
-                cerr<<"The Heap is full!"<<endl;
-                return; //TODO
+                //抛出堆满异常
+                throw arrayFull_Exception("heap");
             }
             else
             {
@@ -108,7 +109,7 @@ namespace DSLibrary
         {
             if(_size==0)
             {
-                //TODO
+                throw heapEmpty_Exception();
             }
             else
             {
@@ -120,7 +121,7 @@ namespace DSLibrary
         {
             if(_size==0)
             {
-                //TODO
+                throw heapEmpty_Exception();
             }
             else
             {
@@ -136,8 +137,10 @@ namespace DSLibrary
         {
             if(!InHeap(_size,posi))
             {
-                cerr<<"WRONG POSITION!"<<endl;
-                //TODO
+                if(posi<0)
+                    throw outOfBounds_Exception(UNDERFLOWED);
+                else
+                    throw outOfBounds_Exception(OVERFLOWED);
             }
             else
             {

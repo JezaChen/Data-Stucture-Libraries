@@ -52,7 +52,7 @@ namespace DSLibrary
 
         void print()
         {
-            cerr << "No elements!" << endl;
+            cerr << "nullPointer!" << endl;
         }
     };
 
@@ -86,6 +86,17 @@ namespace DSLibrary
         void print()
         {
             cerr<<"The tree is empty! "<<endl;
+        }
+    };
+
+    class heapEmpty_Exception
+    {
+    public:
+        heapEmpty_Exception() {}
+
+        void print()
+        {
+            cerr<<"The heap is empty!"<<endl;
         }
     };
 }

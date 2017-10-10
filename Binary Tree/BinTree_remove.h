@@ -21,6 +21,7 @@ namespace DSLibrary
     template <typename T>
     int BinTree<T>::remove(BinNode<T> *x)
     {
+        if(!x) throw nullPointer_Exception(); //抛出空指针异常
         FromParentTo(*x)=NULL;
         updateHeightAbove(x->parent); //更新祖祖辈辈的高度，做最后的告别
         int delete_counts=removeAt(x); _size-=delete_counts;

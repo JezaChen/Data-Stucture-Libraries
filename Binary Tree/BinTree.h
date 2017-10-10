@@ -7,6 +7,7 @@
 #include <algorithm>
 #include "BinNode.h"
 #include "../Common/Share.h"
+#include "../Common/Exception_Handler.h"
 using namespace std;
 
 namespace DSLibrary
@@ -35,16 +36,28 @@ namespace DSLibrary
         bool empty()const {return !_root;} //树空判断
         BinNodePosi(T) root() const {return _root;}
         BinNodePosi(T) insertAsRoot(T const& e) { _size=1; return _root=new BinNode<T> (e); }
-        BinNodePosi(T) insertAsLc (BinNodePosi(T) x, T const& e) {_size++; return x->insertAsLc(e);}
-        BinNodePosi(T) insertAsRc (BinNodePosi(T) x, T const& e) {_size++; return x->insertAsRc(e);}
+        BinNodePosi(T) insertAsLc (BinNodePosi(T) x, T const& e)
+        {
+            if(!x) throw nullPointer_Exception(); //抛出空指针异常
+            _size++;
+            return x->insertAsLc(e);
+        }
+        BinNodePosi(T) insertAsRc (BinNodePosi(T) x, T const& e)
+        {
+            if(!x) throw nullPointer_Exception(); //抛出空指针异常
+            _size++;
+            return x->insertAsRc(e);
+        }
         BinNodePosi(T) attachAsLc (BinNodePosi(T) x, BinTree<T>*& S)
         {
+            if(!x) throw nullPointer_Exception(); //抛出空指针异常
             if(x->lc=S->_root) x->lc->parent=x; //避免空树的判断
             _size+=S->_size; updateHeightAbove(x); //向上更新高度
             release(S); S=NULL; return x; //释放原树，并返回原插入点
         }
         BinNodePosi(T) attachAsRc (BinNodePosi(T) x, BinTree<T>*& S)
         {
+            if(!x) throw nullPointer_Exception(); //抛出空指针异常
             if(x->rc=S->_root) x->rc->parent-x; //避免空树的判断
             _size+=S->_size; updateHeightAbove(x);
             release(S); S=NULL; return x; //释放原树，并返回原插入点
@@ -52,6 +65,7 @@ namespace DSLibrary
         int remove (BinNodePosi(T) x);
         BinTree<T>* secede(BinNodePosi(T) x) //子树分离
         {
+            if(!x) throw nullPointer_Exception(); //抛出空指针异常
             FromParentTo(*x)=NULL; //切断与父亲的联系
             updateHeightAbove(x->parent);
             BinTree<T>* S=new BinTree;
