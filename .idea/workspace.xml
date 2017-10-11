@@ -11,10 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="20171011#2332#增加了Huffman Tree">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Huffman Tree/HuffNode.h" />
+    <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Huffman Tree/HuffTree.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Share.h" afterPath="$PROJECT_DIR$/Common/Share.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Huffman Tree/HuffNode.h" afterPath="$PROJECT_DIR$/Huffman Tree/HuffNode.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -27,79 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Heap.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1349">
-              <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
-              <folding>
-                <element signature="e#394#413#0" expanded="true" />
-                <element signature="e#546#573#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exception_Handler.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1843">
-              <caret line="98" column="45" lean-forward="false" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinNode.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-798">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinNode_trav.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_trav.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinNode_travIn.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travIn.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinNode_travPost.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travPost.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinTree_remove.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_remove.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BinTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,15 +41,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HuffNode.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HuffNode.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffNode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            <state relative-caret-position="592">
+              <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding>
-                <element signature="e#339#351#0" expanded="true" />
-                <element signature="e#686#698#0" expanded="true" />
+                <element signature="e#344#356#0" expanded="true" />
+                <element signature="e#696#708#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HuffTree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <folding>
+                <element signature="e#99#120#0" expanded="true" />
+                <element signature="e#221#233#0" expanded="true" />
+                <element signature="e#881#893#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Share.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Share.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+              <folding>
+                <element signature="e#977#989#0" expanded="true" />
+                <element signature="e#1146#1158#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/List/List.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exception_Handler.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="98" column="45" lean-forward="false" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PQ.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Priority Queue/PQ.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Heap.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-722">
+              <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <folding>
+                <element signature="e#546#573#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AList.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/List/AList.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,13 +155,14 @@
         <option value="$PROJECT_DIR$/BST/BSTNode.h" />
         <option value="$PROJECT_DIR$/BST/BSTHelp.cpp" />
         <option value="$PROJECT_DIR$/Priority Queue/PQ.h" />
-        <option value="$PROJECT_DIR$/Common/Share.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinTree.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinTree_remove.h" />
         <option value="$PROJECT_DIR$/BST/BST.h" />
         <option value="$PROJECT_DIR$/Common/Exception_Handler.h" />
         <option value="$PROJECT_DIR$/Priority Queue/Heap.h" />
         <option value="$PROJECT_DIR$/Huffman Tree/HuffNode.h" />
+        <option value="$PROJECT_DIR$/Common/Share.h" />
+        <option value="$PROJECT_DIR$/Huffman Tree/HuffTree.h" />
       </list>
     </option>
   </component>
@@ -194,7 +203,33 @@
             <path>
               <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
               <item name="Huffman Tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="List" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="List" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="Priority Queue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="Queue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -241,7 +276,7 @@
       <option name="presentableId" value="Default" />
       <updated>1507558383463</updated>
       <workItem from="1507558384636" duration="5710000" />
-      <workItem from="1507641990829" duration="9761000" />
+      <workItem from="1507641990829" duration="11204000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -271,11 +306,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507649556874</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="20171011#2332#增加了Huffman Tree">
+      <created>1507736060192</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1507736060192</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15471000" />
+    <option name="totallyTimeSpent" value="16914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="-1" width="1861" height="1082" extended-state="6" />
@@ -313,7 +355,8 @@
     <MESSAGE value="20171010#2259#新增优先级队列（堆）数据结构" />
     <MESSAGE value="20171010#2316#稍微改动比较器" />
     <MESSAGE value="20171010#2332#异常处理机制跟上去" />
-    <option name="LAST_COMMIT_MESSAGE" value="20171010#2332#异常处理机制跟上去" />
+    <MESSAGE value="20171011#2332#增加了Huffman Tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="20171011#2332#增加了Huffman Tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -395,26 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Priority Queue/PQ.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Share.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#241#253#0" expanded="false" />
-            <element signature="e#918#930#0" expanded="false" />
-            <element signature="e#1004#1016#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BST/BSTHelp.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1919">
@@ -439,25 +462,6 @@
             <element signature="e#76#95#0" expanded="false" />
             <element signature="e#235#261#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="84" column="42" lean-forward="false" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="42" />
-          <folding>
-            <element signature="e#394#413#0" expanded="true" />
-            <element signature="e#546#573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="98" column="45" lean-forward="false" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -519,13 +523,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="98" column="45" lean-forward="false" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List/List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Priority Queue/PQ.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List/AList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <element signature="e#546#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Share.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="e#977#989#0" expanded="true" />
+            <element signature="e#1146#1158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffNode.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        <state relative-caret-position="592">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding>
-            <element signature="e#339#351#0" expanded="true" />
-            <element signature="e#686#698#0" expanded="true" />
+            <element signature="e#344#356#0" expanded="true" />
+            <element signature="e#696#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="e#99#120#0" expanded="true" />
+            <element signature="e#221#233#0" expanded="true" />
+            <element signature="e#881#893#0" expanded="true" />
           </folding>
         </state>
       </provider>

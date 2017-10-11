@@ -15,7 +15,7 @@ namespace DSLibrary
     {
     public:
         //  HuffNode() {}
-        virtual int weight() = 0;
+        virtual int weight()const = 0;
         virtual ~HuffNode() {}
         virtual bool isLeaf() = 0;
     };
@@ -27,7 +27,7 @@ namespace DSLibrary
         int _weight;
         E _elem;
     public:
-        int weight() {return _weight;}
+        int weight()const {return _weight;}
         HuffLeafNode(const E& val, int frequency) : _weight(frequency),_elem(val) {} //???
         E value() {return _elem;}
         bool isLeaf() {return true;}
@@ -46,7 +46,7 @@ namespace DSLibrary
             _weight = l->weight() + r->weight();
             lc = l; rc = r;
         }
-        int weight() {return _weight;}
+        int weight()const {return _weight;}
         bool isLeaf() {return false;}
         HuffNode<E>* leftChild() {return lc;}
         HuffNode<E>* rightChild() {return rc;}

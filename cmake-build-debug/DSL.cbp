@@ -128,6 +128,9 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Huffman Tree/HuffNode.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Huffman Tree/HuffTree.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/List/test.h">
 			<Option target="DSL"/>
 		</Unit>

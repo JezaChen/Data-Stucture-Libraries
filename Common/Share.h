@@ -26,7 +26,6 @@ namespace DSLibrary {
     void release(T *x) { if (x) delete x; }
 
 //判等器、比较器
-    enum CMP {LESS,MORE} ;
     template<typename T> static bool lt (const T& a,const T& b) {return  a<b;}
     template<typename T> static bool lt (const T* a,const T* b) {return  lt(*a,*b);}
     template<typename T> static bool rt (const T& a,const T& b) {return  a>b;}
@@ -35,23 +34,22 @@ namespace DSLibrary {
     template<typename T> static bool eq (const T* a, const T* b) {return eq(*a,*b);}
 
     template<typename T>
-    class COMPARE
+    class COMPARE_LESS
     {
-    private:
-        bool LESS_F; //小的优先?
     public:
-        COMPARE(CMP c)
-        {
-            if(c==LESS)
-            {
-                LESS_F = true;
-            }
-            else LESS_F = false;
-        }
-
         bool priority (const T& a, const T& b)
         {
-            return ( LESS_F ? lt(a,b) :  rt(a,b) );
+            return lt(a,b);
+        }
+    };
+
+    template<typename T>
+    class COMPARE_MORE
+    {
+    public:
+        bool priority (const T&a, const T& b)
+        {
+            return rt(a,b);
         }
     };
 }
