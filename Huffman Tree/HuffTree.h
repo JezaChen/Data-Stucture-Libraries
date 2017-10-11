@@ -30,15 +30,28 @@ namespace DSLibrary
         HuffNode<E>* root() {return _root;}
         int weight() const {return _root->weight();}
 
+        //必须重载运算符才行! 比较器需要用到比较符号
         bool operator < (const HuffTree<E> other) {return weight() < other.weight(); }
         bool operator > (const HuffTree<E> other) {return weight() > other.weight(); }
+        bool operator = (const HuffTree<E> other) {return weight() == other.weight(); }
     };
 
     template<typename E>
     HuffTree<E>*
     buildHuffTree(HuffTree<E>** TreeArr, int count)
     {
-        PQ* P = new heap<HuffTree<E>*, COMPARE_LESS<E> >(TreeArr, count, count*2);
+        PQ* froest = new heap<HuffTree<E>*, COMPARE_LESS<E> >(TreeArr, count, count*2);
+        HuffTree<char> *temp1, *temp2, *temp3 = NULL;
+        while (froest->size() > 1)
+        {
+            temp1 = froest->delFirst();
+            temp2 = froest->delFirst();
+            temp3 = new HuffTree(temp1, temp2);
+            froest->insert(temp3);
+            release(temp1);
+            release(temp2);
+        }
+        return temp3; //返回最后生成的树根
     }
 }
 #endif //DSL_HUFFTREE_H

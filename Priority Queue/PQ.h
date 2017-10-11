@@ -13,6 +13,7 @@ namespace DSLibrary
         void PQ() {}
         virtual void ~PQ() {}
 
+        virtual int size() = 0;
         virtual void insert(const E& ) = 0;
         virtual E getFirst() = 0;
         virtual E delFirst() = 0;
