@@ -1,5 +1,8 @@
 #include <iostream>
-#include "../List/test.h"
+
+#include "Stack/test.h"
+#include "List/test.h"
+#include "Queue/test.h"
 
 using namespace std;
 using namespace DSLibrary;
@@ -7,9 +10,22 @@ using namespace DSLibrary;
 
 int main() {
     cout<<"Select one of the following data structures: "<<endl;
-    cout<<"1.Array Based List 2. Linked List 3. Doubly Linked List"<<endl;
+    cout<<"1.List 2.Stack 3.Queue"<<endl;
     int choice;
     cin>>choice;
-    list_test(choice);
+    if(choice==1)
+    {
+        cout << "And.." << endl;
+        cout << "1.Array Based List 2. Linked List 3. Doubly Linked List" << endl;
+        list_test(choice);
+    }
+    else if(choice==2)
+    {
+        stack_test();
+    }
+    else if(choice==3)
+    {
+        queue_test();
+    }
     return 0;
 }

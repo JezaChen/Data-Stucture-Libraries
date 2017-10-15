@@ -45,9 +45,11 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jeza/Data-Stucture-Libraries/."/>
-					<Add directory="/home/jeza/Data-Stucture-Libraries/./List"/>
 					<Add directory="/home/jeza/Data-Stucture-Libraries/./uniPRINTER"/>
 					<Add directory="/home/jeza/Data-Stucture-Libraries/./Common"/>
+					<Add directory="/home/jeza/Data-Stucture-Libraries/./List"/>
+					<Add directory="/home/jeza/Data-Stucture-Libraries/./Stack"/>
+					<Add directory="/home/jeza/Data-Stucture-Libraries/./Queue"/>
 					<Add directory="/usr/include/c++/6"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
 					<Add directory="/usr/include/c++/6/backward"/>
@@ -72,9 +74,11 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jeza/Data-Stucture-Libraries/."/>
-					<Add directory="/home/jeza/Data-Stucture-Libraries/./List"/>
 					<Add directory="/home/jeza/Data-Stucture-Libraries/./uniPRINTER"/>
 					<Add directory="/home/jeza/Data-Stucture-Libraries/./Common"/>
+					<Add directory="/home/jeza/Data-Stucture-Libraries/./List"/>
+					<Add directory="/home/jeza/Data-Stucture-Libraries/./Stack"/>
+					<Add directory="/home/jeza/Data-Stucture-Libraries/./Queue"/>
 					<Add directory="/usr/include/c++/6"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
 					<Add directory="/usr/include/c++/6/backward"/>
@@ -141,6 +145,9 @@
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Queue/test.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h">
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Stack/test.h">

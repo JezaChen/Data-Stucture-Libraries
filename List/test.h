@@ -2,8 +2,8 @@
 // Created by Jeza on 2017/9/22.
 //
 
-#ifndef DSL_TEST_H
-#define DSL_TEST_H
+#ifndef DSL_LIST_TEST_H
+#define DSL_LIST_TEST_H
 #include <iostream>
 #include "List.h"
 #include "AList.h"
@@ -29,7 +29,6 @@ void list_test(int choice)
             {
                 test->insert(target);
                 cout<<"succeed"<<endl;
-                continue;
             }
             catch(arrayFull_Exception& e)
             {
@@ -37,7 +36,7 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="remove")
+        else if(order=="remove")
         {
             try
             {
@@ -51,7 +50,7 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="append")
+        else if(order=="append")
         {
             int target; cin>>target;
             try
@@ -64,7 +63,7 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="get")
+        else if(order=="get")
         {
             try
             {
@@ -76,22 +75,19 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="moveToStart")
+        else if(order=="moveToStart")
         {
             test->moveToStart();
-            continue;
         }
-        if(order=="moveToEnd")
+        else if(order=="moveToEnd")
         {
             test->moveToEnd();
-            continue;
         }
-        if(order=="prev")
+        else if(order=="prev")
         {
             try
             {
                 test->prev();
-                continue;
             }
             catch(outOfBounds_Exception& e)
             {
@@ -99,11 +95,11 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="next")
+        else if(order=="next")
         {
             try
             {
-                test->next(); continue;
+                test->next();
             }
             catch(outOfBounds_Exception& e)
             {
@@ -111,13 +107,12 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="moveToPosi")
+        else if(order=="moveToPosi")
         {
             int target; cin>>target;
             try
             {
                 test->moveToPosi(target);
-                continue;
             }
             catch(outOfBounds_Exception& e)
             {
@@ -125,15 +120,14 @@ void list_test(int choice)
                 continue;
             }
         }
-        if(order=="print")
+        else if(order=="print")
         {
             if(choice==1) print((Alist<int>*) test);
             else if(choice==2) print((Single_Linked::Llist<int>*) test);
             else print((Double_Linked::Llist<int>*) test);
             printf("\n");
-            continue;
         }
-        if(order=="end")
+        else if(order=="end")
         {
             break;
         }
@@ -145,4 +139,4 @@ void list_test(int choice)
 
 }
 
-#endif //DSL_TEST_H
+#endif //DSL_LIST_TEST_H

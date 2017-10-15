@@ -5,7 +5,11 @@
 #ifndef STACK_ARRAY_BASED_STACK_H
 #define STACK_ARRAY_BASED_STACK_H
 #include "Stack_common.h"
+
+#ifndef defaultSize
 #define defaultSize 250
+#endif
+
 namespace DSLibrary {
     template<typename T>
     class AStack : public Stack<T> {

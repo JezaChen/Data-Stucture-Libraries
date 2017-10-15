@@ -6,6 +6,7 @@
 #define STACK_LINKED_STACK_H
 #define defualtSize 250
 
+#include "Common/Share.h"
 #include  "Stack_common.h"
 #include "../List/Link.h" //引入链表头文件
 
@@ -18,16 +19,17 @@ namespace DSLibrary {
             LinkPosi(T)_top;
             int _size;
         public:
-            LStack(int s = defaultSize) : _size(s) {}
+            LStack() : _size(0),_top(NULL) {}
 
             ~LStack() { clear(); }
 
             void clear()
             {
-                while (_top) {
+                while (_top)
+                {
                     LinkPosi(T)t = _top;
-                    release(t);
                     _top = _top->next;
+                    release(t);
                 }
                 _size = 0; //记得要置零长度
             }
@@ -39,6 +41,7 @@ namespace DSLibrary {
             T pop()
             {
                 if (!_size) throw stackEmpty_Exception(); //这时候抛出空战异常吧
+
                 T data_temp = _top->data;
                 LinkPosi(T)pointer_temp = _top;
                 _top = _top->next;

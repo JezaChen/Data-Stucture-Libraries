@@ -5,7 +5,10 @@
 #ifndef QUEUE_ARRAY_BASED_QUEUE_H
 #define QUEUE_ARRAY_BASED_QUEUE_H
 #include "Queue.h"
+
+#ifndef defaultSize
 #define defaultSize 100
+#endif
 
 namespace DSLibrary{
 template<typename T>
@@ -43,7 +46,7 @@ public:
     {
         if (size() == 0)
             throw queueEmpty_Exception(); //抛出队空异常
-        T temp = listArray[front];
+        T temp = listArray[head];
         head = (head + 1) % capacity; //记得要取余数
         return temp;
     }

@@ -2,8 +2,9 @@
 // Created by Jeza on 2017/9/22.
 //
 
-#ifndef DSL_TEST_H
-#define DSL_TEST_H
+#ifndef DSL_STACK_TEST_H
+#define DSL_STACK_TEST_H
+
 #include <iostream>
 #include <string>
 #include "Stack_common.h"
@@ -17,7 +18,7 @@ using namespace DSLibrary;
 void stack_test()
 {
     int choice;
-    cout<<"Select one of the following data structure for test"<<endl;
+    cout<<"Select one of the following data structures for test"<<endl;
     cout<<"1.Linked Stack   2.Array Based Stack"<<endl;
     cin>>choice;
     cout<<"You can do something in the following examples: push, pop, top, size, clear"<<endl;
@@ -82,4 +83,4 @@ void stack_test()
         }
     }
 }
-#endif //DSL_TEST_H
+#endif //DSL_STACK_TEST_H

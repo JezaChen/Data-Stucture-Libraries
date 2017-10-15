@@ -1,12 +1,9 @@
 //
 // Created by Jeza on 2017/9/18.
 //
-
+#pragma once
 #ifndef COMMON_SHARE_H
 #define COMMON_SHARE_H
-//
-// Created by Jeza on 2017/9/14.
-//
 
 #include <iostream>
 #include "../uniPRINTER/print.h"
@@ -23,7 +20,7 @@ namespace DSLibrary {
 
 //安全释放器
     template<typename T>
-    void release(T *x) { if (x) delete x; }
+    inline void release(T *x) { if (x) delete x; }
 
 //判等器、比较器
     template<typename T> static bool lt (const T& a,const T& b) {return  a<b;}
@@ -53,9 +50,6 @@ namespace DSLibrary {
         }
     };
 }
-#endif //LIST_VISIT_H
+#endif //COMMON_SHARE_H
 
-//
-// Created by Jeza on 2017/9/14.
-//
 

@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jeza/Data-Stucture-Libraries/. -I/home/jeza/Data-Stucture-Libraries/./List -I/home/jeza/Data-Stucture-Libraries/./uniPRINTER -I/home/jeza/Data-Stucture-Libraries/./Common 
+CXX_INCLUDES = -I/home/jeza/Data-Stucture-Libraries/. -I/home/jeza/Data-Stucture-Libraries/./uniPRINTER -I/home/jeza/Data-Stucture-Libraries/./Common -I/home/jeza/Data-Stucture-Libraries/./List -I/home/jeza/Data-Stucture-Libraries/./Stack -I/home/jeza/Data-Stucture-Libraries/./Queue 
 

@@ -56,7 +56,8 @@ namespace DSLibrary
             LinkPosi(T)curr;//当前位置，指针表示
             int currPosition; //当前位置，数字表示
             int listSize; //表长
-            void initialize() {
+            void initialize()
+            {
                 curr = tail = head = new Link<T>();
                 listSize =currPosition=0;
             }
@@ -153,9 +154,9 @@ namespace DSLibrary
                 }
             }
             int currentPosi()  { return currPosition;}
-            const T &getValue()
+            const T& getValue()
             {
-                if (curr == head)
+                if (curr == tail)
                     throw nullPointer_Exception();  //抛出空指针异常
                 return curr->next->data;
             }

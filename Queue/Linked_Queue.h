@@ -5,8 +5,11 @@
 #ifndef QUEUE_LINKED_QUEUE_H
 #define QUEUE_LINKED_QUEUE_H
 
-#include "Queue.h"
+
+#include "../Common/Share.h"
 #include "../List/Link.h" //引入链表头文件
+#include "Queue.h"
+
 namespace DSLibrary {
     namespace Single_Linked {
 
@@ -28,7 +31,8 @@ namespace DSLibrary {
 
             void clear()
             {
-                while (head->next) {
+                while (head->next)
+                {
                     rear = head;
                     head = head->next;
                     release(rear);

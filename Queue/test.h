@@ -2,14 +2,15 @@
 // Created by Jeza on 2017/9/22.
 //
 
-#ifndef DSL_TEST_H
-#define DSL_TEST_H
+#ifndef DSL_QUEUE_TEST_H
+#define DSL_QUEUE_TEST_H
 #include <iostream>
-#include< string >
+#include<string>
+#include "../uniPRINTER/print.h"
 #include "Queue.h"
 #include "Linked_Queue.h"
 #include "Array_Based_Queue.h"
-#include "../uniPRINTER/print.h"
+
 
 using namespace std;
 using namespace DSLibrary;
@@ -97,4 +98,4 @@ void queue_test()
         }
     }
 }
-#endif //DSL_TEST_H
+#endif //DSL_QUEUE_TEST_H
