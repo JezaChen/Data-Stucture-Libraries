@@ -9,12 +9,6 @@ CMakeFiles/DSL.dir/BST/BSTHelp.cpp.o: ../BST/Dictionary.h
 
 CMakeFiles/DSL.dir/main.cpp.o: .././Common/Exception_Handler.h
 CMakeFiles/DSL.dir/main.cpp.o: .././Common/Share.h
-CMakeFiles/DSL.dir/main.cpp.o: .././List/AList.h
-CMakeFiles/DSL.dir/main.cpp.o: .././List/Doubly_Linked_List.h
-CMakeFiles/DSL.dir/main.cpp.o: .././List/List.h
-CMakeFiles/DSL.dir/main.cpp.o: .././Queue/Array_Based_Queue.h
-CMakeFiles/DSL.dir/main.cpp.o: .././Queue/Linked_Queue.h
-CMakeFiles/DSL.dir/main.cpp.o: .././Queue/Queue.h
 CMakeFiles/DSL.dir/main.cpp.o: .././uniPRINTER/print.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Common/Exception_Handler.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Common/Share.h

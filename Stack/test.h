@@ -1,7 +1,7 @@
 //
 // Created by Jeza on 2017/9/22.
 //
-
+#pragma once
 #ifndef DSL_STACK_TEST_H
 #define DSL_STACK_TEST_H
 

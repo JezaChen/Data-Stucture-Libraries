@@ -34,24 +34,12 @@ namespace DSLibrary {
     {
     public:
         //基本类型打印
-        static void p(const int &x) {printf(" %6d",x);}
-        static void p(const float &x) {printf(" %6.2f",x);}
-        static void p(const double &x) {printf(" %6.2f",x);}
+        static void p(const int &x) {printf("%d  ",x);}
+        static void p(const float &x) {printf("%.2f  ",x);}
+        static void p(const double &x) {printf("%2f  ",x);}
         static void p(const char &x) {printf ( " %c",(31<x)&&(x<128)?x:'$');}
 
         //复杂数据结构的打印输出
-        /*template<typename T> static void p(Alist<T>& List)  //表
-        {
-            List.trav(print); //利用虚函数的特性统一规范接入打印函数
-        }
-        template<typename T> static void p(Double_Linked::Llist<T>& list)
-        {
-            list.trav(print);
-        }
-        template<typename T> static void p(Single_Linked::Llist<T>& List)
-        {
-            List.trav(print);
-        }*/
         template<typename T> static void p(List<T>& list)
         {
             list.trav(print);

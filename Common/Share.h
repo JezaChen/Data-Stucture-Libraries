@@ -9,7 +9,12 @@
 #include "../uniPRINTER/print.h"
 using namespace std;
 namespace DSLibrary {
-// 访问器
+
+    //安全释放器
+    template<typename T>
+    inline void release(T *x) { if (x) delete x; }
+
+    // 访问器
     template<typename T>
     class PRINTER {
         void operator()(const T &x) {
@@ -17,10 +22,6 @@ namespace DSLibrary {
             print(x);
         }
     };
-
-//安全释放器
-    template<typename T>
-    inline void release(T *x) { if (x) delete x; }
 
 //判等器、比较器
     template<typename T> static bool lt (const T& a,const T& b) {return  a<b;}

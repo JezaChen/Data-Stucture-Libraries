@@ -1,7 +1,7 @@
 //
 // Created by Jeza on 2017/9/22.
 //
-
+#pragma once
 #ifndef DSL_LIST_TEST_H
 #define DSL_LIST_TEST_H
 #include <iostream>
