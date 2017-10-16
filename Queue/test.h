@@ -89,6 +89,7 @@ void queue_test()
         else
         {
             cerr<<"Wrong Instruction! Please try again. "<<endl;
+            cin.ignore(100,'\n');
         }
     }
     release(Q);

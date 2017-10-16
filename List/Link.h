@@ -86,7 +86,7 @@ namespace DSLibrary
             }
 
 
-            int length()const {return listSize;}
+            int size()const {return listSize;}
             void insert(const T &x) //插入
             {
                 curr->next = new Link<T>(x, curr->next);

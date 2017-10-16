@@ -6,7 +6,7 @@
 #define LIST_EXCEPTION_HANDLER_H
 
 #include <iostream>
-#include <cstring>
+#include <string>
 
 using namespace std;
 
@@ -35,9 +35,9 @@ namespace DSLibrary
     class arrayFull_Exception
     {
     private:
-        char *name;
+        string name;
     public:
-        arrayFull_Exception(char *target_name) {strcpy(name,target_name);}
+        arrayFull_Exception(const string& target_name) {name=target_name;}
 
         void print()
         {

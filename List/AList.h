@@ -17,7 +17,12 @@ namespace DSLibrary {
         int currPosi; //当前位置
         T *data; //储存列表数据的数组
     public:
-        Alist(int s = 250) : capacity(s) { data = new T[s];currPosi=listSize=0;}
+
+        Alist(int s = 250) : capacity(s),currPosi(0),listSize(0)
+        {
+            data = new T[s];
+        }
+
         void clear() //清空
         {
             delete[] data;
@@ -25,11 +30,13 @@ namespace DSLibrary {
             currPosi = 0;
             data = new T[capacity];
         }
+
         void append(const T &x) //追加
         {
             if (listSize == capacity) throw arrayFull_Exception("list");
             data[listSize++] = x;
         }
+
         void insert(const T &x) //插入
         {
             if (listSize == capacity) throw arrayFull_Exception("list");
@@ -39,6 +46,7 @@ namespace DSLibrary {
             data[currPosi] = x;
             listSize++;
         }
+
         T remove() //删除
         {
             if (currPosi >= listSize) throw nullPointer_Exception();
@@ -53,13 +61,16 @@ namespace DSLibrary {
 
         //位置操作
         void moveToStart()  { currPosi = 0;}   //移到最前端
+
         void moveToEnd() { currPosi = listSize; }   //移到最后端
+
         void prev() //向前走一位
         {
             if (currPosi == 0)
                 throw outOfBounds_Exception(OVERFLOWED); //抛出出界异常
             currPosi--;
         }
+
         void next()   //向后走一位
         {
             if (currPosi == listSize - 1)
@@ -74,6 +85,7 @@ namespace DSLibrary {
             currPosi = posi;
         }
         const T &getValue()  { return data[currPosi]; }  //获取当前位置的值
+
         T &operator[](int posi)
         {
             if (posi < 0) throw outOfBounds_Exception(OVERFLOWED);
@@ -82,19 +94,23 @@ namespace DSLibrary {
             currPosi = posi; //当前位置更新
             return data[currPosi]; //返回该元素的引用
         }
+
         int currentPosi()  {return currPosi;} //返回当前位置
 
-        int length() const { return listSize; }  //表的长度
-        bool is_empty()const {return !listSize;}   //表是否为空
+        int size() const { return listSize; }  //表的长度
+
+        bool empty()const {return !listSize;}   //表是否为空
 
         //遍历操作
-        template<typename VST> void trav(VST& visit)
+        template<typename VST>
+        void trav(VST& visit)
         {
             for(int i=0;i<listSize;i++)
             {
                 visit(data[i]);
             }
         }
+
         void trav(void ( *visit )(T&))
         {
             for(int i=0;i<listSize;i++)

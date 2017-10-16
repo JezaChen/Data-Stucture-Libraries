@@ -5,30 +5,47 @@
 #ifndef DSL_LIST_TEST_H
 #define DSL_LIST_TEST_H
 #include <iostream>
+#include <iomanip>
 #include "List.h"
 #include "AList.h"
 #include "Link.h"
 #include "Doubly_Linked_List.h"
 #include "Exception_Handler.h"
+
 using namespace DSLibrary;
+
+void list_all_functions()
+{
+    cout.setf(ios::left);
+    cout<<setw(20)<<"moveToStart"<<setw(30)<<"move the barrier to start"<<endl;
+    cout<<setw(20)<<"moveToEnd"<<setw(30)<<"move the barrier to end"<<endl;
+    cout<<setw(20)<<"prev"<<setw(30)<<"move the barrier to the previous position"<<endl;
+    cout<<setw(20)<<"next"<<setw(30)<<"move the barrier to the next position"<<endl;
+    cout<<setw(20)<<"moveToPosi (num)"<<setw(30)<<"move the barrier to the position you want"<<endl;
+    cout<<setw(20)<<"insert (num)"<<setw(30)<<"insert a number after the barrier"<<endl;
+    cout<<setw(20)<<"remove"<<setw(30)<<"delete the element which is the first one after the barrier"<<endl;
+    cout<<setw(20)<<"append (num)"<<setw(30)<<"append a number"<<endl;
+    cout<<setw(20)<<"get"<<setw(30)<<"get the element which is the first one after the barrier"<<endl;
+    cout<<setw(20)<<"print"<<setw(30)<<"print the list"<<endl;
+}
 void list_test(int choice)
 {
-    cout<<"Tips: now you can do something just like insert, remove..."<<endl;
-    //1. moveToStart 2. moveToEnd 3. prev 4.next 5.moveToPosi 6.insert 7.delete 8.append 9.get 10.trav
+    list_all_functions();
     List<int>* test;
     if(choice==1) test=new Alist<int>();
     else if(choice==2) test=new Single_Linked::Llist<int>();
     else test=new Double_Linked::Llist<int>();
     string order;
+    int target;
     while(cin>>order)
     {
         if(order=="insert")
         {
-            int target; cin>>target;
+            cin>>target;
             try
             {
                 test->insert(target);
-                cout<<"succeed"<<endl;
+                cout<<"insert "<<target<<" successfully."<<endl;
             }
             catch(arrayFull_Exception& e)
             {
@@ -52,10 +69,11 @@ void list_test(int choice)
         }
         else if(order=="append")
         {
-            int target; cin>>target;
+            cin>>target;
             try
             {
                 test->append(target);
+                cout<<"append "<<target<<" successfully."<<endl;
             }
             catch(arrayFull_Exception& e)
             {
@@ -109,7 +127,7 @@ void list_test(int choice)
         }
         else if(order=="moveToPosi")
         {
-            int target; cin>>target;
+            cin>>target;
             try
             {
                 test->moveToPosi(target);
@@ -122,9 +140,7 @@ void list_test(int choice)
         }
         else if(order=="print")
         {
-            if(choice==1) print((Alist<int>*) test);
-            else if(choice==2) print((Single_Linked::Llist<int>*) test);
-            else print((Double_Linked::Llist<int>*) test);
+            print(test);
             printf("\n");
         }
         else if(order=="end")
@@ -134,9 +150,10 @@ void list_test(int choice)
         else
         {
             cerr<<"Wrong Instruction! Please try again. "<<endl;
+            cin.ignore(100,'\n');
         }
     }
-
+    release(test);
 }
 
 #endif //DSL_LIST_TEST_H

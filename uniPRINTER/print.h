@@ -16,9 +16,6 @@
 #include "../List/Link.h"
 #include "../List/List.h"
 #include "../List/Doubly_Linked_List.h"
-#include "../Queue/Queue.h"
-#include "../Queue/Linked_Queue.h"
-#include "../Queue/Array_Based_Queue.h"
 
 
 using namespace std;

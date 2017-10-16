@@ -76,7 +76,7 @@ namespace DSLibrary {
             Llist(int size = defaultSize) { initialize(); } //defaultSize有啥用处
             ~Llist() { removeAll(); }
 
-            int length()const {return listSize;}
+            int size()const {return listSize;}
             void clear() {
                 removeAll();
                 initialize();
