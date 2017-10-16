@@ -12,6 +12,9 @@ namespace DSLibrary {
 
         virtual ~Stack() {}
 
+        void operator = (const Stack& ) = delete;
+        Stack(const Stack& ) = delete;
+
         virtual void clear()=0;//清空函数
         virtual void push(const T &e)=0; //插入函数
         virtual T pop()=0;

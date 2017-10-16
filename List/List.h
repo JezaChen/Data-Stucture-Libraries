@@ -7,15 +7,15 @@
 namespace DSLibrary {
     template<typename T>
     class List {
-    private:
-        void operator=(const List &) {}
-
-        List(const List &) {}
 
     public:
         List() {}
 
         virtual ~List() {}
+
+        void operator=(const List& ) = delete; //不允许赋值
+
+        List(const List& ) = delete; //不允许复制构造
 
         virtual void clear()=0; //清空操作
         virtual void append(const T &x)=0; //追加操作

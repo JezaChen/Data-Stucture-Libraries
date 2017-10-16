@@ -44,28 +44,7 @@ namespace DSLibrary {
         {
             list.trav(print);
         }
-        template <typename T> static void p(Single_Linked::LQueue<T> Q)
-        {
-            int i=0;
-            while(Q.size())
-            {
-                if(i) cout<<"  ";
-                cout<<Q.front();
-                Q.dequeue();
-                i++;
-            }
-        }
-        template <typename T> static void p(AQueue<T>& Q)
-        {
-            int i=0;
-            while(Q.size())
-            {
-                if(i) cout<<"  ";
-                cout<<Q.front();
-                Q.dequeue();
-                i++;
-            }
-        }
+
     };
 
     //对外接口的实现

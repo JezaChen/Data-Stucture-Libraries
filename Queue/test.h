@@ -82,12 +82,6 @@ void queue_test()
             cout<<"Succeed. "<<endl;
             continue;
         }
-        if(order=="print")
-        {
-            if(choice==1) print((Alist<int>*)Q);
-            if(choice==2) print((Single_Linked::LQueue<int>*)Q);
-            continue;
-        }
         if(order=="end")
         {
             break;
@@ -97,5 +91,6 @@ void queue_test()
             cerr<<"Wrong Instruction! Please try again. "<<endl;
         }
     }
+    release(Q);
 }
 #endif //DSL_QUEUE_TEST_H

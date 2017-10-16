@@ -77,12 +77,14 @@ namespace DSLibrary
             }
         public:
             Llist(int size = defaultSize) { initialize(); } //defaultSize有啥用处
+
             ~Llist() { removeAll(); }
 
             void clear() {
                 removeAll();
                 initialize();
             }
+
 
             int length()const {return listSize;}
             void insert(const T &x) //插入

@@ -13,6 +13,9 @@ namespace DSLibrary {
 
         virtual ~Queue() {}
 
+        void operator = (const Queue& ) = delete;
+        Queue(const Queue& ) = delete;
+
         virtual void clear()=0;
         virtual void enqueue(const T &e)=0; //入队
         virtual T dequeue()=0; //出队
