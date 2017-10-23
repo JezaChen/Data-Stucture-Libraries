@@ -23,61 +23,26 @@ namespace DSLibrary {
             data = new T[s];
         }
 
-        void clear() //清空
-        {
-            delete[] data;
-            listSize = 0;
-            currPosi = 0;
-            data = new T[capacity];
-        }
-
-        void append(const T &x) //追加
-        {
-            if (listSize == capacity) throw arrayFull_Exception("list");
-            data[listSize++] = x;
-        }
-
-        void insert(const T &x) //插入
-        {
-            if (listSize == capacity) throw arrayFull_Exception("list");
-            //腾出空间
-            for (int i = listSize; i > currPosi; i--)
-                data[i] = data[i - 1];
-            data[currPosi] = x;
-            listSize++;
-        }
-
-        T remove() //删除
-        {
-            if (currPosi >= listSize) throw nullPointer_Exception();
-
-            T target = data[currPosi];
-            //向左腾空间
-            for (int i = currPosi; i < listSize - 1; i++)
-                data[i] = data[i + 1]; //向左覆盖
-            listSize--;
-            return target; //返回删除的对象
-        }
+        void clear(); //清空
+        void append(const T &x); //追加
+        void insert(const T &x); //插入
+        T remove(); //删除
 
         //位置操作
         void moveToStart()  { currPosi = 0;}   //移到最前端
-
         void moveToEnd() { currPosi = listSize; }   //移到最后端
-
         void prev() //向前走一位
         {
             if (currPosi == 0)
                 throw outOfBounds_Exception(OVERFLOWED); //抛出出界异常
             currPosi--;
         }
-
         void next()   //向后走一位
         {
             if (currPosi == listSize - 1)
                 throw outOfBounds_Exception(UNDERFLOWED); //抛出出界异常
             currPosi++;
         }
-
         void moveToPosi(int posi)   //移动到某个位置
         {
             if (posi < 0) throw outOfBounds_Exception(OVERFLOWED);
@@ -96,29 +61,76 @@ namespace DSLibrary {
         }
 
         int currentPosi()  {return currPosi;} //返回当前位置
-
         int size() const { return listSize; }  //表的长度
-
         bool empty()const {return !listSize;}   //表是否为空
 
         //遍历操作
         template<typename VST>
-        void trav(VST& visit)
-        {
-            for(int i=0;i<listSize;i++)
-            {
-                visit(data[i]);
-            }
-        }
+        void trav(VST& visit);
 
-        void trav(void ( *visit )(T&))
-        {
-            for(int i=0;i<listSize;i++)
-            {
-                visit(data[i]);
-            }
-        }
+        void trav(void ( *visit )(T&));
     };
+
+
+
+    template<typename T>
+    void Alist<T>::clear()
+    {
+        delete[] data;
+        listSize = 0;
+        currPosi = 0;
+        data = new T[capacity];
+    }
+
+    template<typename T>
+    void Alist<T>::append(const T &x) //追加
+    {
+        if (listSize == capacity) throw arrayFull_Exception("list");
+        data[listSize++] = x;
+    }
+
+    template <typename T>
+    void Alist<T>::insert(const T &x) //插入
+    {
+        if (listSize == capacity) throw arrayFull_Exception("list");
+        //腾出空间
+        for (int i = listSize; i > currPosi; i--)
+            data[i] = data[i - 1];
+        data[currPosi] = x;
+        listSize++;
+    }
+
+    template <typename T>
+    T Alist<T>::remove() //删除
+    {
+        if (currPosi >= listSize) throw nullPointer_Exception();
+
+        T target = data[currPosi];
+        //向左腾空间
+        for (int i = currPosi; i < listSize - 1; i++)
+            data[i] = data[i + 1]; //向左覆盖
+        listSize--;
+        return target; //返回删除的对象
+    }
+
+    template<typename T>
+    template<typename VST>
+    void Alist<T>::trav(VST &visit)
+    {
+        for(int i=0;i<listSize;i++)
+        {
+            visit(data[i]);
+        }
+    }
+
+    template <typename T>
+    void Alist<T>::trav(void ( *visit )(T&))
+    {
+        for(int i=0;i<listSize;i++)
+        {
+            visit(data[i]);
+        }
+    }
 
 }
 #endif //LIST_ALIST_H
