@@ -16,10 +16,8 @@ int main() {
     cin>>choice;
     if(choice==1)
     {
-        cout << "And.." << endl;
-        cout << "1.Array Based List 2. Linked List 3. Doubly Linked List" << endl;
-        cin>>choice;
-        list_test(choice);
+
+        list_test();
     }
     else if(choice==2)
     {

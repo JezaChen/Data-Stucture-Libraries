@@ -123,20 +123,20 @@ namespace DSLibrary {
             void prev()
             {
                 if (curr == head)
-                    throw outOfBounds_Exception(OVERFLOWED); //抛出出界异常
+                    throw outOfBounds_Exception(UPPER_BOUND); //抛出出界异常
                 curr = curr->prev;
             }
             void next()
             {
                 if (curr == tail)
-                    throw outOfBounds_Exception(UNDERFLOWED); //抛出出界异常
+                    throw outOfBounds_Exception(LOWER_BOUND); //抛出出界异常
                 curr = curr->next;
                 currPosition++;
             }
             void moveToPosi(int newPosi)
             {
-                if (newPosi < 0) throw outOfBounds_Exception(OVERFLOWED);
-                if (newPosi > listSize) throw outOfBounds_Exception(UNDERFLOWED);
+                if (newPosi < 0) throw outOfBounds_Exception(UPPER_BOUND);
+                if (newPosi > listSize) throw outOfBounds_Exception(LOWER_BOUND);
                 if (newPosi >= currPosition) {
                     //后移
                     for (int i = 0; i < newPosi - currPosition; i++)
@@ -152,7 +152,7 @@ namespace DSLibrary {
             int currentPosi() { return currPosition; }
             const T &getValue()
             {
-                if (curr == head)
+                if (curr == tail)
                     throw nullPointer_Exception();  //抛出空指针异常
                 return curr->next->data;
             }

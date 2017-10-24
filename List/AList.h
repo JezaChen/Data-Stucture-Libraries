@@ -34,33 +34,38 @@ namespace DSLibrary {
         void prev() //向前走一位
         {
             if (currPosi == 0)
-                throw outOfBounds_Exception(OVERFLOWED); //抛出出界异常
+                throw outOfBounds_Exception(UPPER_BOUND); //抛出出界异常
             currPosi--;
         }
         void next()   //向后走一位
         {
-            if (currPosi == listSize - 1)
-                throw outOfBounds_Exception(UNDERFLOWED); //抛出出界异常
+            if ( currPosi >= listSize )
+                throw outOfBounds_Exception(LOWER_BOUND); //抛出出界异常
             currPosi++;
         }
         void moveToPosi(int posi)   //移动到某个位置
         {
-            if (posi < 0) throw outOfBounds_Exception(OVERFLOWED);
-            if (posi >= listSize) throw outOfBounds_Exception(UNDERFLOWED);
+            if (posi < 0) throw outOfBounds_Exception(UPPER_BOUND);
+            if (posi >= listSize) throw outOfBounds_Exception(LOWER_BOUND);
             currPosi = posi;
         }
-        const T &getValue()  { return data[currPosi]; }  //获取当前位置的值
+        const T &getValue()  //获取当前位置的值
+        {
+            if(listSize == 0) throw listEmpty_Exception(); //list为空，抛出空list异常
+            else if(currPosi == listSize) throw nullPointer_Exception();
+            return data[currPosi];
+        }
 
         T &operator[](int posi)
         {
-            if (posi < 0) throw outOfBounds_Exception(OVERFLOWED);
-            if (posi >= listSize) throw outOfBounds_Exception(UNDERFLOWED);
+            if (posi < 0) throw outOfBounds_Exception(UPPER_BOUND);
+            if (posi >= listSize) throw outOfBounds_Exception(LOWER_BOUND);
 
             currPosi = posi; //当前位置更新
             return data[currPosi]; //返回该元素的引用
         }
 
-        int currentPosi()  {return currPosi;} //返回当前位置
+        int currentPosi() {return currPosi;} //返回当前位置
         int size() const { return listSize; }  //表的长度
         bool empty()const {return !listSize;}   //表是否为空
 

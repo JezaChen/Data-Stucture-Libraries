@@ -14,7 +14,7 @@ namespace DSLibrary
 {
     enum OUT_OF_BOUNDS_STATUS
     {
-        OVERFLOWED = 0, UNDERFLOWED = 1
+        LOWER_BOUND,UPPER_BOUND
     };
 
     class outOfBounds_Exception
@@ -26,9 +26,9 @@ namespace DSLibrary
 
         void print()
         {
-            cerr << "Position out of range: ";
-            if (status == OVERFLOWED) cerr << "overflowed." << endl;
-            else cerr << "underflowed" << endl;
+            cerr << "Position has reached the ";
+            if (status == UPPER_BOUND) cerr << "upper bound." << endl;
+            else cerr << "lower bound." << endl;
         }
     };
 
@@ -56,6 +56,15 @@ namespace DSLibrary
         }
     };
 
+    class listEmpty_Exception
+    {
+    public:
+        listEmpty_Exception() {}
+        void print()
+        {
+            cerr << "The list is EMPTY!"<<endl;
+        }
+    };
     class stackEmpty_Exception //栈空异常
     {
     public:

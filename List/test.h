@@ -6,6 +6,7 @@
 #define DSL_LIST_TEST_H
 #include <iostream>
 #include <iomanip>
+#include <memory>
 #include "List.h"
 #include "AList.h"
 #include "Link.h"
@@ -28,13 +29,21 @@ void list_all_functions()
     cout<<setw(20)<<"get"<<setw(30)<<"get the element which is the first one after the barrier"<<endl;
     cout<<setw(20)<<"print"<<setw(30)<<"print the list"<<endl;
 }
-void list_test(int choice)
+
+void list_test()
 {
-    list_all_functions();
+    int choice;
+    cout << "And.." << endl;
+    cout << "1.Array Based List 2. Linked List 3. Doubly Linked List" << endl;
+    cin>>choice;
+
     List<int>* test;
     if(choice==1) test=new Alist<int>();
     else if(choice==2) test=new Single_Linked::Llist<int>();
     else test=new Double_Linked::Llist<int>();
+
+    list_all_functions();
+
     string order;
     int target;
     while(cin>>order)
@@ -85,7 +94,11 @@ void list_test(int choice)
         {
             try
             {
-                cout<<test->getValue()<<endl;
+                cout << test->getValue() << endl;
+            }
+            catch(listEmpty_Exception& e)
+            {
+                e.print(); continue;
             }
             catch(nullPointer_Exception& e)
             {

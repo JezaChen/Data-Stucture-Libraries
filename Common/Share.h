@@ -24,12 +24,12 @@ namespace DSLibrary {
     };
 
 //判等器、比较器
-    template<typename T> static bool lt (const T& a,const T& b) {return  a<b;}
-    template<typename T> static bool lt (const T* a,const T* b) {return  lt(*a,*b);}
-    template<typename T> static bool rt (const T& a,const T& b) {return  a>b;}
-    template<typename T> static bool rt (const T* a,const T* b) {return  rt(*a,*b);}
-    template<typename T> static bool eq (const T& a,const T& b) {return a==b;}
-    template<typename T> static bool eq (const T* a, const T* b) {return eq(*a,*b);}
+    template<typename T> static bool lt (const T& a, const T& b) { return  a<b; }
+    template<typename T> static bool lt (const T* a, const T* b) { return  lt(*a,*b); }
+    template<typename T> static bool rt (const T& a, const T& b) { return  a>b; }
+    template<typename T> static bool rt (const T* a, const T* b) { return  rt(*a,*b); }
+    template<typename T> static bool eq (const T& a, const T& b) { return a==b; }
+    template<typename T> static bool eq (const T* a, const T* b) { return eq(*a,*b); }
 
     template<typename T>
     class COMPARE_LESS

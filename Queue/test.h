@@ -6,6 +6,7 @@
 #define DSL_QUEUE_TEST_H
 #include <iostream>
 #include<string>
+#include <iomanip>
 #include "../uniPRINTER/print.h"
 #include "Queue.h"
 #include "Linked_Queue.h"
@@ -15,18 +16,30 @@
 using namespace std;
 using namespace DSLibrary;
 
+void queue_all_functions()
+{
+    cout.setf(ios::left);
+    cout<<setw(20)<<"enqueue (num)"<<setw(30)<<"enqueue the element"<<endl;
+    cout<<setw(20)<<"dequeue"<<setw(30)<<"dequeue the element"<<endl;
+    cout<<setw(20)<<"front"<<setw(30)<<"get the front element of the stack"<<endl;
+    cout<<setw(20)<<"size"<<setw(30)<<"get the size of the stack"<<endl;
+    cout<<setw(20)<<"clear "<<setw(30)<<"delete all elements in the stack"<<endl;
+}
+
 void queue_test()
 {
     int choice;
     cout<<"Select one of the following data structure for test"<<endl;
     cout<<"1.Linked Queue   2.Array Based Queue"<<endl;
     cin>>choice;
-    cout<<"You can do something in the following examples: enqueue, dequeue, front, size, clear and print"<<endl;
+
     Queue<int>* Q;
     if(choice==1)  Q=new Single_Linked::LQueue<int> ();
     else Q=new AQueue<int> ();
 
-   string order;
+    queue_all_functions();
+
+    string order;
     while(cin>>order)
     {
         if(order=="enqueue")
@@ -43,6 +56,7 @@ void queue_test()
             {
                 e.print();
                 //TODO:应该还有增加扩容措施
+                continue;
             }
         }
         if(order=="dequeue")
@@ -56,6 +70,7 @@ void queue_test()
             catch(queueEmpty_Exception& e)
             {
                 e.print();
+                continue;
             }
         }
         if(order=="front")
@@ -69,6 +84,7 @@ void queue_test()
             catch(queueEmpty_Exception& e)
             {
                 e.print();
+                continue;
             }
         }
         if(order=="size")
