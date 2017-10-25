@@ -41,6 +41,7 @@ public:
         //else
         rear = (rear + 1) % capacity;
         listArray[rear] = e;
+
     }
     T dequeue()
     {
@@ -56,7 +57,7 @@ public:
             throw queueEmpty_Exception(); //抛出队空异常
         return listArray[head];
     }
-    int size() const  {  return (rear - head + 1 - capacity) % capacity;} //记得取余
+    int size() const  {  return (rear - head + 1 + capacity) % capacity; } //记得取余
 };
 
 }

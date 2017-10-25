@@ -104,6 +104,10 @@ namespace DSLibrary
                     throw nullPointer_Exception(); //抛出空指针异常
                 else {
                     LinkPosi(T)target = curr->next;
+                    if(target->next == NULL)
+                    {
+                        tail = curr; //tail指针需要更新
+                    }
                     T r = target->data;
                     curr->next = target->next;
                     delete target;
@@ -150,7 +154,7 @@ namespace DSLibrary
                         curr = curr->next;
                     return;
                 } else {
-                    LinkPosi(T)r = head;
+                    curr = head;
                     for (int i = 0; i < newPosi; i++) curr = curr->next;
                     return;
                 }

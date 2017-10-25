@@ -53,7 +53,8 @@ namespace DSLibrary {
             LinkPosi(T)curr;//当前位置，指针表示
             int currPosition; //当前位置，数字表示
             int listSize; //表长
-            void initialize() {
+            void initialize()
+            {
                 curr = tail = head = new Link<T>();
                 listSize = 0;
             }
@@ -76,15 +77,16 @@ namespace DSLibrary {
             Llist(int size = defaultSize) { initialize(); } //defaultSize有啥用处
             ~Llist() { removeAll(); }
 
-            int size()const {return listSize;}
-            void clear() {
+            int size()const { return listSize; }
+            void clear()
+            {
                 removeAll();
                 initialize();
             }
 
             void insert(const T &x) //插入
             {
-                if(curr==tail) {append(x); return;}
+                if(curr==tail) { append(x); return; }
                 curr->next = curr->next->prev = new Link<T>(x, curr, curr->next);
                 if (curr == tail) tail = tail->next; //如有必要，需要更新尾节点的位置
                 listSize++; //更新表长
@@ -103,8 +105,9 @@ namespace DSLibrary {
                     LinkPosi(T)target = curr->next;
                     T r = target->data;
                     curr->next = target->next;
-                    target->next->prev = curr;
-                    delete target;
+                    if(target->next)  target->next->prev = curr;
+                    else tail = tail->prev;
+                    release(target);
                     return r;
                 }
             }
@@ -125,6 +128,7 @@ namespace DSLibrary {
                 if (curr == head)
                     throw outOfBounds_Exception(UPPER_BOUND); //抛出出界异常
                 curr = curr->prev;
+                currPosition--; //ai~
             }
             void next()
             {
@@ -133,22 +137,27 @@ namespace DSLibrary {
                 curr = curr->next;
                 currPosition++;
             }
+
             void moveToPosi(int newPosi)
             {
                 if (newPosi < 0) throw outOfBounds_Exception(UPPER_BOUND);
                 if (newPosi > listSize) throw outOfBounds_Exception(LOWER_BOUND);
-                if (newPosi >= currPosition) {
+
+                if (newPosi >= currPosition)
+                {
                     //后移
                     for (int i = 0; i < newPosi - currPosition; i++)
                         curr = curr->next;
-                    return;
-                } else {
+                }
+                else
+                {
                     //前移
                     for (int i = 0; i < currPosition - newPosi; i++)
                         curr = curr->prev;
-                    return;
                 }
+                currPosition = newPosi; //Update the current position
             }
+
             int currentPosi() { return currPosition; }
             const T &getValue()
             {

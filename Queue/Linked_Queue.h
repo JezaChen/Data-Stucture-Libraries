@@ -20,11 +20,13 @@ namespace DSLibrary {
             LinkPosi(T)rear;
             int _size;
         public:
-            LQueue() {
+            LQueue()
+            {
                 _size = 0;
                 head = rear = new Link<T>;
             } //init
-            ~LQueue() {
+            ~LQueue()
+            {
                 clear();
                 delete head;
             } //TODO
