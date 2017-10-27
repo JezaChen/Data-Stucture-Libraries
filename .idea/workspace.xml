@@ -13,10 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/List/Doubly_Linked_List.h" afterPath="$PROJECT_DIR$/List/Doubly_Linked_List.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/List/Link.h" afterPath="$PROJECT_DIR$/List/Link.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Queue/Array_Based_Queue.h" afterPath="$PROJECT_DIR$/Queue/Array_Based_Queue.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Queue/Linked_Queue.h" afterPath="$PROJECT_DIR$/Queue/Linked_Queue.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithm/sort.h" afterPath="$PROJECT_DIR$/Algorithm/sort.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Share.h" afterPath="$PROJECT_DIR$/Common/Share.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,112 +25,141 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HuffNode.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffNode.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Linked_Queue.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Queue/Linked_Queue.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-441">
-              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Queue/test.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Link.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/List/Link.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding>
-                <element signature="e#93#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Doubly_Linked_List.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="148" column="68" lean-forward="true" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/List/test.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <element signature="e#100#119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basic_string.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/6/bits/basic_string.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="5100" column="0" lean-forward="false" selection-start-line="5100" selection-start-column="0" selection-end-line="5100" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stack/test.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Array_Based_Queue.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Queue/Array_Based_Queue.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="59" column="50" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/List/List.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="HuffNode.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffNode.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="649">
+                  <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HuffTree.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffTree.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Exception_Handler.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="380">
+                  <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Doubly_Linked_List.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1599">
+                  <caret line="148" column="68" lean-forward="false" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sort.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="915">
+                  <caret line="90" column="23" lean-forward="false" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#78#98#0" expanded="true" />
+                    <element signature="e#215#242#0" expanded="true" />
+                    <element signature="e#511#538#0" expanded="true" />
+                    <element signature="e#832#859#0" expanded="true" />
+                    <element signature="e#1252#1279#0" expanded="true" />
+                    <element signature="e#1332#1359#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BST.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BST/BST.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#235#261#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Dictionary.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BST/Dictionary.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BSTNode.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BST/BSTNode.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="836">
+                  <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BSTHelp.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BST/BSTHelp.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="706">
+                  <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Share.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Common/Share.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#220#232#0" expanded="true" />
+                    <element signature="e#1321#1333#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Share.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Common/Share.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="236">
+                  <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#220#232#0" expanded="true" />
+                    <element signature="e#1321#1333#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -165,8 +192,6 @@
         <option value="$PROJECT_DIR$/Queue/Queue.h" />
         <option value="$PROJECT_DIR$/uniPRINTER/print.h" />
         <option value="$PROJECT_DIR$/List/List.h" />
-        <option value="$PROJECT_DIR$/Algorithm/sort.h" />
-        <option value="$PROJECT_DIR$/Common/Share.h" />
         <option value="$PROJECT_DIR$/List/AList.h" />
         <option value="$PROJECT_DIR$/Common/Exception_Handler.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
@@ -177,6 +202,8 @@
         <option value="$PROJECT_DIR$/List/Doubly_Linked_List.h" />
         <option value="$PROJECT_DIR$/Queue/Linked_Queue.h" />
         <option value="$PROJECT_DIR$/Queue/Array_Based_Queue.h" />
+        <option value="$PROJECT_DIR$/Common/Share.h" />
+        <option value="$PROJECT_DIR$/Algorithm/sort.h" />
       </list>
     </option>
   </component>
@@ -187,10 +214,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="875" />
-    <option name="y" value="188" />
-    <option name="width" value="922" />
-    <option name="height" value="1078" />
+    <option name="x" value="59" />
+    <option name="width" value="930" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -304,7 +330,8 @@
       <workItem from="1508074578817" duration="15224000" />
       <workItem from="1508154009470" duration="2644000" />
       <workItem from="1508747597316" duration="3105000" />
-      <workItem from="1508856750519" duration="10367000" />
+      <workItem from="1508856750519" duration="11680000" />
+      <workItem from="1509082309981" duration="5433000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -397,34 +424,41 @@
       <option name="project" value="LOCAL" />
       <updated>1508858990121</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="20171025#1912#List &amp; Queue &amp; Stack Beta 0.1 release">
+      <created>1508929995667</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508929995667</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52294000" />
+    <option name="totallyTimeSpent" value="59040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="-1" width="1861" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124798276" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3115424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30030644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19096288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3667007" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3667007" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3115424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -448,7 +482,8 @@
     <MESSAGE value="20171016#1614#优化一次" />
     <MESSAGE value="20171023#1614#声明和定义分离" />
     <MESSAGE value="20171024#2329#做了一些细节上的微调" />
-    <option name="LAST_COMMIT_MESSAGE" value="20171024#2329#做了一些细节上的微调" />
+    <MESSAGE value="20171025#1912#List &amp; Queue &amp; Stack Beta 0.1 release" />
+    <option name="LAST_COMMIT_MESSAGE" value="20171025#1912#List &amp; Queue &amp; Stack Beta 0.1 release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -461,7 +496,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="e#235#261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -549,7 +586,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="e#235#261#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,27 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST/BSTHelp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BST/Dictionary.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Priority Queue/PQ.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -677,32 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST/BST.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BST/BSTNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -715,15 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Share.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,28 +716,6 @@
           <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="55" />
           <caret line="47" column="65" lean-forward="false" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="65" />
           <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="65" />
-          <folding>
-            <element signature="e#95#112#0" expanded="true" />
-            <element signature="e#189#201#0" expanded="true" />
-            <element signature="e#2070#2084#0" expanded="true" />
-            <element signature="e#2179#2191#0" expanded="true" />
-            <element signature="e#2343#2355#0" expanded="true" />
-            <element signature="e#2524#2536#0" expanded="true" />
-            <element signature="e#2823#2835#0" expanded="true" />
-            <element signature="e#3157#3169#0" expanded="true" />
-            <element signature="e#3182#3196#0" expanded="true" />
-            <element signature="e#3343#3355#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="e#107#126#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,7 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,21 +737,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Queue/test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="779">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
@@ -802,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stack/test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="342">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
           <folding />
         </state>
@@ -810,7 +758,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/List/List.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
+        <state relative-caret-position="646">
           <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding />
         </state>
@@ -818,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/List/Link.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="1197">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="e#93#110#0" expanded="true" />
           </folding>
@@ -828,7 +776,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/List/test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="950">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="e#100#119#0" expanded="true" />
@@ -838,23 +786,15 @@
     </entry>
     <entry file="file:///usr/include/c++/6/bits/basic_string.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="96900">
           <caret line="5100" column="0" lean-forward="false" selection-start-line="5100" selection-start-column="0" selection-end-line="5100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="148" column="68" lean-forward="true" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Queue/Linked_Queue.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
+        <state relative-caret-position="532">
           <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding />
         </state>
@@ -862,9 +802,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Queue/Array_Based_Queue.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="59" column="50" lean-forward="false" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+        <state relative-caret-position="874">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1599">
+          <caret line="148" column="68" lean-forward="false" selection-start-line="148" selection-start-column="68" selection-end-line="148" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/BSTHelp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/BSTNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/Dictionary.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/BST.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#235#261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="90" column="23" lean-forward="false" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+          <folding>
+            <element signature="e#78#98#0" expanded="true" />
+            <element signature="e#215#242#0" expanded="true" />
+            <element signature="e#511#538#0" expanded="true" />
+            <element signature="e#832#859#0" expanded="true" />
+            <element signature="e#1252#1279#0" expanded="true" />
+            <element signature="e#1332#1359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Share.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+          <folding>
+            <element signature="e#220#232#0" expanded="true" />
+            <element signature="e#1321#1333#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

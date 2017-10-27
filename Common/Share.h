@@ -50,6 +50,47 @@ namespace DSLibrary {
             return rt(a,b);
         }
     };
+
+    template <typename T>
+    class Array_Implement //数组操作类
+    {
+        static void arrayCopy(T* ansArray,
+                              const T*& targetArray,
+                              const int& ansArraySize,
+                              const int targetArraySize)
+        {
+            int i,j;
+            for(int i = 0, j = 0;i < ansArraySize && j < targetArraySize;i++,j++)
+            {
+                ansArray[i] = targetArray[j];
+            }
+            return;
+        }
+
+        static void arrayCopy(T* ansArray,
+                              const T*& targetAns,
+                              const int& ansArraySize,
+                              const int& lo,
+                              const int& hi)
+        {
+            for(int i = 0, j = lo;i<ansArraySize && j < hi;i++,j++)
+            {
+                ansArray[i] = targetAns[j];
+            }
+        }
+
+        static void arrayFill(T* targetArray, int targetNum, const int& size)
+        {
+            for(int i=0;i<size;i++)  targetArray[i] = targetNum;
+        }
+
+        static void arrayZero(T* targetArray, const int& size)
+        {
+            arrayFill(targetArray, 0, size);
+        }
+
+
+    };
 }
 #endif //COMMON_SHARE_H
 
