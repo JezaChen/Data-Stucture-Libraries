@@ -55,7 +55,7 @@ namespace DSLibrary
             }
             swap(elem[i],elem[point]);
         }
-    };
+    }
 
 
     //DEFINE MERGE SORT
@@ -87,7 +87,40 @@ namespace DSLibrary
             else
                 elem[k] = temp[j--];
         }
-    };
+    }
     //END OF MERGE SORT
+
+    //DEFINE QUICK SORT
+    template<typename T, typename COMP>
+    int findPartition(T* elem, const int& lo, const int& hi)
+    {
+        int _lo = lo, _hi = hi;
+        int partition = elem[(_lo + _hi) / 2];
+
+        swap(elem[_lo], elem[partition]);
+
+        while(_hi - _lo > 1)
+        {
+            while(COMP::priority(elem[hi],elem[lo]) && _hi - _lo > 1) { _hi--; }
+            swap(elem[_lo], elem[_hi]);
+            while(COMP::priority(elem[hi],elem[lo]) &&  _hi - _lo > 1 ) { _lo++; }
+            swap(elem[_lo], elem[_hi]);
+        }
+
+        return partition;
+    }
+
+    template <typename T, typename COMP>
+    void quickSort(T* elem, const int& lo, const int& hi)
+    {
+        if(hi-lo<=1) return ;
+        else
+        {
+            int p = findPartition(elem,lo,hi);
+            quickSort(elem,lo,p);
+            quickSort(elem,p,hi);
+        }
+    }
+
 }
 #endif //DSL_SORT_H
