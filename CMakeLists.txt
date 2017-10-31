@@ -13,7 +13,7 @@ aux_source_directory(. DIRSRCS)
 add_executable(DSL ${DIRSRCS} "Binary Tree/BinNode.h" "Binary Tree/BinTree.h"
         "Binary Tree/BinTree_remove.h" "Binary Tree/BinNode_trav.h" "Binary Tree/BinNode_travPre.h" "Binary Tree/BinNode_travIn.h" "Binary Tree/BinNode_travPost.h" List/test.h Queue/test.h BST/Dictionary.h BST/BST.h BST/BSTNode.h BST/BSTHelp.cpp
         "Priority Queue/Heap.h" "Priority Queue/PQ.h" "Huffman Tree/HuffNode.h" "Huffman Tree/HuffTree.h"
-        "Stack/Linked_Stack.h" Stack/test.h Algorithm/sort.h)
+        "Stack/Linked_Stack.h" Stack/test.h Algorithm/sort.h Tree/tree.h)
 include_directories(./ ./uniPRINTER ./Common  ./List ./Stack ./Queue )
 link_directories(./ ./uniPRINTER ./Common  ./List ./Stack ./Queue )
 
