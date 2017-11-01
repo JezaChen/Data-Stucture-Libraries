@@ -9,9 +9,6 @@
 
 #include "../Common/Share.h"
 
-#ifndef GTNodePosi(T)
-//#define GTNodePosi(T) GeneralTreeNode<T>*
-#endif
 
 namespace DSLibrary
 {

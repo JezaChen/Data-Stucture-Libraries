@@ -11,14 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="20171101#2352#增增添添">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tree/tree_LoC.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tree/union_find.h" />
+    <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree.h" afterPath="$PROJECT_DIR$/Tree/tree.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uniPRINTER/print.h" afterPath="$PROJECT_DIR$/uniPRINTER/print.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree_LoC.h" afterPath="$PROJECT_DIR$/Tree/tree_LoC.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/union_find.h" afterPath="$PROJECT_DIR$/Tree/union_find.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,11 +73,11 @@
           <file leaf-file-name="tree.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tree/tree.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+                <state relative-caret-position="931">
+                  <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
                   <folding>
                     <element signature="e#156#168#0" expanded="true" />
-                    <element signature="e#759#771#0" expanded="true" />
+                    <element signature="e#706#718#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -178,11 +175,9 @@
           <file leaf-file-name="union_find.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tree/union_find.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#162#205#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="247">
+                  <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -190,11 +185,12 @@
           <file leaf-file-name="tree_LoC.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tree/tree_LoC.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="711">
-                  <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                <state relative-caret-position="406">
+                  <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
                   <folding>
                     <element signature="e#117#145#0" expanded="true" />
                     <element signature="e#255#267#0" expanded="true" />
+                    <element signature="e#2674#2686#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -287,9 +283,9 @@
         <option value="$PROJECT_DIR$/Common/Share.h" />
         <option value="$PROJECT_DIR$/Algorithm/sort.h" />
         <option value="$PROJECT_DIR$/uniPRINTER/print.h" />
-        <option value="$PROJECT_DIR$/Tree/union_find.h" />
         <option value="$PROJECT_DIR$/Tree/tree.h" />
         <option value="$PROJECT_DIR$/Tree/tree_LoC.h" />
+        <option value="$PROJECT_DIR$/Tree/union_find.h" />
       </list>
     </option>
   </component>
@@ -422,7 +418,7 @@
       <workItem from="1509082309981" duration="6898000" />
       <workItem from="1509094143325" duration="14000" />
       <workItem from="1509094920762" duration="606000" />
-      <workItem from="1509374897471" duration="7176000" />
+      <workItem from="1509374897471" duration="8771000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -543,11 +539,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509490978328</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="20171101#2352#增增添添">
+      <created>1509551560309</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1509551560309</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68301000" />
+    <option name="totallyTimeSpent" value="69896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="0" width="1861" height="1082" extended-state="6" />
@@ -603,7 +606,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -996,33 +999,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        <state relative-caret-position="931">
+          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
           <folding>
             <element signature="e#156#168#0" expanded="true" />
-            <element signature="e#759#771#0" expanded="true" />
+            <element signature="e#706#718#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree_LoC.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="406">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
             <element signature="e#117#145#0" expanded="true" />
             <element signature="e#255#267#0" expanded="true" />
+            <element signature="e#2674#2686#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tree/union_find.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#162#205#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
