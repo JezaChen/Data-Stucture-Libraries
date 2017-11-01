@@ -18,6 +18,9 @@
 #include "../List/Doubly_Linked_List.h"
 #include "../Tree/tree.h"
 
+#ifndef GTNodePosi(T)
+#define GTNodePosi(T) GeneralTreeNode<T>*
+#endif
 
 using namespace std;
 
@@ -50,6 +53,14 @@ namespace DSLibrary
             static void p(const char &x)
             { printf(" %c", (31 < x) && (x < 128) ? x : '$'); }
 
+            static void p(const string &x)
+            {
+                if (!x.empty())
+                    cout << x;
+                else
+                    cout << "<empty string>";
+            }
+
             //复杂数据结构的打印输出
             template<typename T>
             static void p(List<T> &list)
@@ -58,9 +69,19 @@ namespace DSLibrary
             }
 
             template<typename T>
-            static void p(GeneralTree<T> &list)
+            static void p(const GTNodePosi(T)&root)
             {
-                //int a = 5;
+                if (root->isLeaf())
+                    cout << "Leaf: ";
+                else cout << "Internal: ";
+
+                print(root->data());
+
+                for (GTNodePosi(T)r = root->leftMostChild();
+                     r != NULL; r = r->rightSibling())
+                {
+                    p(r);
+                }
             }
 
         };
@@ -81,5 +102,10 @@ namespace DSLibrary
     static void print(const T &x)
     { UNI_PRINTER::p(x); }
 
+    template<>
+    static void print(const string &x)
+    {
+        UNI_PRINTER::p(x);
+    }
 }
 #endif //UNIPRINTER_PRINT_H

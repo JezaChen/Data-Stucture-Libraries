@@ -18,6 +18,10 @@ namespace DSLibrary
 
             virtual void setData(const T &elem) = 0;
 
+            virtual bool isLeaf() = 0;
+
+            virtual GTNodePosi(T) parent() = 0;
+
             virtual GTNodePosi(T)leftMostChild() = 0;
 
             virtual GTNodePosi(T)rightSibling() = 0;
