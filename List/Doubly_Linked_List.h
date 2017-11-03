@@ -28,8 +28,11 @@ namespace DSLibrary {
             static LinkPosi(T) freeList;
 
             //Constructor
-            Link(T _data, LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL) : data(_data), prev(_prev), next(_next) {}
-            Link(LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL) : prev(_prev), next(_next) {}
+            Link(T _data, LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL)
+                    : data(_data), prev(_prev), next(_next) {}
+
+            Link(LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL)
+                    : prev(_prev), next(_next) {}
 
             void *operator new(size_t) {
                 if (freeList == NULL) return ::new Link<T>;
@@ -68,7 +71,7 @@ namespace DSLibrary {
                 {
                     r = h;
                     h = h->next;
-                    delete r;
+                    release(r);
                     r = NULL;
                 }
             }
@@ -113,7 +116,7 @@ namespace DSLibrary {
             }
 
             //位置操作
-            void moveToStart()
+            void moveToStarst()
             {
                 curr = head;
                 currPosition = 0;

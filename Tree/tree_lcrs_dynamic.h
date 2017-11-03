@@ -18,9 +18,9 @@ namespace DSLibrary
     {
     public:
         leftChildRightSibling_TreeNode(T data,
-                                lcrsTreeNodePosi(T)par = nullptr,
-                                lcrsTreeNodePosi(T)rsb = nullptr,
-                                lcrsTreeNodePosi(T)lc = nullptr)
+                                       lcrsTreeNodePosi(T)par = nullptr,
+                                       lcrsTreeNodePosi(T)rsb = nullptr,
+                                       lcrsTreeNodePosi(T)lc = nullptr)
                 : _data(data),
                   _parent(par),
                   _rightSibling(rsb),
@@ -40,6 +40,7 @@ namespace DSLibrary
         {
             return _data;
         }
+
         bool isLeaf()
         {
             if (!_leftMostChild) return true;
@@ -81,7 +82,8 @@ namespace DSLibrary
                 T tempValue = temp->data();
                 release(temp);
                 return tempValue;
-            } else
+            }
+            else
             {
                 //TODO
             }
@@ -97,7 +99,8 @@ namespace DSLibrary
                 T tempValue = temp->data();
                 release(temp);
                 return tempValue;
-            } else
+            }
+            else
             {
                 //TODO
             }
