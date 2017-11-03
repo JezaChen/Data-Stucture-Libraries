@@ -23,7 +23,7 @@ namespace DSLibrary
     {
         if(!x) throw nullPointer_Exception(); //抛出空指针异常
         FromParentTo(*x)=NULL;
-        updateHeightAbove(x->parent); //更新祖祖辈辈的高度，做最后的告别
+        updateHeightAbove(x->_parent); //更新祖祖辈辈的高度，做最后的告别
         int delete_counts=removeAt(x); _size-=delete_counts;
         release(x);
         return delete_counts; //返回删除节点的总数

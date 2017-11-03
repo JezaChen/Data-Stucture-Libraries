@@ -26,7 +26,7 @@ namespace DSLibrary
             while(x)
             {
                 updateHeight(x);
-                x=x->parent;
+                x=x->_parent;
             }
         }
     public:
@@ -51,14 +51,14 @@ namespace DSLibrary
         BinNodePosi(T) attachAsLc (BinNodePosi(T) x, BinTree<T>*& S)
         {
             if(!x) throw nullPointer_Exception(); //抛出空指针异常
-            if(x->lc=S->_root) x->lc->parent=x; //避免空树的判断
+            if(x->lc=S->_root) x->lc->_parent=x; //避免空树的判断
             _size+=S->_size; updateHeightAbove(x); //向上更新高度
             release(S); S=NULL; return x; //释放原树，并返回原插入点
         }
         BinNodePosi(T) attachAsRc (BinNodePosi(T) x, BinTree<T>*& S)
         {
             if(!x) throw nullPointer_Exception(); //抛出空指针异常
-            if(x->rc=S->_root) x->rc->parent-x; //避免空树的判断
+            if(x->rc=S->_root) x->rc->_parent-x; //避免空树的判断
             _size+=S->_size; updateHeightAbove(x);
             release(S); S=NULL; return x; //释放原树，并返回原插入点
         }
@@ -67,9 +67,9 @@ namespace DSLibrary
         {
             if(!x) throw nullPointer_Exception(); //抛出空指针异常
             FromParentTo(*x)=NULL; //切断与父亲的联系
-            updateHeightAbove(x->parent);
+            updateHeightAbove(x->_parent);
             BinTree<T>* S=new BinTree;
-            S->_root=x; x->parent=NULL;
+            S->_root=x; x->_parent=NULL;
             S->_size=x->size();_size-=S->_size;
             return S;
         }

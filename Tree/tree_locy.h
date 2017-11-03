@@ -151,10 +151,27 @@ namespace DSLibrary
         class listOfChildren_Tree
         {
         public:
+            //constructor
+            listOfChildren_Tree() : _root(nullptr), _size(0) {}
+            listOfChildren_Tree(const T& rootValue)
+                    : _root(new listOfChildren_TreeNode<T> (rootValue)),
+                      _size(0)
+            {}
+
+            listOfChildren_Tree(locTreeNodePosi(T) r) : _root(r), _size(1)
+            {}
+
+            //destuctor
+            ~listOfChildren_Tree()
+            {
+                clear();
+            }
+
             void clear()
             {
                 _root->clearChildren();
                 release(_root);
+                _size = 0;
             }
 
             locTreeNodePosi(T) root()
@@ -162,12 +179,26 @@ namespace DSLibrary
                 return _root;
             }
 
+            void insertAsFirstChild(locTreeNodePosi(T) target, const T& val)
+            {
+                target->insertAsFirstChild(val);
+                _size++;
+            }
+
+            void insertAsRightSibling(locTreeNodePosi(T) target, const T& val)
+            {
+                target->insertAsRightSibling(target);
+                _size++;
+            }
+
             int size()
             {
-                return
+                return _size;
             }
+
         private:
             locTreeNodePosi(T) _root;
+            int _size;
         };
     }
 }

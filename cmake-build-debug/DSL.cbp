@@ -168,6 +168,9 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic_tr.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_locy.h">
 			<Option target="DSL"/>
 		</Unit>

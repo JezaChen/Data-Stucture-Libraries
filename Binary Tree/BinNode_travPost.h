@@ -41,7 +41,7 @@ namespace DSLibrary
         if(x) S.push(x); //根节点入栈
         while(S.empty())
         {
-            if(S.top()!=x->parent) //若栈顶非当前节点的父节点，则必为右兄弟或者是当前节点是根节点
+            if(S.top()!=x->_parent) //若栈顶非当前节点的父节点，则必为右兄弟或者是当前节点是根节点
             {
                 gotoHLVFL(S); //找到栈顶节点的最高左侧可见叶节点
             }

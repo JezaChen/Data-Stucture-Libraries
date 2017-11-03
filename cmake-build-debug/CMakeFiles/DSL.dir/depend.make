@@ -25,6 +25,7 @@ CMakeFiles/DSL.dir/main.cpp.o: ../Stack/Array_Based_Stack.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Stack/Linked_Stack.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Stack/Stack_common.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Stack/test.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree.h
 CMakeFiles/DSL.dir/main.cpp.o: ../main.cpp
 CMakeFiles/DSL.dir/main.cpp.o: ../uniPRINTER/print.h
 

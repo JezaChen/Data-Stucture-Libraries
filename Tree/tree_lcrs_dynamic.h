@@ -117,17 +117,24 @@ namespace DSLibrary
     class leftChildRightSibling_Tree : public GeneralTree<T>
     {
     public:
+        //constructor
         leftChildRightSibling_Tree(lcrsTreeNodePosi(T)r)
                 : _root(r), _size(1)
         {}
 
         leftChildRightSibling_Tree(T rootValue)
-                : _root(new leftChildRightSibling_TreeNode<T>(rootValue))
+                : _root(new leftChildRightSibling_TreeNode<T>(rootValue)),
+                  _size(1)
         {}
 
+        leftChildRightSibling_Tree():
+                _root(nullptr), _size(0)
+        {}
+
+        //destructor
         ~leftChildRightSibling_Tree()
         {
-
+            release(_root);
         }
 
         void clear()
@@ -142,6 +149,18 @@ namespace DSLibrary
         }
 
         //void insertAsRoot(const T&, )
+
+        void insertAsFirstChild(lcrsTreeNodePosi(T) target, const T& val)
+        {
+            target->insertAsFirstChild(val);
+            _size++;
+        }
+
+        void insertAsRightSibling(lcrsTreeNodePosi(T) target, const T& val)
+        {
+            target->insertAsRightSibling(val);
+            _size++;
+        }
 
         int size()
         { return _size; }
