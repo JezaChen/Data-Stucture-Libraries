@@ -9,25 +9,25 @@
 #include "../Common/Share.h"
 #include "tree.h"
 
-#define locTreeNodePosi(T) listOfChildren_TreeNode<T>*
+#define lcrsTreeNodePosi(T) leftChildRightSibling_TreeNode<T>*
 
 namespace DSLibrary
 {
     template<typename T>
-    class listOfChildren_TreeNode : public GeneralTreeNode<T>
+    class leftChildRightSibling_TreeNode : public GeneralTreeNode<T>
     {
     public:
-        listOfChildren_TreeNode(T data,
-                                locTreeNodePosi(T)par = nullptr,
-                                locTreeNodePosi(T)rsb = nullptr,
-                                locTreeNodePosi(T)lc = nullptr)
+        leftChildRightSibling_TreeNode(T data,
+                                lcrsTreeNodePosi(T)par = nullptr,
+                                lcrsTreeNodePosi(T)rsb = nullptr,
+                                lcrsTreeNodePosi(T)lc = nullptr)
                 : _data(data),
                   _parent(par),
                   _rightSibling(rsb),
                   _leftMostChild(lc)
         {}
 
-        ~listOfChildren_TreeNode()
+        ~leftChildRightSibling_TreeNode()
         {
             //release(_parent);
             //release(_leftMostChild);
@@ -36,42 +36,46 @@ namespace DSLibrary
             _rightSibling = nullptr;
         }
 
+        T data()
+        {
+            return _data;
+        }
         bool isLeaf()
         {
             if (!_leftMostChild) return true;
             else return false;
         }
 
-        locTreeNodePosi(T)parent()
+        lcrsTreeNodePosi(T)parent()
         {
             return _parent;
         }
 
-        locTreeNodePosi(T)leftMostChild()
+        lcrsTreeNodePosi(T)leftMostChild()
         {
             return _leftMostChild;
         }
 
-        locTreeNodePosi(T)rightSibling() //not necessary
+        lcrsTreeNodePosi(T)rightSibling() //not necessary
         {
             return _rightSibling;
         }
 
         void insertAsFirstChild(const T &elem)
         {
-            _leftMostChild = new listOfChildren_TreeNode<T>(elem, this, _leftMostChild);
+            _leftMostChild = new leftChildRightSibling_TreeNode<T>(elem, this, _leftMostChild);
         }
 
         void insertAsRightSibling(const T &elem)
         {
-            _rightSibling = new listOfChildren_TreeNode<T>(elem, _parent, _rightSibling);
+            _rightSibling = new leftChildRightSibling_TreeNode<T>(elem, _parent, _rightSibling);
         }
 
         T removeFirstChild()
         {
             if (_leftMostChild)
             {
-                locTreeNodePosi(T)temp = _leftMostChild;
+                lcrsTreeNodePosi(T)temp = _leftMostChild;
                 _leftMostChild = _leftMostChild->rightSibling();
 
                 T tempValue = temp->data();
@@ -87,7 +91,7 @@ namespace DSLibrary
         {
             if (_rightSibling)
             {
-                locTreeNodePosi(T)temp = _rightSibling;
+                lcrsTreeNodePosi(T)temp = _rightSibling;
                 _rightSibling = _rightSibling->rightSibling();
 
                 T tempValue = temp->data();
@@ -101,24 +105,24 @@ namespace DSLibrary
 
     private:
         T _data;
-        locTreeNodePosi(T)_parent;
-        locTreeNodePosi(T)_leftMostChild;
-        locTreeNodePosi(T)_rightSibling; //相当于链表中的next指针
+        lcrsTreeNodePosi(T)_parent;
+        lcrsTreeNodePosi(T)_leftMostChild;
+        lcrsTreeNodePosi(T)_rightSibling; //相当于链表中的next指针
     };
 
     template<typename T>
-    class listOfChildren_Tree : public GeneralTree<T>
+    class leftChildRightSibling_Tree : public GeneralTree<T>
     {
     public:
-        listOfChildren_Tree(locTreeNodePosi(T)r)
+        leftChildRightSibling_Tree(lcrsTreeNodePosi(T)r)
                 : _root(r), _size(1)
         {}
 
-        listOfChildren_Tree(T rootValue)
-                : _root(new listOfChildren_TreeNode<T>(rootValue))
+        leftChildRightSibling_Tree(T rootValue)
+                : _root(new leftChildRightSibling_TreeNode<T>(rootValue))
         {}
 
-        ~listOfChildren_Tree()
+        ~leftChildRightSibling_Tree()
         {
 
         }
@@ -129,7 +133,7 @@ namespace DSLibrary
             _size = 0;
         }
 
-        locTreeNodePosi(T)root()
+        lcrsTreeNodePosi(T)root()
         {
             return _root;
         }
@@ -140,13 +144,13 @@ namespace DSLibrary
         { return _size; }
 
     private:
-        locTreeNodePosi(T)_root;
+        lcrsTreeNodePosi(T)_root;
         int _size;
 
-        void clearHelp(locTreeNodePosi(T)r)
+        void clearHelp(lcrsTreeNodePosi(T)r)
         {
-            //locTreeNodePosi(T)temp = r;
-            for (locTreeNodePosi(T)temp = r->leftMostChild();
+            //lcrsTreeNodePosi(T)temp = r;
+            for (lcrsTreeNodePosi(T)temp = r->leftMostChild();
                  temp != nullptr; temp = temp->rightSibling())
             {
                 clearHelp(r);

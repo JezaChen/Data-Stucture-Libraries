@@ -159,7 +159,10 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree.h">
 			<Option target="DSL"/>
 		</Unit>
-		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_LoC.h">
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_array.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic.h">
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/union_find.h">
