@@ -18,7 +18,7 @@
 #include "../List/Doubly_Linked_List.h"
 #include "../Tree/tree.h"
 
-#ifndef GTNodePosi(T)
+#ifndef GTNodePosi
 #define GTNodePosi(T) GeneralTreeNode<T>*
 #endif
 
@@ -102,7 +102,7 @@ namespace DSLibrary
     static void print(const T &x)
     { UNI_PRINTER::p(x); }
 
-    template<>
+    //template<>
     static void print(const string &x)
     {
         UNI_PRINTER::p(x);

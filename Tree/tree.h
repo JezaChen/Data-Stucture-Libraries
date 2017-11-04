@@ -45,9 +45,9 @@ namespace DSLibrary
 
         virtual void insertAsRoot(const T &, GTNodePosi(T), GTNodePosi(T)) = 0;
 
-        //virtual void insertAsFirstChild(GTNodePosi(T), const T&);
+        virtual void insertAsFirstChild(GTNodePosi(T), const T&) = 0;
 
-        //virtual void insertAsRightSibling(GTNodePosi(T), const T&);
+        virtual void insertAsRightSibling(GTNodePosi(T), const T&) = 0;
 
         virtual void print() = 0;
 

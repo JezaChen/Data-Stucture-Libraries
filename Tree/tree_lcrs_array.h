@@ -125,8 +125,6 @@ namespace DSLibrary
                 return _root;
             }
 
-            //void insertAsRoot(const T&, )
-
             int size()
             { return _size; }
 

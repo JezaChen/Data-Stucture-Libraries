@@ -41,6 +41,11 @@ namespace DSLibrary
             return _data;
         }
 
+        void setData(const T&elem)
+        {
+            _data = elem;
+        }
+
         bool isLeaf()
         {
             if (!_leftMostChild) return true;
@@ -67,9 +72,33 @@ namespace DSLibrary
             _leftMostChild = new leftChildRightSibling_TreeNode<T>(elem, this, _leftMostChild);
         }
 
+        /**
+         * Be careful that new left child must not have right siblings and parent!!!
+         * @param newLc
+         */
+        void insertAsFirstChild(lcrsTreeNodePosi(T)newLc)
+        {
+            if (newLc == nullptr) return;
+            newLc->_parent = this;
+            newLc->_rightSibling = _leftMostChild;
+            _leftMostChild = newLc;
+        }
+
         void insertAsRightSibling(const T &elem)
         {
             _rightSibling = new leftChildRightSibling_TreeNode<T>(elem, _parent, _rightSibling);
+        }
+
+        /**
+         * Be careful that new right sibling must not have right siblings and parent!!!
+         * @param newRsb
+         */
+        void insertAsRightSibling(lcrsTreeNodePosi(T)newRsb)
+        {
+            if (newRsb == nullptr) return;
+            newRsb->_parent = _parent;
+            newRsb->_rightSibling = _rightSibling;
+            _rightSibling = newRsb;
         }
 
         T removeFirstChild()
@@ -122,12 +151,12 @@ namespace DSLibrary
                 : _root(r), _size(1)
         {}
 
-        leftChildRightSibling_Tree(T rootValue)
+        leftChildRightSibling_Tree(const T &rootValue)
                 : _root(new leftChildRightSibling_TreeNode<T>(rootValue)),
                   _size(1)
         {}
 
-        leftChildRightSibling_Tree():
+        leftChildRightSibling_Tree() :
                 _root(nullptr), _size(0)
         {}
 
@@ -148,18 +177,24 @@ namespace DSLibrary
             return _root;
         }
 
-        //void insertAsRoot(const T&, )
-
-        void insertAsFirstChild(lcrsTreeNodePosi(T) target, const T& val)
+        void insertAsFirstChild(GTNodePosi(T)target, const T &val)
         {
-            target->insertAsFirstChild(val);
-            _size++;
+            insertAsFirstChild(static_cast<lcrsTreeNodePosi(T)>(target), val);
         }
 
-        void insertAsRightSibling(lcrsTreeNodePosi(T) target, const T& val)
+        void insertAsRightSibling(GTNodePosi(T)target, const T &val)
         {
-            target->insertAsRightSibling(val);
-            _size++;
+            insertAsRightSibling(static_cast<lcrsTreeNodePosi(T)>(target), val);
+        }
+
+        void print()
+        {}
+
+        void insertAsRoot(const T &rootValue, GTNodePosi(T)oldRoot1, GTNodePosi(T)oldRoot2)
+        {
+            _root = new leftChildRightSibling_TreeNode<T>(rootValue);
+            _root->insertAsFirstChild(static_cast<lcrsTreeNodePosi(T) >(oldRoot1));
+            _root->leftMostChild()->insertAsRightSibling(static_cast<lcrsTreeNodePosi(T) >(oldRoot2));
         }
 
         int size()
@@ -179,6 +214,18 @@ namespace DSLibrary
             }
             release(r);
             r = nullptr;
+        }
+
+        void insertAsFirstChild(lcrsTreeNodePosi(T)target, const T &val)
+        {
+            target->insertAsFirstChild(val);
+            _size++;
+        }
+
+        void insertAsRightSibling(lcrsTreeNodePosi(T)target, const T &val)
+        {
+            target->insertAsRightSibling(val);
+            _size++;
         }
     };
 }

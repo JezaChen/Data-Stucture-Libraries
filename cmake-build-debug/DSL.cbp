@@ -159,6 +159,9 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Stack/test.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/test.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree.h">
 			<Option target="DSL"/>
 		</Unit>
@@ -171,7 +174,13 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic_tr.h">
 			<Option target="DSL"/>
 		</Unit>
-		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_locy.h">
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_loc.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_sequential.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/tree_trav.h">
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Tree/union_find.h">

@@ -27,6 +27,7 @@ namespace DSLibrary
                 targetPosi = list.currentPosi();
                 break;
             }
+            list.next();
         }
 
         list.moveToPosi(posiTemp);

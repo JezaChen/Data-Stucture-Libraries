@@ -116,7 +116,7 @@ namespace DSLibrary {
             }
 
             //位置操作
-            void moveToStarst()
+            void moveToStart()
             {
                 curr = head;
                 currPosition = 0;
@@ -171,7 +171,7 @@ namespace DSLibrary {
             T &operator[](int posi)
             {
                 moveToPosi(posi);
-                return curr->data;
+                return curr->next->data;
             }
 
             //遍历操作

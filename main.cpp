@@ -3,7 +3,7 @@
 #include "Queue/test.h"
 #include "Stack/test.h"
 #include "List/test.h"
-
+#include "Tree/test.h"
 
 using namespace std;
 using namespace DSLibrary;
@@ -11,7 +11,7 @@ using namespace DSLibrary;
 
 int main() {
     cout<<"Select one of the following data structures: "<<endl;
-    cout<<"1.List 2.Stack 3.Queue"<<endl;
+    cout<<"1.List 2.Stack 3.Queue 4.Tree"<<endl;
     int choice;
     cin>>choice;
     if(choice==1)
@@ -26,6 +26,10 @@ int main() {
     else if(choice==3)
     {
         queue_test();
+    }
+    else if(choice==4)
+    {
+        tree_test();
     }
     return 0;
 }
