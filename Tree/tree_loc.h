@@ -220,10 +220,7 @@ namespace DSLibrary
             {
                 return _size;
             }
-
-            void print()
-            {}
-
+            
         private:
             locTreeNodePosi(T)_root;
             int _size;

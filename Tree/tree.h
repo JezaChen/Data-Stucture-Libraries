@@ -5,10 +5,13 @@
 #ifndef DSL_TREE_H
 #define DSL_TREE_H
 
+#include <iostream>
 
 #define GTNodePosi(T) GeneralTreeNode<T>*
 namespace DSLibrary
 {
+
+
 
     template<typename T>
     class GeneralTreeNode
@@ -49,9 +52,29 @@ namespace DSLibrary
 
         virtual void insertAsRightSibling(GTNodePosi(T), const T&) = 0;
 
-        virtual void print() = 0;
+        virtual void printTree()
+        {
+            p(root());
+        }
 
         virtual int size() = 0;
     };
+
+
+    template<typename T>
+    static void p(GTNodePosi(T) root)
+    {
+        if (root->isLeaf())
+            cout << "Leaf: ";
+        else cout << "Internal: ";
+
+        cout<<root->data()<<endl;
+
+        for (GTNodePosi(T)r = root->leftMostChild();
+             r != NULL; r = r->rightSibling())
+        {
+            p(r);
+        }
+    }
 }
 #endif //DSL_TREE_H

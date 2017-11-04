@@ -187,8 +187,6 @@ namespace DSLibrary
             insertAsRightSibling(static_cast<lcrsTreeNodePosi(T)>(target), val);
         }
 
-        void print()
-        {}
 
         void insertAsRoot(const T &rootValue, GTNodePosi(T)oldRoot1, GTNodePosi(T)oldRoot2)
         {

@@ -200,9 +200,6 @@ namespace DSLibrary
                 insertAsRightSibling(static_cast<lcrsTreeNodePosi(T)>(target), elem);
             }
 
-            void print()
-            {}
-
             int size()
             { return _size; }
 

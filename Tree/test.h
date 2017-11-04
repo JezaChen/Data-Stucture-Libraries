@@ -79,6 +79,7 @@ void tree_test()
 #endif
 
         cout<<res<<endl;
+        tree->printTree();
     }
 }
 

@@ -11,11 +11,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
+    <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="20171104#2321#初步搞定树的数据结构">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/test.h" afterPath="$PROJECT_DIR$/Tree/test.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree_sequential.h" afterPath="$PROJECT_DIR$/Tree/tree_sequential.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree.h" afterPath="$PROJECT_DIR$/Tree/tree.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h" afterPath="$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h" afterPath="$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/tree_loc.h" afterPath="$PROJECT_DIR$/Tree/tree_loc.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,183 +31,125 @@
     <favorites_list name="DSL" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50958085">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tree/test.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1273">
-                  <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-                  <folding>
-                    <element signature="e#77#96#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="union_find.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tree/union_find.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-725">
-                  <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tree_sequential.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Tree/tree_sequential.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="216" column="27" lean-forward="true" selection-start-line="216" selection-start-column="27" selection-end-line="216" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#238#255#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BinTree.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Stack_common.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Stack/Stack_common.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Linked_Stack.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Stack/Linked_Stack.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tree.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tree/tree.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="477">
-                  <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="tree_lcrs_array.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_array.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="125" column="13" lean-forward="false" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#130#158#0" expanded="true" />
-                    <element signature="e#295#307#0" expanded="true" />
-                    <element signature="e#2152#2164#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tree_loc.h" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Tree/tree_loc.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#184#201#0" expanded="true" />
-                    <element signature="e#342#354#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tree_lcrs_dynamic.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="196" column="12" lean-forward="false" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#117#145#0" expanded="true" />
-                    <element signature="e#263#275#0" expanded="true" />
-                    <element signature="e#3683#3695#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="find.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Algorithm/find.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#77#93#0" expanded="true" />
-                    <element signature="e#217#229#0" expanded="true" />
-                    <element signature="e#724#726#0" expanded="true" />
-                    <element signature="e#1217#1219#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tree_lcrs_dynamic_tr.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1672">
-                  <caret line="223" column="36" lean-forward="false" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#109#137#0" expanded="true" />
-                    <element signature="e#467#479#0" expanded="true" />
-                    <element signature="e#543#555#0" expanded="true" />
-                    <element signature="e#624#636#0" expanded="true" />
-                    <element signature="e#4599#4611#0" expanded="true" />
-                    <element signature="e#5059#5071#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Doubly_Linked_List.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Link.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/List/Link.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-551">
-                  <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BinNode.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/test.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+              <folding>
+                <element signature="e#77#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="union_find.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/union_find.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree_lcrs_dynamic_tr.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="154" column="12" lean-forward="false" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
+              <folding>
+                <element signature="e#109#137#0" expanded="true" />
+                <element signature="e#467#479#0" expanded="true" />
+                <element signature="e#543#555#0" expanded="true" />
+                <element signature="e#624#636#0" expanded="true" />
+                <element signature="e#4599#4611#0" expanded="true" />
+                <element signature="e#5059#5071#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree_sequential.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree/tree_sequential.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-106">
+              <caret line="209" column="16" lean-forward="false" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
+              <folding>
+                <element signature="e#238#255#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinTree.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stack_common.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stack/Stack_common.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Linked_Stack.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Stack/Linked_Stack.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1083">
+              <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tree/tree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+              <folding>
+                <element signature="e#1213#1225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="print.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1330">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="84" selection-end-column="13" />
+              <folding>
+                <element signature="e#1538#1550#0" expanded="true" />
+                <element signature="e#2004#2016#0" expanded="true" />
+                <element signature="e#2144#2156#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -261,15 +205,15 @@
         <option value="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinTree.h" />
         <option value="$PROJECT_DIR$/Tree/tree_locy.h" />
-        <option value="$PROJECT_DIR$/uniPRINTER/print.h" />
         <option value="$PROJECT_DIR$/Tree/tree_trav.h" />
-        <option value="$PROJECT_DIR$/Tree/tree.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h" />
         <option value="$PROJECT_DIR$/Tree/tree_lcrs_array.h" />
-        <option value="$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h" />
         <option value="$PROJECT_DIR$/List/Doubly_Linked_List.h" />
         <option value="$PROJECT_DIR$/Algorithm/find.h" />
+        <option value="$PROJECT_DIR$/uniPRINTER/print.h" />
+        <option value="$PROJECT_DIR$/Tree/tree.h" />
+        <option value="$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h" />
+        <option value="$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h" />
         <option value="$PROJECT_DIR$/Tree/tree_loc.h" />
         <option value="$PROJECT_DIR$/Tree/test.h" />
         <option value="$PROJECT_DIR$/Tree/tree_sequential.h" />
@@ -283,9 +227,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="width" value="960" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="237" />
+    <option name="y" value="84" />
+    <option name="width" value="914" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -420,7 +366,8 @@
       <workItem from="1509094143325" duration="14000" />
       <workItem from="1509094920762" duration="606000" />
       <workItem from="1509374897471" duration="23773000" />
-      <workItem from="1509682526316" duration="49762000" />
+      <workItem from="1509682526316" duration="51110000" />
+      <workItem from="1509804238072" duration="3158000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -583,11 +530,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509799892791</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="20171104#2126#增加调试用代码">
+      <created>1509801981904</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1509801981904</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134660000" />
+    <option name="totallyTimeSpent" value="139166000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -599,27 +553,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1080" extended-state="4" />
+    <frame x="0" y="-1" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1292735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2290795" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22803347" sideWeight="0.49374348" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3002092" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20502092" sideWeight="0.50213677" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20920502" sideWeight="0.508547" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1292735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3211297" sideWeight="0.495829" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25587606" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49786323" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13782051" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20545073" sideWeight="0.49786323" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20920502" sideWeight="0.491453" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -663,17 +617,12 @@
     <MESSAGE value="20171103#1126#进一步完善了左孩子右兄弟表示法" />
     <MESSAGE value="20171103#2254#基本完成树的所有ADT" />
     <MESSAGE value="20171104#2051#基本搞定，大吉大利！" />
-    <option name="LAST_COMMIT_MESSAGE" value="20171104#2051#基本搞定，大吉大利！" />
+    <MESSAGE value="20171104#2126#增加调试用代码" />
+    <MESSAGE value="20171104#2321#初步搞定树的数据结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="20171104#2321#初步搞定树的数据结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Tree/test.h</url>
-          <line>80</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
@@ -764,10 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="e#220#232#0" expanded="false" />
-            <element signature="e#1321#1333#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,15 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -866,21 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_trav.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#94#114#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,46 +865,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree_trav.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-65">
           <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tree/union_find.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
+        <state relative-caret-position="133">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_array.h">
+    <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="125" column="13" lean-forward="false" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
-          <folding>
-            <element signature="e#130#158#0" expanded="true" />
-            <element signature="e#295#307#0" expanded="true" />
-            <element signature="e#2152#2164#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-163">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stack/Linked_Stack.h">
+    <entry file="file://$PROJECT_DIR$/List/Link.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="1197">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1002,24 +906,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="684">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
+    <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="-216">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="84" selection-end-column="13" />
+          <folding>
+            <element signature="e#1538#1550#0" expanded="true" />
+            <element signature="e#2004#2016#0" expanded="true" />
+            <element signature="e#2144#2156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_array.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-401">
+          <caret line="125" column="13" lean-forward="false" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+          <folding>
+            <element signature="e#130#158#0" expanded="false" />
+            <element signature="e#295#307#0" expanded="false" />
+            <element signature="e#2152#2164#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3572">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding>
+            <element signature="e#117#145#0" expanded="true" />
+            <element signature="e#263#275#0" expanded="true" />
+            <element signature="e#3683#3695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stack/Linked_Stack.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/tree_loc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="204" column="13" lean-forward="true" selection-start-line="204" selection-start-column="13" selection-end-line="204" selection-end-column="13" />
+          <folding>
+            <element signature="e#184#201#0" expanded="true" />
+            <element signature="e#342#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/find.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="e#77#93#0" expanded="false" />
+            <element signature="e#217#229#0" expanded="false" />
+            <element signature="e#724#726#0" expanded="false" />
+            <element signature="e#1217#1219#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree/test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="58" column="8" lean-forward="true" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <element signature="e#77#96#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="223" column="36" lean-forward="false" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="36" />
+        <state relative-caret-position="217">
+          <caret line="154" column="12" lean-forward="false" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
           <folding>
             <element signature="e#109#137#0" expanded="true" />
             <element signature="e#467#479#0" expanded="true" />
@@ -1031,82 +1028,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/List/Link.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-551">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="196" column="12" lean-forward="false" selection-start-line="196" selection-start-column="12" selection-end-line="196" selection-end-column="12" />
-          <folding>
-            <element signature="e#117#145#0" expanded="true" />
-            <element signature="e#263#275#0" expanded="true" />
-            <element signature="e#3683#3695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/tree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/find.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#77#93#0" expanded="true" />
-            <element signature="e#217#229#0" expanded="true" />
-            <element signature="e#724#726#0" expanded="true" />
-            <element signature="e#1217#1219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-          <folding>
-            <element signature="e#77#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree_sequential.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="216" column="27" lean-forward="true" selection-start-line="216" selection-start-column="27" selection-end-line="216" selection-end-column="27" />
+        <state relative-caret-position="-106">
+          <caret line="209" column="16" lean-forward="false" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
           <folding>
             <element signature="e#238#255#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/tree_loc.h">
+    <entry file="file://$PROJECT_DIR$/Tree/tree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="351">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
           <folding>
-            <element signature="e#184#201#0" expanded="true" />
-            <element signature="e#342#354#0" expanded="true" />
+            <element signature="e#1213#1225#0" expanded="true" />
           </folding>
         </state>
       </provider>
