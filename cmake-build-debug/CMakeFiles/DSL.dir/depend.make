@@ -10,6 +10,9 @@ CMakeFiles/DSL.dir/BST/BSTHelp.cpp.o: ../BST/Dictionary.h
 CMakeFiles/DSL.dir/main.cpp.o: .././Common/Exception_Handler.h
 CMakeFiles/DSL.dir/main.cpp.o: .././Common/Share.h
 CMakeFiles/DSL.dir/main.cpp.o: .././uniPRINTER/print.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Algorithm/find.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinTree.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Common/Exception_Handler.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Common/Share.h
 CMakeFiles/DSL.dir/main.cpp.o: ../List/AList.h
@@ -25,7 +28,13 @@ CMakeFiles/DSL.dir/main.cpp.o: ../Stack/Array_Based_Stack.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Stack/Linked_Stack.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Stack/Stack_common.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Stack/test.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/test.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree_lcrs_array.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree_lcrs_dynamic.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree_lcrs_dynamic_tr.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree_loc.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Tree/tree_sequential.h
 CMakeFiles/DSL.dir/main.cpp.o: ../main.cpp
 CMakeFiles/DSL.dir/main.cpp.o: ../uniPRINTER/print.h
 

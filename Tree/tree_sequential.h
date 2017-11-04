@@ -207,8 +207,8 @@ namespace DSLibrary
             else
             {
                 //GeneralTree<char> *res = new TRLibrary::leftChildRightSibling_Tree<char>; //以此为例
-                //GeneralTree<char> *res = new leftChildRightSibling_Tree<char>;
-                GeneralTree<char> *res = new TRLibrary::listOfChildren_Tree<char>;
+                GeneralTree<char> *res = new leftChildRightSibling_Tree<char>;
+                //GeneralTree<char> *res = new TRLibrary::listOfChildren_Tree<char>;
 
                 res->insertAsRoot(str[0], nullptr, nullptr);
                 int pos = 1;
