@@ -117,10 +117,16 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_Implement.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_trav.h">
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travIn.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travLevel.h">
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travPost.h">
