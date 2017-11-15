@@ -11,9 +11,10 @@
 namespace DSLibrary
 {
     template<typename T, typename VST>
-    void travLevel(BinNodePosi(T)x, VST &visit)
+    void travLevel_I(BinNodePosi(T)x, VST &visit)
     {
-        Queue<BinNodePosi(T)> Q;
+
+        Single_Linked::LQueue<BinNodePosi(T)> Q;
         if (x) Q.enqueue(x);
         while (Q.size() != 0)
         {
@@ -27,28 +28,34 @@ namespace DSLibrary
     template<typename T, typename VST>
     void travLevel_II(BinNodePosi(T)x, VST &visit)
     {
-        Queue<BinNodePosi(T)> Q1, Q2;
+        Single_Linked::LQueue<BinNodePosi(T)> Q1, Q2;
         bool currIsQ1 = true;
-        if(x) Q1.enqueue(x);
-        while(Q1.size()!=0 || Q2.size()!=0)
+        if (x) Q1.enqueue(x);
+        while (Q1.size() != 0 || Q2.size() != 0)
         {
             if (currIsQ1)
             {
-                BinNodePosi(T) r= Q1.dequeue();
+                BinNodePosi(T)r = Q1.dequeue();
                 visit(r);
-                if(HasLChild(*r)) Q2.enqueue(r->lc);
-                if(HasRChild(*r)) Q2.enqueue(r->rc);
-                if(Q1.size()==0)
+                if (HasLChild(*r)) Q2.enqueue(r->lc);
+                if (HasRChild(*r)) Q2.enqueue(r->rc);
+                if (Q1.size() == 0)
+                {
                     currIsQ1 = false;
+                    cout<<"// ";
+                }
             }
             else
             {
-                BinNodePosi(T) r=Q2.dequeue();
+                BinNodePosi(T)r = Q2.dequeue();
                 visit(r);
-                if(HasLChild(*r)) Q1.enqueue(r->lc);
-                if(HasRChild(*r)) Q1.enqueue(r->rc);
-                if(Q2.size()==0)
+                if (HasLChild(*r)) Q1.enqueue(r->lc);
+                if (HasRChild(*r)) Q1.enqueue(r->rc);
+                if (Q2.size() == 0)
+                {
                     currIsQ1 = true;
+                    cout<<"// ";
+                }
             }
         }
     };

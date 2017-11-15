@@ -2,8 +2,8 @@
 // Created by jeza on 17-11-4.
 //
 
-#ifndef DSL_TEST_H
-#define DSL_TEST_H
+#ifndef DSL_TREE_TEST_H
+#define DSL_TREE_TEST_H
 
 #include <iostream>
 #include <ctime>
@@ -83,4 +83,4 @@ void tree_test()
     }
 }
 
-#endif //DSL_TEST_H
+#endif //DSL_TREE_TEST_H

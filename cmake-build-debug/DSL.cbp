@@ -138,7 +138,13 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree_build.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree_remove.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/test.h">
 			<Option target="DSL"/>
 		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Huffman Tree/HuffNode.h">

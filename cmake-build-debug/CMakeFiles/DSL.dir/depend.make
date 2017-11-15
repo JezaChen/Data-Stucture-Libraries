@@ -9,10 +9,19 @@ CMakeFiles/DSL.dir/BST/BSTHelp.cpp.o: ../BST/Dictionary.h
 
 CMakeFiles/DSL.dir/main.cpp.o: .././Common/Exception_Handler.h
 CMakeFiles/DSL.dir/main.cpp.o: .././Common/Share.h
+CMakeFiles/DSL.dir/main.cpp.o: .././Tree/tree_sequential.h
 CMakeFiles/DSL.dir/main.cpp.o: .././uniPRINTER/print.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Algorithm/find.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_Implement.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_trav.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_travIn.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_travLevel.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_travPost.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_travPre.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinTree.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinTree_build.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/test.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Common/Exception_Handler.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Common/Share.h
 CMakeFiles/DSL.dir/main.cpp.o: ../List/AList.h
