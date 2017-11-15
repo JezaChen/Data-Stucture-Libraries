@@ -12,25 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Binary Tree/BinTree_build.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Binary Tree/test.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Algorithm/sort.h" afterPath="$PROJECT_DIR$/Algorithm/sort.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_Implement.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_Implement.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_trav.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_trav.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_travIn.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_travIn.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_travLevel.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_travLevel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_travPre.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_travPre.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinTree.h" afterPath="$PROJECT_DIR$/Binary Tree/BinTree.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinTree_remove.h" afterPath="$PROJECT_DIR$/Binary Tree/BinTree_remove.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Share.h" afterPath="$PROJECT_DIR$/Common/Share.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tree/test.h" afterPath="$PROJECT_DIR$/Tree/test.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uniPRINTER/print.h" afterPath="$PROJECT_DIR$/uniPRINTER/print.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinTree_build.h" afterPath="$PROJECT_DIR$/Binary Tree/BinTree_build.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/test.h" afterPath="$PROJECT_DIR$/Binary Tree/test.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,10 +38,10 @@
           <file leaf-file-name="BinNode.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+                <state relative-caret-position="243">
+                  <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
                   <folding>
-                    <element signature="e#2617#2631#0" expanded="true" />
+                    <element signature="e#2616#2630#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -86,10 +74,22 @@
           <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Binary Tree/test.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="517">
-                  <caret line="78" column="35" lean-forward="true" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+                <state relative-caret-position="380">
+                  <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
                   <folding>
                     <element signature="e#94#113#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BinTree_build.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_build.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#96#116#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -99,7 +99,7 @@
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_Implement.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="152">
-                  <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+                  <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -108,14 +108,24 @@
           <file leaf-file-name="BinTree_remove.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_remove.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="285">
+                  <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BinNode_travPost.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="sort.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="254">
+                  <caret line="76" column="58" lean-forward="false" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BinNode_travPost.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travPost.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="669">
@@ -144,7 +154,7 @@
           <file leaf-file-name="Share.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Common/Share.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
+                <state relative-caret-position="418">
                   <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding>
                     <element signature="e#87#106#0" expanded="true" />
@@ -159,7 +169,7 @@
           <file leaf-file-name="print.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
+                <state relative-caret-position="1976">
                   <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
                   <folding>
                     <element signature="e#254#273#0" expanded="true" />
@@ -169,22 +179,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BinTree.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="BinTree.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="464">
-                  <caret line="117" column="32" lean-forward="false" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+                <state relative-caret-position="380">
+                  <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
                   <folding>
                     <element signature="e#85#105#0" expanded="true" />
-                    <element signature="e#2770#2784#0" expanded="true" />
-                    <element signature="e#3002#3016#0" expanded="true" />
-                    <element signature="e#3121#3135#0" expanded="true" />
+                    <element signature="e#2780#2794#0" expanded="true" />
+                    <element signature="e#3012#3026#0" expanded="true" />
+                    <element signature="e#3131#3145#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="57">
@@ -197,9 +207,10 @@
           <file leaf-file-name="BinNode_trav.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_trav.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="56">
+                <state relative-caret-position="137">
                   <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
                   <folding>
+                    <element signature="e#95#115#0" expanded="true" />
                     <element signature="e#269#281#0" expanded="true" />
                     <element signature="e#295#309#0" expanded="true" />
                     <element signature="e#496#508#0" expanded="true" />
@@ -216,7 +227,7 @@
           <file leaf-file-name="BinNode_travLevel.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travLevel.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="237">
+                <state relative-caret-position="570">
                   <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
                   <folding>
                     <element signature="e#104#124#0" expanded="true" />
@@ -282,7 +293,6 @@
         <option value="$PROJECT_DIR$/List/Link.h" />
         <option value="$PROJECT_DIR$/Queue/Linked_Queue.h" />
         <option value="$PROJECT_DIR$/Queue/Array_Based_Queue.h" />
-        <option value="$PROJECT_DIR$/Algorithm/sort.h" />
         <option value="$PROJECT_DIR$/Tree/union_find.h" />
         <option value="$PROJECT_DIR$/Tree/tree_LoC.h" />
         <option value="$PROJECT_DIR$/Tree/tree_loc_array.h" />
@@ -301,17 +311,18 @@
         <option value="$PROJECT_DIR$/Binary Tree/BinTree_remove.h" />
         <option value="$PROJECT_DIR$/Tree/test.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Binary Tree/BinTree.h" />
         <option value="$PROJECT_DIR$/Common/Share.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinNode_travPre.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" />
         <option value="$PROJECT_DIR$/uniPRINTER/print.h" />
-        <option value="$PROJECT_DIR$/Binary Tree/BinNode.h" />
-        <option value="$PROJECT_DIR$/Binary Tree/BinNode_Implement.h" />
-        <option value="$PROJECT_DIR$/Binary Tree/BinTree_build.h" />
-        <option value="$PROJECT_DIR$/Binary Tree/test.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinNode_trav.h" />
         <option value="$PROJECT_DIR$/Binary Tree/BinNode_travLevel.h" />
+        <option value="$PROJECT_DIR$/Binary Tree/BinTree.h" />
+        <option value="$PROJECT_DIR$/Binary Tree/BinTree_build.h" />
+        <option value="$PROJECT_DIR$/Binary Tree/BinNode_Implement.h" />
+        <option value="$PROJECT_DIR$/Binary Tree/test.h" />
+        <option value="$PROJECT_DIR$/Binary Tree/BinNode.h" />
+        <option value="$PROJECT_DIR$/Algorithm/sort.h" />
       </list>
     </option>
   </component>
@@ -454,7 +465,7 @@
       <workItem from="1509804238072" duration="3532000" />
       <workItem from="1509809357252" duration="2514000" />
       <workItem from="1509889496050" duration="1226000" />
-      <workItem from="1510497606544" duration="13784000" />
+      <workItem from="1510497606544" duration="14321000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -645,11 +656,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510498983526</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="20171115#2153#二叉树搞定了">
+      <created>1510754053373</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1510754053373</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157064000" />
+    <option name="totallyTimeSpent" value="157601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,18 +680,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="-1" width="1861" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22698745" sideWeight="0.49145064" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3002092" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2761506" sideWeight="0.5129619" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5019305" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3211297" sideWeight="0.495829" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49786323" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1731936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.4980695" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25587606" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2761506" sideWeight="0.48703805" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2761506" sideWeight="0.48703805" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13782051" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -722,7 +741,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="20171010#2316#稍微改动比较器" />
     <MESSAGE value="20171010#2332#异常处理机制跟上去" />
     <MESSAGE value="20171011#2332#增加了Huffman Tree" />
     <MESSAGE value="20171011#2359#进一步改一改" />
@@ -747,7 +765,8 @@
     <MESSAGE value="20171104#2321#初步搞定树的数据结构" />
     <MESSAGE value="20171104#2336#更新md文档" />
     <MESSAGE value="20171112#2302#更新BST相关操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="20171112#2302#更新BST相关操作" />
+    <MESSAGE value="20171115#2153#二叉树搞定了" />
+    <option name="LAST_COMMIT_MESSAGE" value="20171115#2153#二叉树搞定了" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -879,6 +898,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-772">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,14 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/find.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="873">
@@ -990,11 +1002,11 @@
         <state relative-caret-position="-660">
           <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#95#112#0" expanded="true" />
-            <element signature="e#2070#2084#0" expanded="true" />
-            <element signature="e#3157#3169#0" expanded="true" />
-            <element signature="e#3182#3196#0" expanded="true" />
-            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#95#112#0" expanded="false" />
+            <element signature="e#2070#2084#0" expanded="false" />
+            <element signature="e#3157#3169#0" expanded="false" />
+            <element signature="e#3182#3196#0" expanded="false" />
+            <element signature="e#3343#3355#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1041,58 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Queue/Linked_Queue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#254#273#0" expanded="true" />
-            <element signature="e#1873#1885#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travPre.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#107#127#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/Share.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#87#106#0" expanded="true" />
-            <element signature="e#208#220#0" expanded="true" />
-            <element signature="e#394#406#0" expanded="true" />
-            <element signature="e#1404#2582#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="83" column="34" lean-forward="false" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-          <folding>
-            <element signature="e#2617#2631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travIn.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -1103,86 +1063,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="117" column="32" lean-forward="false" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
-          <folding>
-            <element signature="e#85#105#0" expanded="true" />
-            <element signature="e#2770#2784#0" expanded="true" />
-            <element signature="e#3002#3016#0" expanded="true" />
-            <element signature="e#3121#3135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_Implement.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_remove.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_build.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="85" column="30" lean-forward="false" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tree/test.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="e#87#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_trav.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#269#281#0" expanded="true" />
-            <element signature="e#295#309#0" expanded="true" />
-            <element signature="e#496#508#0" expanded="true" />
-            <element signature="e#522#536#0" expanded="true" />
-            <element signature="e#732#744#0" expanded="true" />
-            <element signature="e#758#772#0" expanded="true" />
-            <element signature="e#913#925#0" expanded="true" />
-            <element signature="e#939#953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="78" column="35" lean-forward="true" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-          <folding>
-            <element signature="e#94#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travLevel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="e#104#124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1199,6 +1085,143 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
           <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travLevel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <element signature="e#104#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_travPre.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#107#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Queue/Linked_Queue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1976">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#254#273#0" expanded="true" />
+            <element signature="e#1873#1885#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Share.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#87#106#0" expanded="true" />
+            <element signature="e#208#220#0" expanded="true" />
+            <element signature="e#394#406#0" expanded="true" />
+            <element signature="e#1404#2582#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_trav.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#95#115#0" expanded="true" />
+            <element signature="e#269#281#0" expanded="true" />
+            <element signature="e#295#309#0" expanded="true" />
+            <element signature="e#496#508#0" expanded="true" />
+            <element signature="e#522#536#0" expanded="true" />
+            <element signature="e#732#744#0" expanded="true" />
+            <element signature="e#758#772#0" expanded="true" />
+            <element signature="e#913#925#0" expanded="true" />
+            <element signature="e#939#953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_build.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#96#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#85#105#0" expanded="true" />
+            <element signature="e#2780#2794#0" expanded="true" />
+            <element signature="e#3012#3026#0" expanded="true" />
+            <element signature="e#3131#3145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode_Implement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinTree_remove.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#94#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Binary Tree/BinNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="77" column="25" lean-forward="false" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding>
+            <element signature="e#2616#2630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="76" column="58" lean-forward="false" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
           <folding />
         </state>
       </provider>

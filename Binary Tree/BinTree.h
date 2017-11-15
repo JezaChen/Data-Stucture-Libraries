@@ -7,7 +7,7 @@
 
 #include <algorithm>
 #include "BinNode.h"
-#include "BinNode_trav.h"
+#include "BinNode_trav.h" //一定一定要记得
 //#include "../Common/Share.h"
 #include "../Common/Exception_Handler.h"
 

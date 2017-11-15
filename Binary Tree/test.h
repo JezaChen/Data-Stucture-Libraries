@@ -25,69 +25,70 @@ using DSLibrary::HeightCount;
 
 void binTree_test()
 {
-    cout<<"Select one of the following types of BinTree"<<endl;
-    cout<<"1.Char 2.Int"<<endl;
+    cout << "Select one of the following types of BinTree" << endl;
+    cout << "1.Char 2.Int" << endl;
     int choice;
-    cin>>choice;
+    cin >> choice;
 
-    if(choice == 1)
+    if (choice == 1)
     {
-        cout<<"Input a string: ";
+        cout << "Input a string: ";
         string str;
-        cin>>str;
-        BinTree<char>* newTree = binTreeBuild_Char(str);
+        cin >> str;
+        BinTree<char> *newTree = binTreeBuild_Char(str);
 
         //print the bintree
         PRINTER<BinNodePosi(char)> printer;
-        cout<<"TravPre: ";
+        cout << "TravPre: ";
         newTree->travPre(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"TravIn: ";
+        cout << "TravIn: ";
         newTree->travIn(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"TravPost: ";
+        cout << "TravPost: ";
         newTree->travPost(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"TreeLevel: ";
+        cout << "TreeLevel: ";
         newTree->travLevel(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"The number of all nodes is: "<<leavesCount(newTree)<<endl;
+        cout << "The number of all nodes is: " << leavesCount(newTree) << endl;
 
-        cout<<"THe height of this tree is: "<<HeightCount(newTree)<<endl;
+        cout << "THe height of this tree is: " << HeightCount(newTree) << endl;
 
         delete newTree;
     }
-    else if(choice == 2)
+    else if (choice == 2)
     {
 
         //print the bintree
-        BinTree<int>* newTree = binTreeBuild_General<int>(); //要这样子使用
+        BinTree<int> *newTree = binTreeBuild_General<int>(); //要这样子使用
         PRINTER<BinNodePosi(int)> printer;
-        cout<<"TravPre: ";
+        cout << "TravPre: ";
         newTree->travPre(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"TravIn: ";
+        cout << "TravIn: ";
         newTree->travIn(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"TravPost: ";
+        cout << "TravPost: ";
         newTree->travPost(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"TreeLevel: ";
+        cout << "TreeLevel: ";
         newTree->travLevel(printer);
-        cout<<endl;
+        cout << endl;
 
-        cout<<"The number of all nodes is: "<<leavesCount(newTree)<<endl;
+        cout << "The number of all nodes is: " << leavesCount(newTree) << endl;
 
-        cout<<"The height of this tree is: "<<HeightCount(newTree)<<endl;
+        cout << "The height of this tree is: " << HeightCount(newTree) << endl;
 
         delete newTree;
     }
 }
+
 #endif //DSL_BINTREE_TEST_H

@@ -81,7 +81,7 @@ namespace DSLibrary
             {
                 //找到包含当前节点为左子树范围的最近祖先
                 BinNodePosi(T)x = this;
-                while ( x->_parent && !IsLChild(*x))
+                while (x->_parent && !IsLChild(*x))
                 {
                     x = x->_parent;
                 }

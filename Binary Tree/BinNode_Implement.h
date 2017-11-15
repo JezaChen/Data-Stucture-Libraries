@@ -14,9 +14,9 @@ namespace DSLibrary
     int leavesCount_Help(BinNodePosi(T)_root)
     {
         if (_root == nullptr) return 0;
-        //if (IsLeaf(*_root)) return 1;
+            //if (IsLeaf(*_root)) return 1;
         else
-            return 1+leavesCount_Help(_root->lc) + leavesCount_Help(_root->rc);
+            return 1 + leavesCount_Help(_root->lc) + leavesCount_Help(_root->rc);
     }
 
     template<typename T>
@@ -35,8 +35,8 @@ namespace DSLibrary
         }
     }
 
-    template <typename T>
-    int HeightCount(BinTree<T>* tree)
+    template<typename T>
+    int HeightCount(BinTree<T> *tree)
     {
         return HeightCount_Help(tree->root());
     }

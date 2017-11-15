@@ -19,34 +19,34 @@ namespace DSLibrary
     template<typename T>
     BinTree<T> *binTreeBuild_General()
     {
-        cout<<"Input the root node's elem: ";
+        cout << "Input the root node's elem: ";
         T temp;
-        if(cin>>temp)
+        if (cin >> temp)
         {
             BinTree<T> *newTree = new BinTree<T>();
             newTree->insertAsRoot(temp);
 
-            cout<<"Input the root's left child elem: ";
+            cout << "Input the root's left child elem: ";
             T temp2;
-            if(cin>>temp2)
+            if (cin >> temp2)
             {
                 binTreeBuild_General_Help(newTree, newTree->root(), temp2, true);
             }
             else
             {
-                cout<<"It has no left child"<<endl;
+                cout << "It has no left child" << endl;
                 cin.clear();
                 cin.ignore();
             }
 
-            cout<<"Input the root's right child elem: ";
-            if(cin>>temp2)
+            cout << "Input the root's right child elem: ";
+            if (cin >> temp2)
             {
                 binTreeBuild_General_Help(newTree, newTree->root(), temp2, false);
             }
             else
             {
-                cout<<"It has no right child"<<endl;
+                cout << "It has no right child" << endl;
                 cin.clear();
                 cin.ignore();
             }
@@ -63,34 +63,34 @@ namespace DSLibrary
                                    const T &elem,
                                    bool isLeftChild)
     {
-        BinNodePosi(T) newTreeNodePosi;
-        if(isLeftChild)
+        BinNodePosi(T)newTreeNodePosi;
+        if (isLeftChild)
             newTreeNodePosi = tree->insertAsLc(currTreeNode, elem);
         else
             newTreeNodePosi = tree->insertAsRc(currTreeNode, elem);
 
 
-        cout<<"Input the node "<<elem<<"'s left child elem: ";
+        cout << "Input the node " << elem << "'s left child elem: ";
         T temp;
-        if(cin>>temp)
+        if (cin >> temp)
         {
             binTreeBuild_General_Help(tree, newTreeNodePosi, temp, true);
         }
         else
         {
-            cout<<"It has no left child"<<endl;
+            cout << "It has no left child" << endl;
             cin.clear();
             cin.ignore();
         }
 
-        cout<<"Input the node "<<elem<<"'s right child elem: ";
-        if(cin>>temp)
+        cout << "Input the node " << elem << "'s right child elem: ";
+        if (cin >> temp)
         {
             binTreeBuild_General_Help(tree, newTreeNodePosi, temp, false);
         }
         else
         {
-            cout<<"It has no right child"<<endl;
+            cout << "It has no right child" << endl;
             cin.clear();
             cin.ignore();
         }
