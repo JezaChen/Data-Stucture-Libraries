@@ -12,6 +12,8 @@ CMakeFiles/DSL.dir/main.cpp.o: .././Common/Share.h
 CMakeFiles/DSL.dir/main.cpp.o: .././Tree/tree_sequential.h
 CMakeFiles/DSL.dir/main.cpp.o: .././uniPRINTER/print.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Algorithm/find.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Algorithm/sort.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Algorithm/sort_test.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_Implement.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Binary\ Tree/BinNode_trav.h
@@ -29,6 +31,8 @@ CMakeFiles/DSL.dir/main.cpp.o: ../List/Doubly_Linked_List.h
 CMakeFiles/DSL.dir/main.cpp.o: ../List/Link.h
 CMakeFiles/DSL.dir/main.cpp.o: ../List/List.h
 CMakeFiles/DSL.dir/main.cpp.o: ../List/test.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Priority\ Queue/Heap.h
+CMakeFiles/DSL.dir/main.cpp.o: ../Priority\ Queue/PQ.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Queue/Array_Based_Queue.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Queue/Linked_Queue.h
 CMakeFiles/DSL.dir/main.cpp.o: ../Queue/Queue.h

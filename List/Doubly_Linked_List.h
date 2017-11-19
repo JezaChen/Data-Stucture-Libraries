@@ -10,31 +10,38 @@
 #ifndef defaultSize
 #define defaultSize 100
 #endif
+
 #include <iostream>
 #include "List.h"
 #include "../Common/Exception_Handler.h"
 #include "../Common/Share.h"
 
 
-namespace DSLibrary {
-    namespace Double_Linked {
+namespace DSLibrary
+{
+    namespace Double_Linked
+    {
 
         template<typename T>
-        class Link {
+        class Link
+        {
         public:
             T data;
             LinkPosi(T)next;
             LinkPosi(T)prev;
-            static LinkPosi(T) freeList;
+            static LinkPosi(T)freeList;
 
             //Constructor
             Link(T _data, LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL)
-                    : data(_data), prev(_prev), next(_next) {}
+                    : data(_data), prev(_prev), next(_next)
+            {}
 
             Link(LinkPosi(T)_prev = NULL, LinkPosi(T)_next = NULL)
-                    : prev(_prev), next(_next) {}
+                    : prev(_prev), next(_next)
+            {}
 
-            void *operator new(size_t) {
+            void *operator new(size_t)
+            {
                 if (freeList == NULL) return ::new Link<T>;
                 LinkPosi(T)temp = freeList;
                 freeList = freeList->next;
@@ -42,14 +49,18 @@ namespace DSLibrary {
                 return temp;
             }
 
-            void operator delete(void *ptr) {
+            void operator delete(void *ptr)
+            {
                 ((LinkPosi(T)) ptr)->next = freeList;
                 freeList = (LinkPosi(T)) ptr;
             }
         };
+
         template<typename T> LinkPosi(T)Link<T>::freeList = NULL;
+
         template<typename T>
-        class Llist : public List<T> {
+        class Llist : public List<T>
+        {
         private:
             LinkPosi(T)head;
             LinkPosi(T)tail;
@@ -77,10 +88,29 @@ namespace DSLibrary {
             }
 
         public:
-            Llist(int size = defaultSize) { initialize(); } //defaultSize有啥用处
-            ~Llist() { removeAll(); }
+            Llist(int size = defaultSize)
+            { initialize(); } //defaultSize有啥用处
+            Llist(const Llist<T> &target, int lo, int hi)
+            {
+                initialize();
+                if (lo > hi || hi >= target.size() || lo < 0) return;
+                this->moveToStart();
+                int posiTemp = target.currentPosi();
+                target.moveToPosi(lo);
+                while (target.currentPosi() != hi + 1)
+                {
+                    this->append(target.getValue());
+                    target.next();
+                }
+                target.moveToPosi(posiTemp);
+            }
 
-            int size()const { return listSize; }
+            ~Llist()
+            { removeAll(); }
+
+            int size() const
+            { return listSize; }
+
             void clear()
             {
                 removeAll();
@@ -89,11 +119,16 @@ namespace DSLibrary {
 
             void insert(const T &x) //插入
             {
-                if(curr==tail) { append(x); return; }
+                if (curr == tail)
+                {
+                    append(x);
+                    return;
+                }
                 curr->next = curr->next->prev = new Link<T>(x, curr, curr->next);
                 if (curr == tail) tail = tail->next; //如有必要，需要更新尾节点的位置
                 listSize++; //更新表长
             }
+
             void append(const T &x) //追加
             {
                 tail = tail->next = new Link<T>(x, tail, NULL);
@@ -104,11 +139,12 @@ namespace DSLibrary {
             {
                 if (curr->next == NULL)
                     throw nullPointer_Exception(); //抛出空指针异常
-                else {
+                else
+                {
                     LinkPosi(T)target = curr->next;
                     T r = target->data;
                     curr->next = target->next;
-                    if(target->next)  target->next->prev = curr;
+                    if (target->next) target->next->prev = curr;
                     else tail = tail->prev;
                     release(target);
                     return r;
@@ -121,11 +157,13 @@ namespace DSLibrary {
                 curr = head;
                 currPosition = 0;
             }
+
             void moveToEnd()
             {
                 curr = tail;
                 currPosition = listSize;
             }
+
             void prev()
             {
                 if (curr == head)
@@ -133,6 +171,7 @@ namespace DSLibrary {
                 curr = curr->prev;
                 currPosition--; //ai~
             }
+
             void next()
             {
                 if (curr == tail)
@@ -161,13 +200,16 @@ namespace DSLibrary {
                 currPosition = newPosi; //Update the current position
             }
 
-            int currentPosi() { return currPosition; }
+            int currentPosi()
+            { return currPosition; }
+
             const T &getValue()
             {
                 if (curr == tail)
                     throw nullPointer_Exception();  //抛出空指针异常
                 return curr->next->data;
             }
+
             T &operator[](int posi)
             {
                 moveToPosi(posi);
@@ -175,22 +217,24 @@ namespace DSLibrary {
             }
 
             //遍历操作
-            template<typename VST> void trav(VST& visit)
+            template<typename VST>
+            void trav(VST &visit)
             {
-                LinkPosi(T) p=head->next;
-                while(p)
+                LinkPosi(T)p = head->next;
+                while (p)
                 {
                     visit(p->data);  //线性访问
-                    p=p->next;
+                    p = p->next;
                 }
             }
-            void trav(void ( *visit )(T&))
+
+            void trav(void ( *visit )(T &))
             {
-                LinkPosi(T) p=head->next;
-                while(p)
+                LinkPosi(T)p = head->next;
+                while (p)
                 {
                     visit(p->data);  //线性访问
-                    p=p->next;
+                    p = p->next;
                 }
             }
         };

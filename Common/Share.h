@@ -31,7 +31,6 @@ namespace DSLibrary
     { if (x) delete x; }
 
 
-
 //判等器、比较器
     template<typename T>
     static bool lt(const T &a, const T &b)
@@ -61,7 +60,7 @@ namespace DSLibrary
     class COMPARE_LESS
     {
     public:
-        bool priority(const T &a, const T &b)
+        static bool priority(const T &a, const T &b)
         {
             return lt(a, b);
         }
@@ -71,12 +70,20 @@ namespace DSLibrary
     class COMPARE_MORE
     {
     public:
-        bool priority(const T &a, const T &b)
+        static bool priority(const T &a, const T &b)
         {
             return rt(a, b);
         }
     };
 
+    class KeyGetter
+    {
+    public:
+        static int key(int num)  //用于基数排序用，整数直接返回它本身
+        {
+            return num;
+        }
+    };
     template<typename T>
     class Array_Implement //数组操作类
     {
@@ -114,8 +121,24 @@ namespace DSLibrary
         {
             arrayFill(targetArray, 0, size);
         }
+    };
 
-
+    template<typename T>
+    class List_Implement
+    {
+    public:
+        static void listCopy(List <T>& target, List <T>& resource, int lo, int hi)
+        {
+            if (lo > hi) return;
+            target.moveToPosi(lo);
+            resource.moveToPosi(lo);
+            for (int i = lo; i <= hi; i++)
+            {
+                const_cast<T>(target.getValue()) = resource.getValue();
+                target.next();
+                resource.next();
+            }
+        }
     };
 }
 #endif //COMMON_SHARE_H

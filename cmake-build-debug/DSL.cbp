@@ -102,6 +102,9 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Algorithm/sort.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Algorithm/sort_test.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/BST/BST.h">
 			<Option target="DSL"/>
 		</Unit>

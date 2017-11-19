@@ -8,6 +8,7 @@
 #include "List.h"
 #include <iostream>
 #include "../Common/Exception_Handler.h"
+
 #ifndef defaultSize
 #define defaultSize 200
 #endif
@@ -29,10 +30,14 @@ namespace DSLibrary
             Link *next;
             static LinkPosi(T)freeList;
 
-            Link(const T &_data, Link<T> *next_pointer = NULL) : data(_data), next(next_pointer) {}
-            Link(Link<T> *next_pointer = NULL) : next(next_pointer) {}
+            Link(const T &_data, Link<T> *next_pointer = NULL) : data(_data), next(next_pointer)
+            {}
 
-            void *operator new(size_t) {
+            Link(Link<T> *next_pointer = NULL) : next(next_pointer)
+            {}
+
+            void *operator new(size_t)
+            {
                 if (freeList == NULL) return ::new Link<T>;
                 LinkPosi(T)temp = freeList;
                 freeList = freeList->next;
@@ -40,16 +45,19 @@ namespace DSLibrary
                 return temp;
             }
 
-            void operator delete(void *ptr) {
+            void operator delete(void *ptr)
+            {
                 ((LinkPosi(T)) ptr)->next = freeList;
                 freeList = (LinkPosi(T)) ptr;
             }
         };
+
         template<typename T> LinkPosi(T)Link<T>::freeList = NULL;
 
 
         template<typename T>
-        class Llist : public List<T> {
+        class Llist : public List<T>
+        {
         private:
             LinkPosi(T)head;
             LinkPosi(T)tail;
@@ -59,7 +67,7 @@ namespace DSLibrary
             void initialize()
             {
                 curr = tail = head = new Link<T>();
-                listSize =currPosition=0;
+                listSize = currPosition = 0;
             }
 
             void removeAll()
@@ -75,36 +83,60 @@ namespace DSLibrary
                     r = NULL;
                 }
             }
+
         public:
-            Llist(int size = defaultSize) { initialize(); } //defaultSize有啥用处
+            Llist(int size = defaultSize)
+            { initialize(); } //defaultSize有啥用处
 
-            ~Llist() { removeAll(); }
+            Llist(const Llist<T> &target, int lo, int hi)
+            {
+                initialize();
+                if (lo > hi || hi >= target.size() || lo < 0) return;
+                this->moveToStart();
+                int posiTemp = target.currentPosi();
+                target.moveToPosi(lo);
+                while (target.currentPosi() != hi + 1)
+                {
+                    this->append(target.getValue());
+                    target.next();
+                }
+                target.moveToPosi(posiTemp);
+            }
 
-            void clear() {
+            ~Llist()
+            { removeAll(); }
+
+            void clear()
+            {
                 removeAll();
                 initialize();
             }
 
 
-            int size()const {return listSize;}
+            int size() const
+            { return listSize; }
+
             void insert(const T &x) //插入
             {
                 curr->next = new Link<T>(x, curr->next);
                 if (curr == tail) tail = tail->next; //如有必要，需要更新尾节点的位置
                 listSize++; //更新表长
             }
+
             void append(const T &x) //追加
             {
                 tail = tail->next = new Link<T>(x, NULL);
                 listSize++;
             }
+
             T remove() //删除
             {
                 if (curr->next == NULL)
                     throw nullPointer_Exception(); //抛出空指针异常
-                else {
+                else
+                {
                     LinkPosi(T)target = curr->next;
-                    if(target->next == NULL)
+                    if (target->next == NULL)
                     {
                         tail = curr; //tail指针需要更新
                     }
@@ -121,11 +153,13 @@ namespace DSLibrary
                 curr = head;
                 currPosition = 0;
             }
+
             void moveToEnd()
             {
                 curr = tail;
                 currPosition = listSize;
             }
+
             void prev()
             {
                 if (curr == head)
@@ -136,6 +170,7 @@ namespace DSLibrary
                 curr = r;
                 currPosition--;
             }
+
             void next()
             {
                 if (curr == tail)
@@ -143,29 +178,37 @@ namespace DSLibrary
                 curr = curr->next;
                 currPosition++;
             }
+
             void moveToPosi(int newPosi)
             {
                 if (newPosi < 0) throw outOfBounds_Exception(UPPER_BOUND);
                 if (newPosi > listSize) throw outOfBounds_Exception(LOWER_BOUND);
 
-                if (newPosi >= currPosition) {
+                if (newPosi >= currPosition)
+                {
                     //直接后移即可
                     for (int i = 0; i < newPosi - currPosition; i++)
                         curr = curr->next;
                     return;
-                } else {
+                }
+                else
+                {
                     curr = head;
                     for (int i = 0; i < newPosi; i++) curr = curr->next;
                     return;
                 }
             }
-            int currentPosi()  { return currPosition;}
-            const T& getValue()
+
+            int currentPosi()
+            { return currPosition; }
+
+            const T &getValue()
             {
                 if (curr == tail)
                     throw nullPointer_Exception();  //抛出空指针异常
                 return curr->next->data;
             }
+
             T &operator[](int posi)
             {
                 moveToPosi(posi);
@@ -173,15 +216,18 @@ namespace DSLibrary
             }
 
             //遍历操作
-            template<typename VST> void trav(VST& visit)
+            template<typename VST>
+            void trav(VST &visit)
             {
                 LinkPosi(T)p = head->next;
-                while (p) {
+                while (p)
+                {
                     visit(p);  //线性访问
                     p = p->next;
                 }
             }
-            void trav(void ( *visit )(T&))
+
+            void trav(void ( *visit )(T &))
             {
                 LinkPosi(T)p = head->next;
                 while (p)

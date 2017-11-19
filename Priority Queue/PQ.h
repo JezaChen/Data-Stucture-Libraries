@@ -10,11 +10,11 @@ namespace DSLibrary
     template<typename E, typename COMP>
     struct PQ
     {
-        void PQ() {}
-        virtual void ~PQ() {}
+        PQ() {}
+        virtual ~PQ() {}
 
-        virtual int size() = 0;
-        virtual void insert(const E& ) = 0;
+        virtual int size()const = 0;
+        //virtual void insert(const E& ) = 0;
         virtual E getFirst() = 0;
         virtual E delFirst() = 0;
     };
