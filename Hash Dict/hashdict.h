@@ -10,6 +10,7 @@
 #include "../Common/Share.h"
 #include "../BST/Dictionary.h"
 #include "KVPair.h"
+#include "../Common/Exception_Handler.h"
 
 using std::string;
 
@@ -62,9 +63,9 @@ namespace DSLibrary
 
         void hashInsert(const Key &, const E &);
 
-        bool hashSearch(const Key &, E&);
+        bool hashSearch(const Key &, E &);
 
-        bool hashRemove(const Key &, E&);
+        bool hashRemove(const Key &, E &);
 
     public:
         HashDict(int sz, Key emptyKey, Key _tombStone)
@@ -80,7 +81,7 @@ namespace DSLibrary
             release(HashTable);
         }
 
-        bool find(const Key &k, E& result)
+        bool find(const Key &k, E &result)
         {
             return hashSearch(k, result);
         }
@@ -92,13 +93,13 @@ namespace DSLibrary
         {
             if (_size == M)
             {
-                //TODO
+                throw hashDictFull_Exception();
             }
             hashInsert(k, it);
             _size++;
         }
 
-        bool remove(const Key &k, E& result)
+        bool remove(const Key &k, E &result)
         {
             return hashRemove(k, result);
         }
@@ -107,7 +108,7 @@ namespace DSLibrary
         {
             if (_size == 0)
             {
-                //TODO
+                throw hashDictEmpty_Exception();
             }
             else
             {
@@ -133,18 +134,18 @@ namespace DSLibrary
         int curr = home = h(k);
         for (int i = 1; EmptyKey != (HashTable[curr].key()) && TombStone != (HashTable[curr].key()); i++)
         {
-            curr = (home + p(k, i)) % M;
             if (k == HashTable[curr].key())
             {
-                //TODO:不能有重复的key
+                throw hashDictKeyCollision_Exception();
             }
+            curr = (home + p(k, i)) % M;
         }
         KVPair<Key, E> newPair(k, e);
         HashTable[curr] = newPair;
     }
 
     template<typename Key, typename E>
-    bool HashDict<Key, E>::hashSearch(const Key &k, E& result)
+    bool HashDict<Key, E>::hashSearch(const Key &k, E &result)
     {
         int home;
         int curr = home = h(k);
@@ -163,7 +164,7 @@ namespace DSLibrary
     }
 
     template<typename Key, typename E>
-    bool HashDict<Key, E>::hashRemove(const Key &k, E& result)
+    bool HashDict<Key, E>::hashRemove(const Key &k, E &result)
     {
         int home;
         int curr = home = h(k);

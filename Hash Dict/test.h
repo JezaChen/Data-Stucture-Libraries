@@ -41,9 +41,23 @@ void hashDict_test()
                 case 'i':
                 case 'I':
                     cin >> key >> value;
-                    hashDict->insert(key, value);
-                    cout << "Insert Successfully." << endl;
-                    break;
+                    try
+                    {
+                        hashDict->insert(key, value);
+                        cout << "Insert Successfully." << endl;
+                        break;
+                    }
+                    catch(hashDictKeyCollision_Exception e)
+                    {
+                        e.print();
+                        break;
+                    }
+                    catch(hashDictFull_Exception e)
+                    {
+                        e.print();
+                        break;
+                    }
+
                 case 'S':
                 case 's':
                     cin >> key;
@@ -90,9 +104,22 @@ void hashDict_test()
                 case 'i':
                 case 'I':
                     cin >> key >> value;
-                    hashDict->insert(key, value);
-                    cout << "Insert Successfully." << endl;
-                    break;
+                    try
+                    {
+                        hashDict->insert(key, value);
+                        cout << "Insert Successfully." << endl;
+                        break;
+                    }
+                    catch(hashDictKeyCollision_Exception e)
+                    {
+                        e.print();
+                        break;
+                    }
+                    catch(hashDictFull_Exception e)
+                    {
+                        e.print();
+                        break;
+                    }
                 case 'S':
                 case 's':
                     cin >> key;

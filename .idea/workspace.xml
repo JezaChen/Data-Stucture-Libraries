@@ -12,16 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hash Dict/KVPair.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hash Dict/hashdict.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hash Dict/test.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BST/BSTNode.h" afterPath="$PROJECT_DIR$/BST/BSTNode.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" afterPath="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/DSL.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uniPRINTER/print.h" afterPath="$PROJECT_DIR$/uniPRINTER/print.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/Exception_Handler.h" afterPath="$PROJECT_DIR$/Common/Exception_Handler.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hash Dict/hashdict.h" afterPath="$PROJECT_DIR$/Hash Dict/hashdict.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hash Dict/test.h" afterPath="$PROJECT_DIR$/Hash Dict/test.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,18 +51,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hashdict.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hashdict.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hash Dict/hashdict.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="1008">
+              <caret line="135" column="9" lean-forward="false" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
               <folding>
                 <element signature="e#85#103#0" expanded="true" />
-                <element signature="e#257#283#0" expanded="true" />
-                <element signature="e#2873#2899#0" expanded="true" />
-                <element signature="e#3389#3415#0" expanded="true" />
-                <element signature="e#3890#3916#0" expanded="true" />
+                <element signature="e#298#324#0" expanded="true" />
+                <element signature="e#2967#2993#0" expanded="true" />
+                <element signature="e#3506#3532#0" expanded="true" />
+                <element signature="e#4007#4033#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AList.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/List/AList.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2734">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Doubly_Linked_List.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-609">
+              <caret line="95" column="69" lean-forward="false" selection-start-line="95" selection-start-column="69" selection-end-line="95" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hash Dict/test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="67" column="67" lean-forward="false" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
+            <state relative-caret-position="588">
+              <caret line="121" column="21" lean-forward="false" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
               <folding>
                 <element signature="e#95#114#0" expanded="true" />
               </folding>
@@ -117,44 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="Exception_Handler.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="print.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/uniPRINTER/print.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="143" column="25" lean-forward="false" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
-              <folding>
-                <element signature="e#601#613#0" expanded="true" />
-                <element signature="e#656#668#0" expanded="true" />
-                <element signature="e#711#723#0" expanded="true" />
-                <element signature="e#772#784#0" expanded="true" />
-                <element signature="e#829#841#0" expanded="true" />
-                <element signature="e#886#898#0" expanded="true" />
-                <element signature="e#2401#2413#0" expanded="true" />
-                <element signature="e#2481#2493#0" expanded="true" />
-                <element signature="e#2621#2633#0" expanded="true" />
-                <element signature="e#2731#2743#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BSTNode.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BST/BSTNode.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state relative-caret-position="759">
+              <caret line="140" column="50" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -192,7 +174,6 @@
         <option value="$PROJECT_DIR$/Stack/Array_Based_Stack.h" />
         <option value="$PROJECT_DIR$/Stack/Stack_common.h" />
         <option value="$PROJECT_DIR$/Queue/Queue.h" />
-        <option value="$PROJECT_DIR$/Common/Exception_Handler.h" />
         <option value="$PROJECT_DIR$/List/test.h" />
         <option value="$PROJECT_DIR$/Stack/test.h" />
         <option value="$PROJECT_DIR$/Queue/test.h" />
@@ -235,9 +216,10 @@
         <option value="$PROJECT_DIR$/Binary Tree/BinNode_travPost.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/uniPRINTER/print.h" />
-        <option value="$PROJECT_DIR$/Hash Dict/hashdict.h" />
         <option value="$PROJECT_DIR$/Hash Dict/KVPair.h" />
+        <option value="$PROJECT_DIR$/Common/Exception_Handler.h" />
         <option value="$PROJECT_DIR$/Hash Dict/test.h" />
+        <option value="$PROJECT_DIR$/Hash Dict/hashdict.h" />
       </list>
     </option>
   </component>
@@ -284,6 +266,11 @@
               <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
               <item name="BST" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Data-Stucture-Libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSL" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -370,7 +357,7 @@
       <workItem from="1510969616560" duration="5553000" />
       <workItem from="1510975362184" duration="20191000" />
       <workItem from="1511013819271" duration="20794000" />
-      <workItem from="1512297761047" duration="11985000" />
+      <workItem from="1512297761047" duration="13359000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -582,11 +569,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511103157023</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="20171203#2239#哈希表大体框架和测试代码就绪">
+      <created>1512311977577</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1512311977577</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218909000" />
+    <option name="totallyTimeSpent" value="220283000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,7 +604,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13734142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.4980695" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25537783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3629707" sideWeight="0.48703805" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19665273" sideWeight="0.48703805" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13782051" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -659,7 +653,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="20171011#2359#进一步改一改" />
     <MESSAGE value="20171011#2359#再进一步优化一下" />
     <MESSAGE value="20171015#2324#改动" />
     <MESSAGE value="20171015#2353#初步调试完成" />
@@ -684,7 +677,8 @@
     <MESSAGE value="20171115#2153#二叉树搞定了" />
     <MESSAGE value="20171115#2202#完善完善" />
     <MESSAGE value="20171119#2250#所有的排序代码已经就绪" />
-    <option name="LAST_COMMIT_MESSAGE" value="20171119#2250#所有的排序代码已经就绪" />
+    <MESSAGE value="20171203#2239#哈希表大体框架和测试代码就绪" />
+    <option name="LAST_COMMIT_MESSAGE" value="20171203#2239#哈希表大体框架和测试代码就绪" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -721,13 +715,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Stack/Array_Based_Stack.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -862,13 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="95" column="69" lean-forward="false" selection-start-line="95" selection-start-column="69" selection-end-line="95" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Huffman Tree/HuffTree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
@@ -899,13 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/List/AList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1006,6 +979,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1023,7 @@
         <state relative-caret-position="825">
           <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1081,14 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BST/Dictionary.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BST/BSTHelp.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="888">
@@ -1116,6 +1082,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/List/Doubly_Linked_List.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="95" column="69" lean-forward="false" selection-start-line="95" selection-start-column="69" selection-end-line="95" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BST/Dictionary.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/Exception_Handler.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="140" column="50" lean-forward="false" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/List/AList.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2734">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Hash Dict/KVPair.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -1124,26 +1122,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hash Dict/hashdict.h">
+    <entry file="file://$PROJECT_DIR$/Hash Dict/test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="588">
+          <caret line="121" column="21" lean-forward="false" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
           <folding>
-            <element signature="e#85#103#0" expanded="true" />
-            <element signature="e#257#283#0" expanded="true" />
-            <element signature="e#2873#2899#0" expanded="true" />
-            <element signature="e#3389#3415#0" expanded="true" />
-            <element signature="e#3890#3916#0" expanded="true" />
+            <element signature="e#95#114#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hash Dict/test.h">
+    <entry file="file://$PROJECT_DIR$/Hash Dict/hashdict.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="67" column="67" lean-forward="false" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
+        <state relative-caret-position="1008">
+          <caret line="135" column="9" lean-forward="false" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
           <folding>
-            <element signature="e#95#114#0" expanded="true" />
+            <element signature="e#85#103#0" expanded="true" />
+            <element signature="e#298#324#0" expanded="true" />
+            <element signature="e#2967#2993#0" expanded="true" />
+            <element signature="e#3506#3532#0" expanded="true" />
+            <element signature="e#4007#4033#0" expanded="true" />
           </folding>
         </state>
       </provider>

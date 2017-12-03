@@ -108,5 +108,38 @@ namespace DSLibrary
             cerr<<"The heap is empty!"<<endl;
         }
     };
+
+    class hashDictKeyCollision_Exception
+    {
+    public:
+        hashDictKeyCollision_Exception() {}
+
+        void print()
+        {
+            cerr<<"The Key Collision Occurs!"<<endl;
+        }
+    };
+
+    class hashDictFull_Exception
+    {
+    public:
+        hashDictFull_Exception() {}
+
+        void print()
+        {
+            cerr<<"The Hash Table is full!"<<endl;
+        }
+    };
+
+    class hashDictEmpty_Exception
+    {
+    public:
+        hashDictEmpty_Exception() {}
+
+        void print()
+        {
+            cerr<<"The Hash Dict is EMPTY!"<<endl;
+        }
+    };
 }
 #endif //LIST_EXCEPTION_HANDLER_H
