@@ -37,6 +37,15 @@ namespace DSLibrary
     template<typename T>
     static void print(const T &x);
 
+    template<typename T>
+    static void println(T *x);
+
+    template<typename T>
+    static void println(T &x);
+
+    template<typename T>
+    static void println(const T &x);
+
     //内接口
     class UNI_PRINTER //统一输出类
     {
@@ -85,10 +94,10 @@ namespace DSLibrary
             }
         }
 
-        template <typename T>
-        static void p(const BinNode<T>& x)
+        template<typename T>
+        static void p(const BinNode<T> &x)
         {
-            cout<<x.data<<' ';
+            cout << x.data << ' ';
         }
     };
 
@@ -107,6 +116,29 @@ namespace DSLibrary
     template<typename T>
     void print(const T &x)
     { UNI_PRINTER::p(x); }
+
+    template<typename T>
+    void println(T *x)
+    {
+        if (x) print(*x);
+        else printf("<NULL");
+
+        printf("\n");
+    }
+
+    template<typename T>
+    void println(T &x)
+    {
+        UNI_PRINTER::p(x);
+        printf("\n");
+    }
+
+    template<typename T>
+    void println(const T &x)
+    {
+        UNI_PRINTER::p(x);
+        printf("\n");
+    }
 
     //template<>
     void print(const string &x)

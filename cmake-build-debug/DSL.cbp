@@ -150,6 +150,15 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/test.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/KVPair.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/hashdict.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/test.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Huffman Tree/HuffNode.h">
 			<Option target="DSL"/>
 		</Unit>

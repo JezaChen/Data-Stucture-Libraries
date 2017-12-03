@@ -30,10 +30,13 @@
 
 
 #include <iostream>
-#define BSTNodePosi(K,E) BSTNode<K,E>*
-namespace DSLibrary {
+
+#define BSTNodePosi(K, E) BSTNode<K,E>*
+namespace DSLibrary
+{
     template<typename Key, typename E>
-    struct BSTNode {
+    struct BSTNode
+    {
     private:
         E _elem;
     public:
@@ -41,31 +44,43 @@ namespace DSLibrary {
         BSTNodePosi(Key, E)parent;
         BSTNodePosi(Key, E)lc;
         BSTNodePosi(Key, E)rc; //父亲，左孩子，右孩子
-        BSTNode() : parent(NULL), lc(NULL), rc(NULL) {}
+        BSTNode() : parent(NULL), lc(NULL), rc(NULL)
+        {}
 
         BSTNode(E e, Key k, BSTNodePosi(Key, E)p = NULL, BSTNodePosi(Key, E)lc = NULL, BSTNodePosi(Key, E)rc = NULL)
-                : _elem(e), _key(k), parent(p), lc(lc), rc(rc) {}
+                : _elem(e), _key(k), parent(p), lc(lc), rc(rc)
+        {}
 
-        ~BSTNode() {}
+        ~BSTNode()
+        {}
 
-        BSTNodePosi(Key, E)insertAsLc(const E &elem, const Key &key) {
+        BSTNodePosi(Key, E)insertAsLc(const E &elem, const Key &key)
+        {
             return lc = new BSTNode<Key, E>(elem, key, this);
         }
 
-        BSTNodePosi(Key, E)insertAsRc(const E &elem, const Key &key) {
+        BSTNodePosi(Key, E)insertAsRc(const E &elem, const Key &key)
+        {
             return rc = new BSTNode<Key, E>(elem, key, this);
         }
 
-        E element() {return _elem; }
-        void setElem(E val) {_elem = val;}
+        E element()
+        { return _elem; }
 
-        BSTNodePosi(Key, E)succ() {
+        void setElem(E val)
+        { _elem = val; }
 
-            if (rc) {
+        BSTNodePosi(Key, E)succ()
+        {
+
+            if (rc)
+            {
                 BSTNodePosi(Key, E)x = rc;
                 while (x->lc) x = x->lc;
                 return x;
-            } else {
+            }
+            else
+            {
                 BSTNodePosi(Key, E)x = parent;
                 while (!IsLChild(*x)) x = x->parent;
                 return x->parent;
