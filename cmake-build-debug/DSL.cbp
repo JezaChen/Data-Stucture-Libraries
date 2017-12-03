@@ -153,6 +153,9 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/KVPair.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/hashDictFunc.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/hashdict.h">
 			<Option target="DSL"/>
 		</Unit>

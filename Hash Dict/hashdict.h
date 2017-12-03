@@ -7,15 +7,18 @@
 
 #include <cstring>
 #include <string>
+#include "hashDictFunc.h"
 #include "../Common/Share.h"
 #include "../BST/Dictionary.h"
 #include "KVPair.h"
 #include "../Common/Exception_Handler.h"
 
+
 using std::string;
 
 namespace DSLibrary
 {
+
     template<typename Key, typename E>
     class HashDict
     {
@@ -28,7 +31,7 @@ namespace DSLibrary
 
         int p(Key K, int i) const
         {
-            return i;
+            return probingFunc<Key,E>::quadraticProbing(K, i);
         }
 
         int h(int x) const
@@ -72,6 +75,7 @@ namespace DSLibrary
                 : M(sz), EmptyKey(emptyKey), _size(0), TombStone(_tombStone)
         {
             HashTable = new KVPair<Key, E>[M];
+            probingFunc<Key,E>::setM(M);
             for (int i = 0; i < M; i++)
                 HashTable[i].setKey(emptyKey);
         }
