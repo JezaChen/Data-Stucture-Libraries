@@ -84,11 +84,13 @@ namespace DSLibrary
             return num;
         }
     };
+
     template<typename T>
     class Array_Implement //数组操作类
     {
+    public:
         static void arrayCopy(T *ansArray,
-                              const T *&targetArray,
+                              const T *targetArray,
                               const int &ansArraySize,
                               const int targetArraySize)
         {
@@ -101,7 +103,7 @@ namespace DSLibrary
         }
 
         static void arrayCopy(T *ansArray,
-                              const T *&targetAns,
+                              const T *targetAns,
                               const int &ansArraySize,
                               const int &lo,
                               const int &hi)

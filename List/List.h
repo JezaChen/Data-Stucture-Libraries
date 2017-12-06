@@ -31,7 +31,7 @@ namespace DSLibrary {
 
         virtual const T &getValue()=0; //获取当前位置的值
         virtual T &operator[](int posi)=0; //重载访问运算符，以便直接使用某个元素
-        virtual int currentPosi()=0; //返回当前位置
+        virtual int currentPosi()const=0; //返回当前位置
         virtual int size() const =0; //表的长度
 
         //遍历操作

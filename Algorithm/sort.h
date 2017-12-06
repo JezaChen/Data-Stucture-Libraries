@@ -220,8 +220,8 @@ namespace DSLibrary
         Double_Linked::Llist<T> leftHalf(elem, 0, mid);
         Double_Linked::Llist<T> rightHalf(elem, mid + 1, elem.size() - 1);
 
-        mergeSort(leftHalf);
-        mergeSort(rightHalf);
+        mergeSort<T, COMP>(leftHalf);
+        mergeSort<T, COMP>(rightHalf);
 
         leftHalf.moveToStart();
         rightHalf.moveToStart();
@@ -303,11 +303,11 @@ namespace DSLibrary
     {
         while (lo < hi)
         {
-            while (lo < hi && (COMPARE_LESS<double>::priority((double)A[lo], ave) || abs(A[lo] -ave)<=1e-6))
+            while (lo < hi && (COMPARE_LESS<double>::priority((double) A[lo], ave) || abs(A[lo] - ave) <= 1e-6))
             {
                 lo++;
             }
-            while (lo < hi && (COMPARE_LESS<double>::priority(ave, (double) A[hi])|| abs(A[hi] -ave)<=1e-6))
+            while (lo < hi && (COMPARE_LESS<double>::priority(ave, (double) A[hi]) || abs(A[hi] - ave) <= 1e-6))
             {
                 hi--;
             }
@@ -417,7 +417,10 @@ namespace DSLibrary
     template<typename T, typename COMP>
     void heapSort(T elem[], int elemSize)
     {
-        heap<T, COMP> Heap(elem, elemSize, elemSize + 2);
+        T *temp = new T[elemSize];
+        Array_Implement<T>::arrayCopy(temp, elem, elemSize,0 , elemSize - 1);
+
+        heap<T, COMP> Heap(temp, elemSize, elemSize + 2);
         for (int i = 0; i < elemSize; i++)
             elem[i] = Heap.delFirst();
     };

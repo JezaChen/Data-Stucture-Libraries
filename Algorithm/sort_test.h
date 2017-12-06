@@ -15,15 +15,18 @@
 using namespace DSLibrary;
 
 void test_AlgorithmTure();
+
 void AlgorithmRunningTimeTest();
 
 //timeval结构定义
-struct TimeVal{
+struct TimeVal
+{
     long tv_sec; //秒
     long tv_usec; //微秒
 };
 //timezone 结构定义
-struct TimeZone{
+struct TimeZone
+{
     int tz_minuteswest; /*和Greenwich 时间差了多少分钟*/
     int tz_dsttime; /*日光节约时间的状态*/
 };
@@ -48,8 +51,8 @@ void sort_test_I()
     // for (int i = 0; i < n; i++)
     //     cout << num[i] << ' ';
     // cout << endl;
-    //test_AlgorithmTure();
-    AlgorithmRunningTimeTest();
+    test_AlgorithmTure();
+    //AlgorithmRunningTimeTest();
 }
 
 bool isAlgorithmTure_Less(int num[], int size)
@@ -58,6 +61,13 @@ bool isAlgorithmTure_Less(int num[], int size)
     {
         if (num[i] > num[i + 1]) return false;
     }
+    return true;
+}
+
+bool isAlgorithmTure_Less(Double_Linked::Llist<int> &num, int size)
+{
+    for (int i = 0; i < size; i++)
+        if (num[i] > num[i + 1]) return false;
     return true;
 }
 
@@ -125,6 +135,14 @@ void test_AlgorithmTure()
         cout << "quickSort I: ";
         if (isAlgorithmTure_Less(num, k)) cout << "true." << endl;
         else cout << "false." << endl;
+
+        randomArray(num, k);
+        Double_Linked::Llist<int> list;
+        for (int i = 0; i < k; i++)
+            list.append(num[i]);
+        mergeSort<int, COMPARE_LESS<int> >(list);
+        if (isAlgorithmTure_Less(list, k - 1)) cout << "true." << endl;
+        else cout << "false." << endl;
 */
         randomArray(num, k);
         quickSort_Ave<int, COMPARE_LESS<int> >(num, 0, k - 1);
@@ -137,6 +155,14 @@ void test_AlgorithmTure()
                 cout << num[i] << ' ';
             cout << endl;
         }
+
+        randomArray(num,k);
+        heapSort<int, COMPARE_LESS<int> >(num, k);
+        cout<<"heapSort"<<endl;
+        if(isAlgorithmTure_Less(num,k))
+            cout<<"true"<<endl;
+        else cout<<"false"<<endl;
+
 
         k *= 10;
         dig++;
@@ -154,11 +180,11 @@ void AlgorithmRunningTimeTest()
     int dig = 2;
     int *num;
 
-    struct timeval t1,t2;
+    struct timeval t1, t2;
     double timeuse;
     double ave;
 
-    cout<<"Running..."<<endl;
+    cout << "Running..." << endl;
     while (k <= 1000000)
     {
         output << "The size of testing array: " << k << endl;
@@ -166,42 +192,42 @@ void AlgorithmRunningTimeTest()
         num = new int[k];
 
         ave = 0;
-        output << "quickSort Normal Edition: "<<endl;
+        output << "quickSort Normal Edition: " << endl;
         for (int i = 0; i < 10; i++)
         {
-            output<<"Test "<<i+1<<':';
+            output << "Test " << i + 1 << ':';
 
             randomArray(num, k);
 
-            gettimeofday(&t1,NULL);
+            gettimeofday(&t1, NULL);
             quickSort<int, COMPARE_LESS<int> >(num, 0, k - 1);
-            gettimeofday(&t2,NULL);
-            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec)/1000000.0;
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
-            ave += timeuse/10;
-            output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output<<"Average: "<<ave<<"ms"<<endl;
+        output << "Average: " << ave << "ms" << endl;
 
         ave = 0;
-        output << "MergeSort: "<<endl;
+        output << "MergeSort: " << endl;
         for (int i = 0; i < 10; i++)
         {
-            output<<"Test "<<i+1<<':';
+            output << "Test " << i + 1 << ':';
 
             randomArray(num, k);
 
-            gettimeofday(&t1,NULL);
+            gettimeofday(&t1, NULL);
             mergeSort<int, COMPARE_LESS<int> >(num, k);
-            gettimeofday(&t2,NULL);
-            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec)/1000000.0;
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
-            ave += timeuse/10;
-            output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output<<"Average: "<<ave<<"ms"<<endl;
+        output << "Average: " << ave << "ms" << endl;
 
-        /*ave = 0;
+        ave = 0;
         output << "HeapSort: "<<endl;
         for (int i = 0; i < 10; i++)
         {
@@ -218,7 +244,7 @@ void AlgorithmRunningTimeTest()
             output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
         }
         output<<"Average: "<<ave<<"ms"<<endl;
-*/
+
 
         /*ave = 0;
         output << "BubbleSort: "<<endl;
@@ -275,76 +301,76 @@ void AlgorithmRunningTimeTest()
         output<<"Average: "<<ave<<"ms"<<endl;
 */
         ave = 0;
-        output << "IntegerRadixSort: "<<endl;
+        output << "IntegerRadixSort: " << endl;
         for (int i = 0; i < 10; i++)
         {
-            output<<"Test "<<i+1<<':';
+            output << "Test " << i + 1 << ':';
 
             randomArray(num, k);
 
-            gettimeofday(&t1,NULL);
+            gettimeofday(&t1, NULL);
             IntegerRadixSort(num, k, 8, dig);
-            gettimeofday(&t2,NULL);
-            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec)/1000000.0;
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
-            ave += timeuse/10;
-            output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output<<"Average: "<<ave<<"ms"<<endl;
+        output << "Average: " << ave << "ms" << endl;
 
         ave = 0;
-        output << "QuickSort with InsertSort: "<<endl;
+        output << "QuickSort with InsertSort: " << endl;
         for (int i = 0; i < 10; i++)
         {
-            output<<"Test "<<i+1<<':';
+            output << "Test " << i + 1 << ':';
 
             randomArray(num, k);
 
-            gettimeofday(&t1,NULL);
-            quickSort_with_InsertSort<int, COMPARE_LESS<int> >(num, 0, k-1);
-            gettimeofday(&t2,NULL);
-            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec)/1000000.0;
+            gettimeofday(&t1, NULL);
+            quickSort_with_InsertSort<int, COMPARE_LESS<int> >(num, 0, k - 1);
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
-            ave += timeuse/10;
-            output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output<<"Average: "<<ave<<"ms"<<endl;
+        output << "Average: " << ave << "ms" << endl;
 
         ave = 0;
-        output << "QuickSort I: "<<endl;
+        output << "QuickSort I: " << endl;
         for (int i = 0; i < 10; i++)
         {
-            output<<"Test "<<i+1<<':';
+            output << "Test " << i + 1 << ':';
 
             randomArray(num, k);
 
-            gettimeofday(&t1,NULL);
-            quickSort_I<int, COMPARE_LESS<int> >(num, 0, k-1);
-            gettimeofday(&t2,NULL);
-            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec)/1000000.0;
+            gettimeofday(&t1, NULL);
+            quickSort_I<int, COMPARE_LESS<int> >(num, 0, k - 1);
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
-            ave += timeuse/10;
-            output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output<<"Average: "<<ave<<"ms"<<endl;
+        output << "Average: " << ave << "ms" << endl;
 
         ave = 0;
-        output << "QuickSort Average Edition: "<<endl;
+        output << "QuickSort Average Edition: " << endl;
         for (int i = 0; i < 10; i++)
         {
-            output<<"Test "<<i+1<<':';
+            output << "Test " << i + 1 << ':';
 
             randomArray(num, k);
 
-            gettimeofday(&t1,NULL);
-            quickSort_Ave<int, COMPARE_LESS<int> >(num, 0, k-1);
-            gettimeofday(&t2,NULL);
-            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec)/1000000.0;
+            gettimeofday(&t1, NULL);
+            quickSort_Ave<int, COMPARE_LESS<int> >(num, 0, k - 1);
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
-            ave += timeuse/10;
-            output<<fixed<<setprecision(6)<<timeuse<<" ms"<<endl;
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output<<"Average: "<<ave<<"ms"<<endl;
+        output << "Average: " << ave << "ms" << endl;
 
 
         k *= 4;
@@ -353,7 +379,7 @@ void AlgorithmRunningTimeTest()
     }
 
     output.close();
-    cout<<"Completed."<<endl;
+    cout << "Completed." << endl;
 }
 
 #endif //DSL_SORT_TEST_H

@@ -97,7 +97,7 @@ namespace DSLibrary
             return data[currPosi]; //返回该元素的引用
         }
 
-        int currentPosi()
+        int currentPosi()const
         { return currPosi; } //返回当前位置
         int size() const
         { return listSize; }  //表的长度

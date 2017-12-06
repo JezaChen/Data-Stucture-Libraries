@@ -15,16 +15,12 @@
 #define Parent(i) ( (i-1)>>1 )
 #define LastInternal(n) Parent(n-1)
 #define LChild(i) ( 1 + ( (i)<< 1) )
-#define RChild(i) ( ( 1+ ( i ) )>> 1 )
+#define RChild(i) ( ( 1+ ( i ) )<< 1 )
 #define HasParent(i) (0 < i)
 
-#ifdef HasLChild
-#define HasLChild(n, i)  InHeap(n,LChild(i))
-#endif
+#define Heap_HasLChild(n, i)  InHeap(n,LChild(i))
+#define Heap_HasRChild(n, i)  InHeap(n,RChild(i))
 
-#ifdef HasRChild
-#define HasRChild(n, i)  InHeap(n,RChild(i))
-#endif
 using namespace std;
 namespace DSLibrary
 {
@@ -39,7 +35,8 @@ namespace DSLibrary
         int properParent(int posi)
         {
             //选择三者中优先级最高的作为父亲
-            if (HasLChild(_size, posi) && HasRChild(_size, posi))
+            if (Heap_HasLChild(_size, posi) && Heap_HasRChild
+            (_size, posi))
             {
                 if (COMP::priority(_Heap[LChild(posi)], _Heap[posi]))
                 {
@@ -56,11 +53,11 @@ namespace DSLibrary
                     else return RChild(posi);
                 }
             }
-            else if (HasLChild(_size, posi))
+            else if (Heap_HasLChild(_size, posi))
             {
                 return (COMP::priority(_Heap[posi], _Heap[LChild(posi)]) ? posi : LChild(posi));
             }
-            else if (HasRChild(_size, posi))
+            else if (Heap_HasRChild(_size, posi))
             {
                 return (COMP::priority(_Heap[posi], _Heap[RChild(posi)]) ? posi : RChild(posi));
             }

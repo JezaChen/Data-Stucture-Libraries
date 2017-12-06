@@ -71,6 +71,7 @@ namespace DSLibrary
             {
                 curr = tail = head = new Link<T>();
                 listSize = 0;
+                currPosition = 0;
             }
 
             void removeAll()
@@ -90,7 +91,21 @@ namespace DSLibrary
         public:
             Llist(int size = defaultSize)
             { initialize(); } //defaultSize有啥用处
-            Llist(const Llist<T> &target, int lo, int hi)
+            Llist(Llist<T> &target)
+            {
+                initialize();
+                this->moveToStart();
+                int tempPosi = target.currentPosi();
+                target.moveToStart();
+                while (target.currentPosi() != target.size())
+                {
+                    this->append(target.getValue());
+                    target.next();
+                }
+                target.moveToPosi(tempPosi);
+            }
+
+            Llist(Llist<T> &target, int lo, int hi)
             {
                 initialize();
                 if (lo > hi || hi >= target.size() || lo < 0) return;
@@ -200,7 +215,7 @@ namespace DSLibrary
                 currPosition = newPosi; //Update the current position
             }
 
-            int currentPosi()
+            int currentPosi() const
             { return currPosition; }
 
             const T &getValue()

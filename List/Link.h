@@ -199,7 +199,7 @@ namespace DSLibrary
                 }
             }
 
-            int currentPosi()
+            int currentPosi()const
             { return currPosition; }
 
             const T &getValue()
