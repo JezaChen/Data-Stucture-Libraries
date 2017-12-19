@@ -325,14 +325,15 @@ namespace DSLibrary
     };
 
     template<typename T>
-    inline double findPivot_Average(const T A[], int lo, int hi)
+    inline int findPivot_Average(const T A[], int lo, int hi)
     {
-        long long sum = 0;
-        // if (hi < lo) return sum;
-        for (int i = lo; i <= hi; i++)
-            sum += A[i];
-        return (double) sum / (hi - lo + 1);
+        int mi = (lo + hi) / 2;
+
+        if(A[lo] < A[mi] && A[mi] < A[hi] || A[hi] < A[mi] && A[mi] < A[lo]) return A[mi];
+        if(A[lo] < A[hi] && A[hi] < A[mi] || A[mi] < A[hi] && A[hi] < A[lo]) return A[hi];
+        if(A[mi] < A[lo] && A[lo] < A[hi] || A[hi] < A[lo] && A[mi] < A[lo]) return A[lo];
     };
+
 
     template<typename T, typename COMP>
     void quickSort(T A[], int lo, int hi)
@@ -352,16 +353,16 @@ namespace DSLibrary
     void quickSort_Ave(T A[], int lo, int hi)
     {
         if (lo >= hi) return;
+        int pivotIndex = findPivot_Average(A, lo, hi);
+        swap(A[pivotIndex], A[hi]);
 
-        double pivot = findPivot_Average(A, lo, hi);
-        int k = partition_Ave<T, COMP>(A, lo, hi, pivot);
+        int k = partition<T, COMP>(A, lo - 1, hi, A[hi]);
+        swap(A[k], A[hi]);
 
-        if (lo <= k && k <= hi) //论文错了...
-        {
-            quickSort_Ave<T, COMP>(A, lo, k - 1);
-            quickSort_Ave<T, COMP>(A, k, hi);
-        }
+        quickSort<T, COMP>(A, lo, k - 1);
+        quickSort<T, COMP>(A, k + 1, hi);
     };
+
 
     template<typename T, typename COMP = COMPARE_LESS<int> >
     void quickSort_I(T A[], int lo, int hi) //快速排序迭代实现
@@ -397,12 +398,30 @@ namespace DSLibrary
     template<typename T, typename COMP>
     void quickSort_with_InsertSort(T A[], int lo, int hi)
     {
-        if (hi - lo + 1 <= 8)
+        if (hi - lo + 1 <= 16)
         {
             insertSort<T, COMP>(A, lo, hi);
             return;
         }
         int pivotIndex = findPivot(A, lo, hi);
+        swap(A[pivotIndex], A[hi]);
+
+        int k = partition<T, COMP>(A, lo - 1, hi, A[hi]);
+        swap(A[k], A[hi]);
+
+        quickSort_with_InsertSort<T, COMP>(A, lo, k - 1);
+        quickSort_with_InsertSort<T, COMP>(A, k + 1, hi);
+    };
+
+    template<typename T, typename COMP>
+    void quickSort_Better(T A[], int lo, int hi)
+    {
+        if (hi - lo + 1 <= 8)
+        {
+            insertSort<T, COMP>(A, lo, hi);
+            return;
+        }
+        int pivotIndex = findPivot_Average(A, lo, hi);
         swap(A[pivotIndex], A[hi]);
 
         int k = partition<T, COMP>(A, lo - 1, hi, A[hi]);
@@ -418,7 +437,7 @@ namespace DSLibrary
     void heapSort(T elem[], int elemSize)
     {
         T *temp = new T[elemSize];
-        Array_Implement<T>::arrayCopy(temp, elem, elemSize,0 , elemSize - 1);
+        Array_Implement<T>::arrayCopy(temp, elem, elemSize, 0, elemSize - 1);
 
         heap<T, COMP> Heap(temp, elemSize, elemSize + 2);
         for (int i = 0; i < elemSize; i++)

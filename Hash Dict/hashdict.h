@@ -5,6 +5,8 @@
 #ifndef DSL_HASHDICT_H
 #define DSL_HASHDICT_H
 
+#define _TEST
+
 #include <cstring>
 #include <string>
 #include "hashDictFunc.h"
@@ -31,7 +33,7 @@ namespace DSLibrary
 
         int p(Key K, int i) const
         {
-            return probingFunc<Key,E>::quadraticProbing(K, i);
+            return probingFunc<Key, E>::pseudoRandomProbing(K, i);
         }
 
         int h(int x) const
@@ -70,12 +72,20 @@ namespace DSLibrary
 
         bool hashRemove(const Key &, E &);
 
+//#ifdef _TEST
+
+        void hashInsert(const Key &, const E &, int &);
+
+        bool hashRemove(const Key &, E &, int &);
+
+//#endif
+
     public:
         HashDict(int sz, Key emptyKey, Key _tombStone)
                 : M(sz), EmptyKey(emptyKey), _size(0), TombStone(_tombStone)
         {
             HashTable = new KVPair<Key, E>[M];
-            probingFunc<Key,E>::setM(M);
+            probingFunc<Key, E>::setM(M);
             for (int i = 0; i < M; i++)
                 HashTable[i].setKey(emptyKey);
         }
@@ -100,8 +110,25 @@ namespace DSLibrary
                 throw hashDictFull_Exception();
             }
             hashInsert(k, it);
-            _size++;
         }
+
+//#ifdef _TEST
+
+        void insert_test(const Key &k, const E &it, int &picks)
+        {
+            if (_size == M)
+            {
+                throw hashDictFull_Exception();
+            }
+            hashInsert(k, it, picks);
+        }
+
+        bool remove_test(const Key &k, E &result, int &picks)
+        {
+            return hashRemove(k, result, picks);
+        }
+
+//#endif
 
         bool remove(const Key &k, E &result)
         {
@@ -146,7 +173,34 @@ namespace DSLibrary
         }
         KVPair<Key, E> newPair(k, e);
         HashTable[curr] = newPair;
+        _size++;
     }
+
+//#ifdef _TEST
+
+    template<typename Key, typename E>
+    void HashDict<Key, E>::
+    hashInsert(const Key &k, const E &e, int &picks)
+    {
+        picks = 1;
+        int home;
+        int curr = home = h(k);
+        for (int i = 1; EmptyKey != (HashTable[curr].key()) && TombStone != (HashTable[curr].key()); i++)
+        {
+            if (k == HashTable[curr].key())
+            {
+                //throw hashDictKeyCollision_Exception();
+                return; //测试用的的代码不抛出异常，直接返回
+            }
+            curr = (home + p(k, i)) % M;
+            picks++;
+        }
+        KVPair<Key, E> newPair(k, e);
+        HashTable[curr] = newPair;
+        _size++;
+    }
+
+//#endif
 
     template<typename Key, typename E>
     bool HashDict<Key, E>::hashSearch(const Key &k, E &result)
@@ -184,13 +238,41 @@ namespace DSLibrary
             tombKey.setKey(TombStone);
             HashTable[curr] = tombKey;
             result = temp;
+            _size--;
             return true;
         }
         else
             return false;
     }
 
+//#ifdef _TEST
 
+    template<typename Key, typename E>
+    bool HashDict<Key, E>::hashRemove(const Key &k, E &result, int &picks)
+    {
+        picks = 1;
+        int home;
+        int curr = home = h(k);
+        for (int i = 1;
+             (k != HashTable[curr].key()) && (EmptyKey != HashTable[curr].key());
+             i++, picks++)
+            curr = (home + p(k, i)) % M;
+
+        if (k == HashTable[curr].key())
+        {
+            E temp = HashTable[curr].value();
+            KVPair<Key, E> tombKey;
+            tombKey.setKey(TombStone);
+            HashTable[curr] = tombKey;
+            result = temp;
+            _size--;
+            return true;
+        }
+        else
+            return false;
+    }
+
+//#endif
 }
 
 #endif //DSL_HASHDICT_H

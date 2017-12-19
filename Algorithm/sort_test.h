@@ -51,8 +51,8 @@ void sort_test_I()
     // for (int i = 0; i < n; i++)
     //     cout << num[i] << ' ';
     // cout << endl;
-    test_AlgorithmTure();
-    //AlgorithmRunningTimeTest();
+    //test_AlgorithmTure();
+    AlgorithmRunningTimeTest();
 }
 
 bool isAlgorithmTure_Less(int num[], int size)
@@ -80,6 +80,7 @@ void randomArray(int num[], int k)
     }
 }
 
+
 void test_AlgorithmTure()
 {
     int k = 10;
@@ -93,13 +94,13 @@ void test_AlgorithmTure()
         cout << "quickSort Normal Edition: ";
         if (isAlgorithmTure_Less(num, k)) cout << "true." << endl;
         else cout << "false." << endl;
-
+*/
         randomArray(num, k);
         mergeSort<int, COMPARE_LESS<int> >(num, k);
-        cout << "mergeSort: ";
+        cout<<"MergeSort for Array: ";
         if (isAlgorithmTure_Less(num, k)) cout << "true." << endl;
         else cout << "false." << endl;
-
+/*
         randomArray(num, k);
         bubbleSort<int, COMPARE_LESS<int> >(num, k);
         cout << "bubbleSort: ";
@@ -135,15 +136,16 @@ void test_AlgorithmTure()
         cout << "quickSort I: ";
         if (isAlgorithmTure_Less(num, k)) cout << "true." << endl;
         else cout << "false." << endl;
-
+*/
         randomArray(num, k);
         Double_Linked::Llist<int> list;
         for (int i = 0; i < k; i++)
             list.append(num[i]);
         mergeSort<int, COMPARE_LESS<int> >(list);
+        cout<<"MergeSort for Linked List: ";
         if (isAlgorithmTure_Less(list, k - 1)) cout << "true." << endl;
         else cout << "false." << endl;
-*/
+/*
         randomArray(num, k);
         quickSort_Ave<int, COMPARE_LESS<int> >(num, 0, k - 1);
         cout << "quickSort Average Edition: ";
@@ -162,7 +164,7 @@ void test_AlgorithmTure()
         if(isAlgorithmTure_Less(num,k))
             cout<<"true"<<endl;
         else cout<<"false"<<endl;
-
+*/
 
         k *= 10;
         dig++;
@@ -173,7 +175,7 @@ void test_AlgorithmTure()
 void AlgorithmRunningTimeTest()
 {
     ofstream output;
-    output.open("/home/jeza/timeTest.log", ios::out | ios::app);
+    output.open("/home/jeza/timeTest_for_QuickSoft.log", ios::out | ios::app);
     output << "///////////////TEST///////////////" << endl;
 
     int k = 10;
@@ -192,7 +194,7 @@ void AlgorithmRunningTimeTest()
         num = new int[k];
 
         ave = 0;
-        output << "quickSort Normal Edition: " << endl;
+        output << "quickSort Better Edition: " << endl;
         for (int i = 0; i < 10; i++)
         {
             output << "Test " << i + 1 << ':';
@@ -200,17 +202,17 @@ void AlgorithmRunningTimeTest()
             randomArray(num, k);
 
             gettimeofday(&t1, NULL);
-            quickSort<int, COMPARE_LESS<int> >(num, 0, k - 1);
+            quickSort_Better<int, COMPARE_LESS<int> >(num, 0, k - 1);
             gettimeofday(&t2, NULL);
             timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
             ave += timeuse / 10;
-            output << fixed << setprecision(6) << timeuse << " ms" << endl;
+            output << fixed << setprecision(6) << timeuse << " s" << endl;
         }
-        output << "Average: " << ave << "ms" << endl;
-
+        output << "Average: " << ave << "s" << endl;
+/*
         ave = 0;
-        output << "MergeSort: " << endl;
+        output << "MergeSort For Array: " << endl;
         for (int i = 0; i < 10; i++)
         {
             output << "Test " << i + 1 << ':';
@@ -223,10 +225,32 @@ void AlgorithmRunningTimeTest()
             timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
             ave += timeuse / 10;
-            output << fixed << setprecision(6) << timeuse << " ms" << endl;
+            output << fixed << setprecision(6) << timeuse << " s" << endl;
         }
-        output << "Average: " << ave << "ms" << endl;
+        output << "Average: " << ave << "s" << endl;
 
+        ave = 0;
+        output << "MergeSort For Array: " << endl;
+        for (int i = 0; i < 10; i++)
+        {
+            output << "Test " << i + 1 << ':';
+
+            randomArray(num, k);
+            Double_Linked::Llist<int> list;
+            for (int i = 0; i < k; i++)
+                list.append(num[i]);
+
+            gettimeofday(&t1, NULL);
+            mergeSort<int, COMPARE_LESS<int> >(list);
+            gettimeofday(&t2, NULL);
+            timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
+
+            ave += timeuse / 10;
+            output << fixed << setprecision(6) << timeuse << " s" << endl;
+        }
+        output << "Average: " << ave << "s" << endl;
+         */
+/*
         ave = 0;
         output << "HeapSort: "<<endl;
         for (int i = 0; i < 10; i++)
@@ -300,6 +324,7 @@ void AlgorithmRunningTimeTest()
         }
         output<<"Average: "<<ave<<"ms"<<endl;
 */
+        /*
         ave = 0;
         output << "IntegerRadixSort: " << endl;
         for (int i = 0; i < 10; i++)
@@ -317,9 +342,9 @@ void AlgorithmRunningTimeTest()
             output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
         output << "Average: " << ave << "ms" << endl;
-
+*/
         ave = 0;
-        output << "QuickSort with InsertSort: " << endl;
+        output << "QuickSort with InsertSort_16: " << endl;
         for (int i = 0; i < 10; i++)
         {
             output << "Test " << i + 1 << ':';
@@ -334,10 +359,10 @@ void AlgorithmRunningTimeTest()
             ave += timeuse / 10;
             output << fixed << setprecision(6) << timeuse << " ms" << endl;
         }
-        output << "Average: " << ave << "ms" << endl;
+        output << "Average: " << ave << "s" << endl;
 
         ave = 0;
-        output << "QuickSort I: " << endl;
+        output << "QuickSort 迭代版: " << endl;
         for (int i = 0; i < 10; i++)
         {
             output << "Test " << i + 1 << ':';
@@ -350,9 +375,9 @@ void AlgorithmRunningTimeTest()
             timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
             ave += timeuse / 10;
-            output << fixed << setprecision(6) << timeuse << " ms" << endl;
+            output << fixed << setprecision(6) << timeuse << " s" << endl;
         }
-        output << "Average: " << ave << "ms" << endl;
+        output << "Average: " << ave << "s" << endl;
 
         ave = 0;
         output << "QuickSort Average Edition: " << endl;
@@ -368,9 +393,10 @@ void AlgorithmRunningTimeTest()
             timeuse = t2.tv_sec - t1.tv_sec + (t2.tv_usec - t1.tv_usec) / 1000000.0;
 
             ave += timeuse / 10;
-            output << fixed << setprecision(6) << timeuse << " ms" << endl;
+            output << fixed << setprecision(6) << timeuse << " s" << endl;
         }
-        output << "Average: " << ave << "ms" << endl;
+        output << "Average: " << ave << "s" << endl;
+
 
 
         k *= 4;

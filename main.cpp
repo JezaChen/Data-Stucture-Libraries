@@ -46,7 +46,7 @@ int main()
     }
     else if(choice == 7)
     {
-        hashDict_test();
+        hashDict_testII();
     }
         return 0;
 }
