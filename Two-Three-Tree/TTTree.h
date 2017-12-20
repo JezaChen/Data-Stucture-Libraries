@@ -26,6 +26,9 @@ namespace DSLibrary
 
         void printHelp(TTNode<Key, T> *, int) const;
 
+        bool splitNode(TTNode<Key, T> *subroot, const Key &inKey, const T &inVal, TTNode<Key, T> *inPtr, Key &returnKey,
+                       T &returnVal, TTNode<Key, T> *returnPtr);
+
     public:
         TTTree() : _root(nullptr), recordsCount(0)
         {}
