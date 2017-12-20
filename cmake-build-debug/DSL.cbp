@@ -150,6 +150,12 @@
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Binary Tree/test.h">
 			<Option target="DSL"/>
 		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Graph/Graph.h">
+			<Option target="DSL"/>
+		</Unit>
+		<Unit filename="/home/jeza/Data-Stucture-Libraries/Graph/Graphm.h">
+			<Option target="DSL"/>
+		</Unit>
 		<Unit filename="/home/jeza/Data-Stucture-Libraries/Hash Dict/KVPair.h">
 			<Option target="DSL"/>
 		</Unit>
