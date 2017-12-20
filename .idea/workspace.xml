@@ -12,8 +12,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e267e982-d3ed-4b1b-8440-7ad75864ff47" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_C.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_CXX.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/a.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/BST/BSTHelp.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/main.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/DSL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/.idea/Queue.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeCache.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CMakeCCompiler.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CMakeCXXCompiler.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CMakeSystem.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Queue.dir/DependInfo.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Queue.dir/build.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Queue.dir/cmake_clean.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Queue.dir/depend.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Queue.dir/flags.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/Queue.dir/progress.make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/cmake.check_cache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/Project.cbp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/Queue.cbp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Queue/cmake-build-debug/cmake_install.cmake" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/CXX.includecache" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSL.dir/depend.internal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Two-Three-Tree/TTTree.h" afterPath="$PROJECT_DIR$/Two-Three-Tree/TTTree.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Two-Three-Tree/TTree_Insert_Impl.h" afterPath="$PROJECT_DIR$/Two-Three-Tree/TTree_Insert_Impl.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -32,7 +71,7 @@
       <file leaf-file-name="TTNode.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Two-Three-Tree/TTNode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="489">
               <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding>
                 <element signature="e#189#215#0" expanded="true" />
@@ -86,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="158" column="20" lean-forward="true" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+              <caret line="158" column="20" lean-forward="false" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
               <folding>
                 <element signature="e#79#98#0" expanded="true" />
               </folding>
@@ -97,12 +136,13 @@
       <file leaf-file-name="TTree_Insert_Impl.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Two-Three-Tree/TTree_Insert_Impl.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
+            <state relative-caret-position="741">
+              <caret line="200" column="4" lean-forward="false" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
               <folding>
                 <element signature="e#104#123#0" expanded="true" />
                 <element signature="e#179#205#0" expanded="true" />
-                <element signature="e#3471#3497#0" expanded="true" />
+                <element signature="e#3671#3697#0" expanded="true" />
+                <element signature="e#6023#6049#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,19 +154,6 @@
             <state relative-caret-position="483">
               <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hash Dict/test.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3675">
-              <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="220" selection-end-column="5" />
-              <folding>
-                <element signature="e#95#114#0" expanded="true" />
-                <element signature="e#624#5156#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -377,7 +404,7 @@
       <workItem from="1513124655820" duration="1784000" />
       <workItem from="1513424345176" duration="2754000" />
       <workItem from="1513427172138" duration="21237000" />
-      <workItem from="1513733469611" duration="1458000" />
+      <workItem from="1513733469611" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="20171009#2337#初步完善了二叉搜索树，非平衡">
       <created>1507563542180</created>
@@ -624,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513698204764</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="20171219#2342#update 2-3tree">
+      <created>1513738591796</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1513738591798</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260732000" />
+    <option name="totallyTimeSpent" value="261487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,7 +736,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="20171016#1614#优化一次" />
     <MESSAGE value="20171023#1614#声明和定义分离" />
     <MESSAGE value="20171024#2329#做了一些细节上的微调" />
     <MESSAGE value="20171025#1912#List &amp; Queue &amp; Stack Beta 0.1 release" />
@@ -727,7 +760,8 @@
     <MESSAGE value="20171203#2329#增加一些探查函数" />
     <MESSAGE value="20171206#1111#修改了堆排序一些不经意的严重bug" />
     <MESSAGE value="20171219#2342#增添2-3树-未完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="20171219#2342#增添2-3树-未完成" />
+    <MESSAGE value="20171219#2342#update 2-3tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="20171219#2342#update 2-3tree" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -773,13 +807,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tree/tree_lcrs_dynamic_tr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="154" column="12" lean-forward="false" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tree/tree_loc.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3876">
@@ -1002,6 +1029,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,16 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Two-Three-Tree/TTNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="e#189#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithm/sort.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1140,9 +1158,27 @@
     <entry file="file://$PROJECT_DIR$/Priority Queue/Heap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="158" column="20" lean-forward="true" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
+          <caret line="158" column="20" lean-forward="false" selection-start-line="158" selection-start-column="20" selection-end-line="158" selection-end-column="20" />
           <folding>
             <element signature="e#79#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Two-Three-Tree/TTNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#189#215#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1160,12 +1196,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Two-Three-Tree/TTree_Insert_Impl.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
+        <state relative-caret-position="741">
+          <caret line="200" column="4" lean-forward="false" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
           <folding>
             <element signature="e#104#123#0" expanded="true" />
             <element signature="e#179#205#0" expanded="true" />
-            <element signature="e#3471#3497#0" expanded="true" />
+            <element signature="e#3671#3697#0" expanded="true" />
+            <element signature="e#6023#6049#0" expanded="true" />
           </folding>
         </state>
       </provider>

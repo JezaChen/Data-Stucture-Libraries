@@ -1,0 +1,6 @@
+/usr/share/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jeza/Data-Stucture-Libraries/Queue
+-- Configuring done
+CMake Error: CMake can not determine linker language for target: Queue
+CMake Error: Cannot determine link language for target "Queue".
+-- Generating done
+-- Build files have been written to: /home/jeza/Data-Stucture-Libraries/Queue/cmake-build-debug

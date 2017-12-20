@@ -1,0 +1,456 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././Common/Exception_Handler.h
+iostream
+-
+string
+-
+
+.././Common/Share.h
+iostream
+-
+../uniPRINTER/print.h
+.././uniPRINTER/print.h
+
+.././Tree/tree_sequential.h
+cstdio
+-
+iostream
+-
+string
+-
+tree.h
+.././Tree/tree.h
+../Binary Tree/BinTree.h
+.././Binary Tree/BinTree.h
+tree_lcrs_dynamic_tr.h
+.././Tree/tree_lcrs_dynamic_tr.h
+tree_lcrs_dynamic.h
+.././Tree/tree_lcrs_dynamic.h
+tree_loc.h
+.././Tree/tree_loc.h
+
+.././uniPRINTER/print.h
+iostream
+-
+cstdio
+-
+../List/AList.h
+.././List/AList.h
+../List/Link.h
+.././List/Link.h
+../List/List.h
+.././List/List.h
+../List/Doubly_Linked_List.h
+.././List/Doubly_Linked_List.h
+../Tree/tree.h
+.././Tree/tree.h
+../Binary Tree/BinNode.h
+.././Binary Tree/BinNode.h
+
+/home/jeza/Data-Stucture-Libraries/Algorithm/find.h
+cmath
+-
+../List/List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+
+/home/jeza/Data-Stucture-Libraries/Algorithm/sort.h
+algorithm
+-
+Share.h
+/home/jeza/Data-Stucture-Libraries/Algorithm/Share.h
+../Stack/Linked_Stack.h
+/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h
+../List/List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+../List/AList.h
+/home/jeza/Data-Stucture-Libraries/List/AList.h
+../Priority Queue/Heap.h
+/home/jeza/Data-Stucture-Libraries/Priority Queue/Heap.h
+
+/home/jeza/Data-Stucture-Libraries/Algorithm/sort_test.h
+cstdlib
+-
+iostream
+-
+istream
+-
+ostream
+-
+fstream
+-
+sys/time.h
+/home/jeza/Data-Stucture-Libraries/Algorithm/sys/time.h
+sort.h
+/home/jeza/Data-Stucture-Libraries/Algorithm/sort.h
+
+/home/jeza/Data-Stucture-Libraries/BST/BST.h
+iostream
+-
+Common/Exception_Handler.h
+-
+Dictionary.h
+/home/jeza/Data-Stucture-Libraries/BST/Dictionary.h
+BSTNode.h
+/home/jeza/Data-Stucture-Libraries/BST/BSTNode.h
+
+/home/jeza/Data-Stucture-Libraries/BST/BSTHelp.cpp
+BST.h
+/home/jeza/Data-Stucture-Libraries/BST/BST.h
+
+/home/jeza/Data-Stucture-Libraries/BST/BSTNode.h
+iostream
+-
+
+/home/jeza/Data-Stucture-Libraries/BST/Dictionary.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+iostream
+-
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_Implement.h
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+BinTree.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_trav.h
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+BinNode_travPre.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travPre.h
+BinNode_travIn.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travIn.h
+BinNode_travPost.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travPost.h
+BinNode_travLevel.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travLevel.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travIn.h
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+../Stack/Linked_Stack.h
+/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travLevel.h
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+../Queue/Linked_Queue.h
+/home/jeza/Data-Stucture-Libraries/Queue/Linked_Queue.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travPost.h
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+../Stack/Linked_Stack.h
+/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_travPre.h
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+../Stack/Linked_Stack.h
+/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h
+algorithm
+-
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+BinNode_trav.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_trav.h
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree_build.h
+BinTree.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h
+Tree/tree_sequential.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/Tree/tree_sequential.h
+
+/home/jeza/Data-Stucture-Libraries/Binary Tree/test.h
+iostream
+-
+BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+BinTree.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h
+BinTree_build.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree_build.h
+BinNode_Implement.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode_Implement.h
+
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+iostream
+-
+string
+-
+
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+iostream
+-
+../uniPRINTER/print.h
+/home/jeza/Data-Stucture-Libraries/uniPRINTER/print.h
+
+/home/jeza/Data-Stucture-Libraries/Hash Dict/KVPair.h
+
+/home/jeza/Data-Stucture-Libraries/Hash Dict/hashDictFunc.h
+ctime
+-
+cstdlib
+-
+
+/home/jeza/Data-Stucture-Libraries/Hash Dict/hashdict.h
+cstring
+-
+string
+-
+hashDictFunc.h
+/home/jeza/Data-Stucture-Libraries/Hash Dict/hashDictFunc.h
+../Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+../BST/Dictionary.h
+/home/jeza/Data-Stucture-Libraries/BST/Dictionary.h
+KVPair.h
+/home/jeza/Data-Stucture-Libraries/Hash Dict/KVPair.h
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+
+/home/jeza/Data-Stucture-Libraries/Hash Dict/test.h
+iostream
+-
+iomanip
+-
+vector
+-
+hashdict.h
+/home/jeza/Data-Stucture-Libraries/Hash Dict/hashdict.h
+
+/home/jeza/Data-Stucture-Libraries/List/AList.h
+List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+
+/home/jeza/Data-Stucture-Libraries/List/Doubly_Linked_List.h
+iostream
+-
+List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+../Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+
+/home/jeza/Data-Stucture-Libraries/List/Link.h
+List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+iostream
+-
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+
+/home/jeza/Data-Stucture-Libraries/List/List.h
+
+/home/jeza/Data-Stucture-Libraries/List/test.h
+iostream
+-
+iomanip
+-
+memory
+-
+List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+AList.h
+/home/jeza/Data-Stucture-Libraries/List/AList.h
+Link.h
+/home/jeza/Data-Stucture-Libraries/List/Link.h
+Doubly_Linked_List.h
+/home/jeza/Data-Stucture-Libraries/List/Doubly_Linked_List.h
+Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/List/Exception_Handler.h
+
+/home/jeza/Data-Stucture-Libraries/Priority Queue/Heap.h
+iostream
+-
+algorithm
+-
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+PQ.h
+/home/jeza/Data-Stucture-Libraries/Priority Queue/PQ.h
+
+/home/jeza/Data-Stucture-Libraries/Priority Queue/PQ.h
+
+/home/jeza/Data-Stucture-Libraries/Queue/Array_Based_Queue.h
+Queue.h
+/home/jeza/Data-Stucture-Libraries/Queue/Queue.h
+
+/home/jeza/Data-Stucture-Libraries/Queue/Linked_Queue.h
+../Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+../List/Link.h
+/home/jeza/Data-Stucture-Libraries/List/Link.h
+Queue.h
+/home/jeza/Data-Stucture-Libraries/Queue/Queue.h
+
+/home/jeza/Data-Stucture-Libraries/Queue/Queue.h
+
+/home/jeza/Data-Stucture-Libraries/Queue/test.h
+iostream
+-
+string
+-
+iomanip
+-
+../uniPRINTER/print.h
+/home/jeza/Data-Stucture-Libraries/uniPRINTER/print.h
+Queue.h
+/home/jeza/Data-Stucture-Libraries/Queue/Queue.h
+Linked_Queue.h
+/home/jeza/Data-Stucture-Libraries/Queue/Linked_Queue.h
+Array_Based_Queue.h
+/home/jeza/Data-Stucture-Libraries/Queue/Array_Based_Queue.h
+
+/home/jeza/Data-Stucture-Libraries/Stack/Array_Based_Stack.h
+Stack_common.h
+/home/jeza/Data-Stucture-Libraries/Stack/Stack_common.h
+
+/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h
+Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Stack/Common/Share.h
+Stack_common.h
+/home/jeza/Data-Stucture-Libraries/Stack/Stack_common.h
+../List/Link.h
+/home/jeza/Data-Stucture-Libraries/List/Link.h
+
+/home/jeza/Data-Stucture-Libraries/Stack/Stack_common.h
+
+/home/jeza/Data-Stucture-Libraries/Stack/test.h
+iostream
+-
+string
+-
+iomanip
+-
+Stack_common.h
+/home/jeza/Data-Stucture-Libraries/Stack/Stack_common.h
+Linked_Stack.h
+/home/jeza/Data-Stucture-Libraries/Stack/Linked_Stack.h
+Array_Based_Stack.h
+/home/jeza/Data-Stucture-Libraries/Stack/Array_Based_Stack.h
+../Common/Exception_Handler.h
+/home/jeza/Data-Stucture-Libraries/Common/Exception_Handler.h
+uniPRINTER/print.h
+/home/jeza/Data-Stucture-Libraries/Stack/uniPRINTER/print.h
+
+/home/jeza/Data-Stucture-Libraries/Tree/test.h
+iostream
+-
+ctime
+-
+sys/time.h
+/home/jeza/Data-Stucture-Libraries/Tree/sys/time.h
+tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+tree_lcrs_dynamic_tr.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic_tr.h
+tree_lcrs_array.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_array.h
+tree_lcrs_dynamic.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic.h
+tree_loc.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_loc.h
+tree_sequential.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_sequential.h
+
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+iostream
+-
+
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_array.h
+../Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic.h
+../Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic_tr.h
+../Common/Share.h
+/home/jeza/Data-Stucture-Libraries/Common/Share.h
+tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+../Binary Tree/BinTree.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h
+
+/home/jeza/Data-Stucture-Libraries/Tree/tree_loc.h
+tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+../List/Doubly_Linked_List.h
+/home/jeza/Data-Stucture-Libraries/List/Doubly_Linked_List.h
+../Algorithm/find.h
+/home/jeza/Data-Stucture-Libraries/Algorithm/find.h
+
+/home/jeza/Data-Stucture-Libraries/Tree/tree_sequential.h
+cstdio
+-
+iostream
+-
+string
+-
+tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+../Binary Tree/BinTree.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinTree.h
+tree_lcrs_dynamic_tr.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic_tr.h
+tree_lcrs_dynamic.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_lcrs_dynamic.h
+tree_loc.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree_loc.h
+
+/home/jeza/Data-Stucture-Libraries/main.cpp
+iostream
+-
+Queue/test.h
+/home/jeza/Data-Stucture-Libraries/Queue/test.h
+Stack/test.h
+/home/jeza/Data-Stucture-Libraries/Stack/test.h
+List/test.h
+/home/jeza/Data-Stucture-Libraries/List/test.h
+Tree/test.h
+/home/jeza/Data-Stucture-Libraries/Tree/test.h
+Binary Tree/test.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/test.h
+Algorithm/sort_test.h
+/home/jeza/Data-Stucture-Libraries/Algorithm/sort_test.h
+Hash Dict/test.h
+/home/jeza/Data-Stucture-Libraries/Hash Dict/test.h
+
+/home/jeza/Data-Stucture-Libraries/uniPRINTER/print.h
+iostream
+-
+cstdio
+-
+../List/AList.h
+/home/jeza/Data-Stucture-Libraries/List/AList.h
+../List/Link.h
+/home/jeza/Data-Stucture-Libraries/List/Link.h
+../List/List.h
+/home/jeza/Data-Stucture-Libraries/List/List.h
+../List/Doubly_Linked_List.h
+/home/jeza/Data-Stucture-Libraries/List/Doubly_Linked_List.h
+../Tree/tree.h
+/home/jeza/Data-Stucture-Libraries/Tree/tree.h
+../Binary Tree/BinNode.h
+/home/jeza/Data-Stucture-Libraries/Binary Tree/BinNode.h
+
